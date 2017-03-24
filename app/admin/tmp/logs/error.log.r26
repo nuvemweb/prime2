@@ -1,0 +1,599 @@
+2015-10-28 14:01:16 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /paula_mendonca/Desenvolvimento/admin/users/assets/images/meta_icons/favicon.png
+Stack Trace:
+#0 D:\www\paula_mendonca\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\www\paula_mendonca\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 D:\www\paula_mendonca\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-10-28 14:03:30 Error: [MissingControllerException] Controller class ParceirosController could not be found.
+Exception Attributes: array (
+  'class' => 'ParceirosController',
+  'plugin' => NULL,
+)
+Request URL: /paula_mendonca/Desenvolvimento/admin/Parceiros
+Stack Trace:
+#0 D:\www\paula_mendonca\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-28 14:04:30 Error: [MissingViewException] View file "D:\www\paula_mendonca\Desenvolvimento\app\admin\View\Parceiros\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'D:\\www\\paula_mendonca\\Desenvolvimento\\app\\admin\\View\\Parceiros\\index.ctp',
+)
+Request URL: /paula_mendonca/Desenvolvimento/admin/Parceiros
+Stack Trace:
+#0 D:\www\paula_mendonca\Desenvolvimento\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 D:\www\paula_mendonca\Desenvolvimento\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 D:\www\paula_mendonca\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 D:\www\paula_mendonca\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ParceirosController), Object(CakeRequest))
+#4 D:\www\paula_mendonca\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-28 14:12:26 Error: [MissingActionException] Action ParceirosController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'ParceirosController',
+  'action' => 'img',
+)
+Request URL: /paula_mendonca/Desenvolvimento/admin/Parceiros/img/meta_icons/favicon.png
+Stack Trace:
+#0 D:\www\paula_mendonca\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\www\paula_mendonca\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ParceirosController), Object(CakeRequest))
+#2 D:\www\paula_mendonca\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-10-28 14:16:23 Error: [MissingControllerException] Controller class ProdutosController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdutosController',
+  'plugin' => NULL,
+)
+Request URL: /paula_mendonca/Desenvolvimento/admin/Produtos
+Stack Trace:
+#0 D:\www\paula_mendonca\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-28 14:16:50 Error: [MissingControllerException] Controller class ProdutosController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdutosController',
+  'plugin' => NULL,
+)
+Request URL: /paula_mendonca/Desenvolvimento/admin/Produtos
+Stack Trace:
+#0 D:\www\paula_mendonca\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-28 14:16:52 Error: [MissingTableException] Table tb_conteudos for model Conteudo was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tb_conteudos',
+  'class' => 'Conteudo',
+  'ds' => 'default',
+)
+Request URL: /paula_mendonca/Desenvolvimento/admin/Conteudos
+Stack Trace:
+#0 D:\www\paula_mendonca\Desenvolvimento\lib\Cake\Model\Model.php(3504): Model->setSource('conteudos')
+#1 D:\www\paula_mendonca\Desenvolvimento\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 D:\www\paula_mendonca\Desenvolvimento\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 D:\www\paula_mendonca\Desenvolvimento\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#4 D:\www\paula_mendonca\Desenvolvimento\app\admin\Controller\ConteudosController.php(27): PaginatorComponent->paginate()
+#5 [internal function]: ConteudosController->index()
+#6 D:\www\paula_mendonca\Desenvolvimento\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ConteudosController), Array)
+#7 D:\www\paula_mendonca\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 D:\www\paula_mendonca\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ConteudosController), Object(CakeRequest))
+#9 D:\www\paula_mendonca\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-10-28 14:19:09 Error: [MissingControllerException] Controller class ServicosController could not be found.
+Exception Attributes: array (
+  'class' => 'ServicosController',
+  'plugin' => NULL,
+)
+Request URL: /paula_mendonca/Desenvolvimento/admin/Servicos
+Stack Trace:
+#0 D:\www\paula_mendonca\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-28 14:23:48 Error: [MissingActionException] Action ServicosController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'ServicosController',
+  'action' => 'img',
+)
+Request URL: /paula_mendonca/Desenvolvimento/admin/Servicos/img/meta_icons/favicon.png
+Stack Trace:
+#0 D:\www\paula_mendonca\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\www\paula_mendonca\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ServicosController), Object(CakeRequest))
+#2 D:\www\paula_mendonca\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-10-28 14:24:45 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /paula_mendonca/Desenvolvimento/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 D:\www\paula_mendonca\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-28 14:25:27 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /paula_mendonca/Desenvolvimento/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 D:\www\paula_mendonca\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-25 20:36:30 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /harasrecanto/Desenvolvimento/admin/users/assets/images/meta_icons/favicon.png
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-08-25 20:36:43 Error: [MissingTableException] Table tb_conteudos for model Conteudo was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tb_conteudos',
+  'class' => 'Conteudo',
+  'ds' => 'default',
+)
+Request URL: /harasrecanto/Desenvolvimento/admin/Conteudos
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(3504): Model->setSource('conteudos')
+#1 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#4 D:\www\harasrecanto\Desenvolvimento\app\admin\Controller\ConteudosController.php(27): PaginatorComponent->paginate()
+#5 [internal function]: ConteudosController->index()
+#6 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ConteudosController), Array)
+#7 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ConteudosController), Object(CakeRequest))
+#9 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-08-25 21:45:19 Error: [MissingActionException] Action ConteudosController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'ConteudosController',
+  'action' => 'img',
+)
+Request URL: /harasrecanto/Desenvolvimento/admin/Conteudos/img/meta_icons/favicon.png
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ConteudosController), Object(CakeRequest))
+#2 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-08-25 21:48:12 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /harasrecanto/Desenvolvimento/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-25 21:49:10 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /harasrecanto/Desenvolvimento/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-25 21:49:39 Error: Fatal Error (4): syntax error, unexpected end of file in [D:\www\harasrecanto\Desenvolvimento\app\admin\View\Conteudos\edit.ctp, line 46]
+2016-08-25 21:49:39 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /harasrecanto/Desenvolvimento/admin/Conteudos/edit/2
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\\www\\harasrec...', 46)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\\www\\harasrec...', 46, Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\\www\\harasrec...', 46, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-25 21:49:39 Error: Fatal Error (4): syntax error, unexpected end of file in [D:\www\harasrecanto\Desenvolvimento\app\admin\View\Conteudos\edit.ctp, line 46]
+2016-08-25 21:49:39 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /harasrecanto/Desenvolvimento/admin/Conteudos/edit/img/meta_icons/favicon.png
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\\www\\harasrec...', 46)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\\www\\harasrec...', 46, Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\\www\\harasrec...', 46, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-25 21:49:44 Error: Fatal Error (4): syntax error, unexpected end of file in [D:\www\harasrecanto\Desenvolvimento\app\admin\View\Conteudos\edit.ctp, line 46]
+2016-08-25 21:49:44 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /harasrecanto/Desenvolvimento/admin/Conteudos/edit/3
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\\www\\harasrec...', 46)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\\www\\harasrec...', 46, Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\\www\\harasrec...', 46, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-25 21:49:44 Error: Fatal Error (4): syntax error, unexpected end of file in [D:\www\harasrecanto\Desenvolvimento\app\admin\View\Conteudos\edit.ctp, line 46]
+2016-08-25 21:49:44 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /harasrecanto/Desenvolvimento/admin/Conteudos/edit/img/meta_icons/favicon.png
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\\www\\harasrec...', 46)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\\www\\harasrec...', 46, Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\\www\\harasrec...', 46, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-25 21:50:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /harasrecanto/Desenvolvimento/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-25 21:50:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /harasrecanto/Desenvolvimento/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-25 21:50:17 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Imgadmin',
+)
+Request URL: /harasrecanto/Desenvolvimento/admin/imgadmin/js/ckeditor/contents.css
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-08-26 14:06:16 Error: [MissingActionException] Action UsersController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'assets',
+)
+Request URL: /harasrecanto/Desenvolvimento/admin/users/assets/images/meta_icons/favicon.png
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-08-26 14:59:08 Error: [MissingActionException] Action DestaquesController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'DestaquesController',
+  'action' => 'img',
+)
+Request URL: /harasrecanto/Desenvolvimento/admin/Destaques/img/meta_icons/favicon.png
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(DestaquesController), Object(CakeRequest))
+#2 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-08-26 15:40:12 Error: [MissingTableException] Table tb_servicos for model Servico was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tb_servicos',
+  'class' => 'Servico',
+  'ds' => 'default',
+)
+Request URL: /harasrecanto/Desenvolvimento/admin/Servicos
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(3504): Model->setSource('servicos')
+#1 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#4 D:\www\harasrecanto\Desenvolvimento\app\admin\Controller\ServicosController.php(25): PaginatorComponent->paginate()
+#5 [internal function]: ServicosController->index()
+#6 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ServicosController), Array)
+#7 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ServicosController), Object(CakeRequest))
+#9 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-08-26 19:17:28 Error: [MissingActionException] Action AnimaisController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'AnimaisController',
+  'action' => 'img',
+)
+Request URL: /harasrecanto/Desenvolvimento/admin/animais/img/meta_icons/favicon.png
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AnimaisController), Object(CakeRequest))
+#2 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-08-26 19:29:04 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'AlbunsAnimal.album_id' in 'on clause'
+Request URL: /harasrecanto/Desenvolvimento/admin/animais/edit/1
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Album`....', Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Album`....', Array, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(1444): DboSource->fetchAll('SELECT `Album`....', false)
+#4 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(1297): DboSource->_fetchHasAndBelongsToMany(Object(Animal), 'SELECT `Album`....', Array, 'Album')
+#5 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(1142): DboSource->queryAssociation(Object(Animal), Object(Album), 'hasAndBelongsTo...', 'Album', Array, Array, true, Array, 0, Array)
+#6 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(2905): DboSource->read(Object(Animal), Array)
+#7 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(2877): Model->_readDataSource('first', Array)
+#8 D:\www\harasrecanto\Desenvolvimento\app\admin\Controller\AnimaisController.php(80): Model->find('first', Array)
+#9 [internal function]: AnimaisController->edit('1')
+#10 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AnimaisController), Array)
+#11 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AnimaisController), Object(CakeRequest))
+#13 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-08-26 19:30:43 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Album.animal_id' in 'field list'
+Request URL: /harasrecanto/Desenvolvimento/admin/animais/edit/1
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Album`....', Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Album`....', Array, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(1421): DboSource->fetchAll('SELECT `Album`....', false)
+#4 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(1259): DboSource->_fetchHasMany(Object(Animal), 'SELECT `Album`....', Array)
+#5 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(1142): DboSource->queryAssociation(Object(Animal), Object(Album), 'hasMany', 'Album', Array, Array, true, Array, 0, Array)
+#6 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(2905): DboSource->read(Object(Animal), Array)
+#7 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(2877): Model->_readDataSource('first', Array)
+#8 D:\www\harasrecanto\Desenvolvimento\app\admin\Controller\AnimaisController.php(80): Model->find('first', Array)
+#9 [internal function]: AnimaisController->edit('1')
+#10 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AnimaisController), Array)
+#11 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AnimaisController), Object(CakeRequest))
+#13 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-08-26 19:44:12 Error: [MissingActionException] Action AlbunsController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'AlbunsController',
+  'action' => 'img',
+)
+Request URL: /harasrecanto/Desenvolvimento/admin/albuns/img/meta_icons/favicon.png
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlbunsController), Object(CakeRequest))
+#2 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-08-26 19:47:26 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [D:\www\harasrecanto\Desenvolvimento\app\admin\View\Albuns\edit.ctp, line 21]
+2016-08-26 19:47:26 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /harasrecanto/Desenvolvimento/admin/albuns/edit/1
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\\www\\harasrec...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\\www\\harasrec...', 21, Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\\www\\harasrec...', 21, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-26 19:47:27 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [D:\www\harasrecanto\Desenvolvimento\app\admin\View\Albuns\edit.ctp, line 21]
+2016-08-26 19:47:27 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /harasrecanto/Desenvolvimento/admin/albuns/edit/img/meta_icons/favicon.png
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\\www\\harasrec...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\\www\\harasrec...', 21, Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\\www\\harasrec...', 21, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-26 19:48:51 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [D:\www\harasrecanto\Desenvolvimento\app\admin\View\Albuns\edit.ctp, line 21]
+2016-08-26 19:48:51 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /harasrecanto/Desenvolvimento/admin/albuns/edit/1
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\\www\\harasrec...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\\www\\harasrec...', 21, Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\\www\\harasrec...', 21, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-26 19:48:52 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [D:\www\harasrecanto\Desenvolvimento\app\admin\View\Albuns\edit.ctp, line 21]
+2016-08-26 19:48:52 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /harasrecanto/Desenvolvimento/admin/albuns/edit/img/meta_icons/favicon.png
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\\www\\harasrec...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\\www\\harasrec...', 21, Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\\www\\harasrec...', 21, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-26 19:48:52 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [D:\www\harasrecanto\Desenvolvimento\app\admin\View\Albuns\edit.ctp, line 21]
+2016-08-26 19:48:52 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /harasrecanto/Desenvolvimento/admin/albuns/edit/1
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\\www\\harasrec...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\\www\\harasrec...', 21, Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\\www\\harasrec...', 21, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-26 19:48:53 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [D:\www\harasrecanto\Desenvolvimento\app\admin\View\Albuns\edit.ctp, line 21]
+2016-08-26 19:48:53 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /harasrecanto/Desenvolvimento/admin/albuns/edit/img/meta_icons/favicon.png
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\\www\\harasrec...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\\www\\harasrec...', 21, Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\\www\\harasrec...', 21, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-26 19:53:17 Error: [MissingActionException] Action AlbunsImagensController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'AlbunsImagensController',
+  'action' => 'img',
+)
+Request URL: /harasrecanto/Desenvolvimento/admin/albunsImagens/img/meta_icons/favicon.png
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlbunsImagensController), Object(CakeRequest))
+#2 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-08-26 20:21:44 Error: Fatal Error (1): Call to a member function find() on a non-object in [D:\www\harasrecanto\Desenvolvimento\app\admin\Controller\AlbunsAnimaisController.php, line 105]
+2016-08-26 20:21:44 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /harasrecanto/Desenvolvimento/admin/albunsAnimais/add/2
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\\www\\harasrec...', 105)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\\www\\harasrec...', 105, Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\\www\\harasrec...', 105, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-26 20:21:45 Error: Fatal Error (1): Call to a member function find() on a non-object in [D:\www\harasrecanto\Desenvolvimento\app\admin\Controller\AlbunsAnimaisController.php, line 105]
+2016-08-26 20:21:45 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /harasrecanto/Desenvolvimento/admin/albunsAnimais/add/img/meta_icons/favicon.png
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\\www\\harasrec...', 105)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\\www\\harasrec...', 105, Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\\www\\harasrec...', 105, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-26 20:22:19 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Album.id' in 'where clause'
+Request URL: /harasrecanto/Desenvolvimento/admin/albunsAnimais/add/2
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Animal`...', Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Animal`...', Array, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Animal`...', false)
+#4 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(2905): DboSource->read(Object(Animal), Array)
+#5 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(2877): Model->_readDataSource('list', Array)
+#6 D:\www\harasrecanto\Desenvolvimento\app\admin\Controller\AlbunsAnimaisController.php(105): Model->find('list', Array)
+#7 [internal function]: AlbunsAnimaisController->add('2')
+#8 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AlbunsAnimaisController), Array)
+#9 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlbunsAnimaisController), Object(CakeRequest))
+#11 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-08-26 20:22:19 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Album.id' in 'where clause'
+Request URL: /harasrecanto/Desenvolvimento/admin/albunsAnimais/add/img/meta_icons/favicon.png
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Animal`...', Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Animal`...', Array, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Animal`...', false)
+#4 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(2905): DboSource->read(Object(Animal), Array)
+#5 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(2877): Model->_readDataSource('list', Array)
+#6 D:\www\harasrecanto\Desenvolvimento\app\admin\Controller\AlbunsAnimaisController.php(105): Model->find('list', Array)
+#7 [internal function]: AlbunsAnimaisController->add('img', 'meta_icons', 'favicon.png')
+#8 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AlbunsAnimaisController), Array)
+#9 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlbunsAnimaisController), Object(CakeRequest))
+#11 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-08-26 20:24:46 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'albunsAnimais.animal_id' in 'where clause'
+Request URL: /harasrecanto/Desenvolvimento/admin/albunsAnimais/index/2
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `AlbunsA...', Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `AlbunsA...', Array, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `AlbunsA...', false)
+#4 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(2905): DboSource->read(Object(AlbunsAnimal), Array)
+#5 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#6 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#7 D:\www\harasrecanto\Desenvolvimento\app\admin\Controller\AlbunsAnimaisController.php(32): PaginatorComponent->paginate()
+#8 [internal function]: AlbunsAnimaisController->index('2')
+#9 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AlbunsAnimaisController), Array)
+#10 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlbunsAnimaisController), Object(CakeRequest))
+#12 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-08-26 20:24:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'albunsAnimais.animal_id' in 'where clause'
+Request URL: /harasrecanto/Desenvolvimento/admin/albunsAnimais/index/img/meta_icons/favicon.png
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `AlbunsA...', Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `AlbunsA...', Array, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `AlbunsA...', false)
+#4 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(2905): DboSource->read(Object(AlbunsAnimal), Array)
+#5 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#6 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#7 D:\www\harasrecanto\Desenvolvimento\app\admin\Controller\AlbunsAnimaisController.php(32): PaginatorComponent->paginate()
+#8 [internal function]: AlbunsAnimaisController->index('img', 'meta_icons', 'favicon.png')
+#9 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AlbunsAnimaisController), Array)
+#10 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlbunsAnimaisController), Object(CakeRequest))
+#12 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-08-26 20:27:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'AlbunsAnimais.animal_id' in 'where clause'
+Request URL: /harasrecanto/Desenvolvimento/admin/albunsAnimais/index/2
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `AlbunsA...', Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `AlbunsA...', Array, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `AlbunsA...', false)
+#4 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(2905): DboSource->read(Object(AlbunsAnimal), Array)
+#5 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#6 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#7 D:\www\harasrecanto\Desenvolvimento\app\admin\Controller\AlbunsAnimaisController.php(32): PaginatorComponent->paginate()
+#8 [internal function]: AlbunsAnimaisController->index('2')
+#9 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AlbunsAnimaisController), Array)
+#10 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlbunsAnimaisController), Object(CakeRequest))
+#12 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-08-26 20:27:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'AlbunsAnimais.animal_id' in 'where clause'
+Request URL: /harasrecanto/Desenvolvimento/admin/albunsAnimais/index/img/meta_icons/favicon.png
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `AlbunsA...', Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `AlbunsA...', Array, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `AlbunsA...', false)
+#4 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(2905): DboSource->read(Object(AlbunsAnimal), Array)
+#5 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#6 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Controller\Component\PaginatorComponent.php(198): Model->find('all', Array)
+#7 D:\www\harasrecanto\Desenvolvimento\app\admin\Controller\AlbunsAnimaisController.php(32): PaginatorComponent->paginate()
+#8 [internal function]: AlbunsAnimaisController->index('img', 'meta_icons', 'favicon.png')
+#9 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AlbunsAnimaisController), Array)
+#10 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlbunsAnimaisController), Object(CakeRequest))
+#12 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-08-26 20:31:37 Error: Fatal Error (1): Call to a member function find() on a non-object in [D:\www\harasrecanto\Desenvolvimento\app\admin\Controller\AlbunsAnimaisController.php, line 105]
+2016-08-26 20:31:37 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /harasrecanto/Desenvolvimento/admin/albunsAnimais/add/2
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\\www\\harasrec...', 105)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\\www\\harasrec...', 105, Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\\www\\harasrec...', 105, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-26 20:31:37 Error: Fatal Error (1): Call to a member function find() on a non-object in [D:\www\harasrecanto\Desenvolvimento\app\admin\Controller\AlbunsAnimaisController.php, line 105]
+2016-08-26 20:31:37 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /harasrecanto/Desenvolvimento/admin/albunsAnimais/add/img/meta_icons/favicon.png
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\\www\\harasrec...', 105)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\\www\\harasrec...', 105, Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\\www\\harasrec...', 105, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-26 21:15:38 Error: Fatal Error (1): Call to a member function find() on a non-object in [D:\www\harasrecanto\Desenvolvimento\app\admin\Controller\AlbunsAnimaisController.php, line 133]
+2016-08-26 21:15:38 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /harasrecanto/Desenvolvimento/admin/albunsAnimais/edit/4
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\\www\\harasrec...', 133)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\\www\\harasrec...', 133, Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\\www\\harasrec...', 133, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-26 21:15:38 Error: [NotFoundException] Inválido
+Request URL: /harasrecanto/Desenvolvimento/admin/albunsAnimais/edit/img/meta_icons/favicon.png
+Stack Trace:
+#0 [internal function]: AlbunsAnimaisController->edit('img', 'meta_icons', 'favicon.png')
+#1 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AlbunsAnimaisController), Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlbunsAnimaisController), Object(CakeRequest))
+#4 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-08-26 21:16:01 Error: Fatal Error (1): Call to a member function find() on a non-object in [D:\www\harasrecanto\Desenvolvimento\app\admin\Controller\AlbunsAnimaisController.php, line 133]
+2016-08-26 21:16:01 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /harasrecanto/Desenvolvimento/admin/albunsAnimais/edit/4
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'D:\\www\\harasrec...', 133)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'D:\\www\\harasrec...', 133, Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'D:\\www\\harasrec...', 133, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-08-26 21:16:22 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Album.id' in 'where clause'
+Request URL: /harasrecanto/Desenvolvimento/admin/albunsAnimais/edit/4
+Stack Trace:
+#0 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Animal`...', Array)
+#2 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Animal`...', Array, Array)
+#3 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Animal`...', false)
+#4 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(2905): DboSource->read(Object(Animal), Array)
+#5 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Model\Model.php(2877): Model->_readDataSource('list', Array)
+#6 D:\www\harasrecanto\Desenvolvimento\app\admin\Controller\AlbunsAnimaisController.php(133): Model->find('list', Array)
+#7 [internal function]: AlbunsAnimaisController->edit('4')
+#8 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AlbunsAnimaisController), Array)
+#9 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 D:\www\harasrecanto\Desenvolvimento\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlbunsAnimaisController), Object(CakeRequest))
+#11 D:\www\harasrecanto\Desenvolvimento\admin\index.php(107): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
