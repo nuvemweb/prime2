@@ -8,7 +8,7 @@
 					<?php echo utf8_encode(strftime("- %d %B, %Y" ))  ; ?>
 			</form>
 			<div class="login col-md-2">
-				<a href="#">Entrar</a>
+				<a href="<?php echo $this->request->base; ?>/cadastro">Entrar / Cadastrar</a>
 			</div>
 			<div class="redes-sociais col-md-6">
 				<ul class="lista-social">

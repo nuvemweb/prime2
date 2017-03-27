@@ -723,6 +723,67 @@ figcaption span{
 	font-weight: bold;
 }
 
+.anuncio-conteudo-outros span{
+	font-family: 'Merriweather-Bold';
+}
+
+.anuncio-conteudo-outros p{
+	font-family: 'Merriweather-Italic';
+}
+
+/*CADASTRAR*/
+
+.formularios-cadastro {
+	margin-top: 15px;
+	text-align: center;
+	margin-bottom: 15px;
+
+}
+
+.formularios-cadastro span{
+	font-family: 'Poppins-SemiBold';
+	font-size: 12pt;
+
+}
+.formulario-login form,
+.formulario-signin form{
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.form-group ::-webkit-input-placeholder,
+.form-group select{ 
+	color:red; 
+}
+
+.botao-formularios{
+	float: right;
+}
+.botao-formularios button{
+	color: white;
+	font-family: 'Poppins';
+	font-weight: bold;
+	text-transform: uppercase;
+	background: red;
+	border-style: none;
+	font-size: 10px;
+	padding: 7px 20px;
+	letter-spacing: 2px;
+}
+
+.esquecer-senha{
+	color: black;
+	font-family: 'Poppins';
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 10px;
+	letter-spacing: 2px;
+	margin-top: 20px;
+}
+
+
+
 
 
 

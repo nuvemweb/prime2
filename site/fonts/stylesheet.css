@@ -46,4 +46,17 @@
         url('Merriweather-LightItalic.woff') format('woff');
    
 }
-
+@font-face {
+    font-family: 'Merriweather-Bold';
+    src:
+        url('Merriweather-Bold.ttf') format('ttf'),
+        url('Merriweather-Bold.woff') format('woff');
+   
+}
+@font-face {
+    font-family: 'Merriweather-Italic';
+    src:
+        url('Merriweather-Italic.ttf') format('ttf'),
+        url('Merriweather-Italic.woff') format('woff');
+   
+}

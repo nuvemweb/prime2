@@ -46,7 +46,7 @@
 	<div class="col-md-12 galeria">
 		<div class="galeria-anuncios col-md-8">
 			<span>Galeria</span>
-			<ul class="lista-galeria">
+			<ul>
 				<a href="#"><li>Todos</li></a>
 				<a href="#"><li>Aluguel</li></a>
 				<a href="#"><li>Veiculos</li></a>
