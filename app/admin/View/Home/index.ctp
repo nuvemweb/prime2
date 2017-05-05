@@ -1,15 +1,15 @@
 
 <div class='col-xs-12'>
 
-    <div class='page-header page-header-with-buttons'>
+    <!--<div class='page-header page-header-with-buttons'>
         <h1 class='pull-left'>
             <i class='icon-home'></i>
-            <span>Gerenciador Aqua</span>
+            <span>Gerenciador Prime</span>
         </h1>
-    </div>
+    </div>-->
 
     <div class='row'>
-        <div class='col-sm-6 col-md-4'>
+        <div class='col-sm-6 col-md-12'>
             <div class='box'>
                 <div class='row'>
                     <div class='col-sm-12 LinksHome'>
@@ -18,7 +18,7 @@
 
                             <?php echo $this->Html->image('/upload/users/' . $usuario["id"] . '/m_' . $usuario["imagem"]); ?>
 
-                            <h4>Olá <?php echo($usuario["nome"]); ?>,</h4>
+                            <h4>Bem Vindo <?php echo($usuario["nome"]); ?>,</h4>
                             <ul class="list-unstyled">
                                 <li>
                                     <i class="icon-envelope text-purple"></i>

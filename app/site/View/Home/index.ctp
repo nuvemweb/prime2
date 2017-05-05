@@ -11,55 +11,78 @@
 <div class="container">
 	<div class="row">
 		<div class="anuncios-principais">
-			<figure class="col-md-3 anuncio-principal">
+		<?php foreach($Anunciosultimos as $Anuncio):?>
+			<figure class="col-md-3 col-xs-12 anuncio-principal">
+				<img class="img-responsive" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/263x350-<?php echo $Anuncio['Anuncio']['imagem'] ?>"/>
+				<figcaption>
+					<h4><span><?php echo $Anuncio['Anuncio']['titulo'];?></span></h4><br/>
+					<p><?php echo $Anuncio['Anuncio']['descricao'];?></p>
+				</figcaption>
+			</figure>
+		<?php endforeach;?>
+
+			<!--<figure class="col-md-3 col-xs-12 anuncio-principal">
 				<img src="http://placehold.it/300x400"/>
 				<figcaption>
 					<h4><span>Nome</span></h4><br/>
 					<p>Descrição curta</p>
 				</figcaption>
 			</figure>
-			<figure class="col-md-3 anuncio-principal">
+			<figure class="col-md-3 col-xs-12 anuncio-principal">
 				<img src="http://placehold.it/300x400"/>
 				<figcaption>
 					<h4><span>Nome</span></h4><br/>
 					<p>Descrição curta</p>
 				</figcaption>
 			</figure>
-			<figure class="col-md-3 anuncio-principal">
+			<figure class="col-md-3 col-xs-12 anuncio-principal">
 				<img src="http://placehold.it/300x400"/>
 				<figcaption>
 					<h4><span>Nome</span></h4><br/>
 					<p>Descrição curta</p>
 				</figcaption>
-			</figure>
-			<figure class="col-md-3 anuncio-principal">
-				<img src="http://placehold.it/300x400"/>
-				<figcaption>
-					<h4><span>Nome</span></h4><br/>
-					<p>Descrição curta</p>
-				</figcaption>
-			</figure>
+			</figure>-->
 		</div>
 	</div>
 </div>
 <div class="container">
-	<div class="col-md-12 galeria">
-		<div class="galeria-anuncios col-md-8">
+	<div class="col-md-12 col-xs-12 galeria">
+		<div class="galeria-anuncios col-md-8 col-xs-12">
+		<div class="nome-sessao nome-sessao-galeria">
 			<span>Galeria</span>
-			<ul>
-				<a href="#"><li>Todos</li></a>
-				<a href="#"><li>Aluguel</li></a>
-				<a href="#"><li>Veiculos</li></a>
-				<a href="#"><li>Sport</li></a>
-				<a href="#"><li>Comida</li></a>
-				<a href="#"><li>Utensilios</li></a>
-				<a href="#"><li>Fashion</li></a>
+			<a href="http://localhost/prime2/Desenvolvimento/site/galeria">Ver todos</a>
+			<!--<div class="dropdown">
+  			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    			Categorias
+    			<span class="caret"></span>
+  			</button>
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+				<li><a href="#">Todos</a></li>
+				<li><a href="#">Imóveis</a></li>
+				<li><a href="#">Automóveis</a></li>
+				<li><a href="#">Animais</a></li>
+				<li><a href="#">Motos</a></li>
+				<li><a href="#">Empregos</a></li>
+				<li><a href="#">Serviços</a></li>
+				<li><a href="#">Bicicletas</a></li>
+				<li><a href="#">Caminhões</a></li>
+				<li><a href="#">Celulares</a></li>
+				<li><a href="#">Computadores</a></li>
+				<li><a href="#">Diversos</a></li>
+				<li><a href="#">Eletrodomésticos</a></li>
+				<li><a href="#">Máquinas</a></li>
+				<li><a href="#">Construção</a></li>
+				<li><a href="#">Multimidia</a></li>
 			</ul>
+			</div>-->
+		</div>
 
-			<div class="galeria-anuncios-conteudo col-md-12">
-				<div class="anuncio-conteudo-principal col-md-6">
+			<div class="galeria-anuncios-conteudo col-md-12 col-xs-12">
+				<div class="anuncio-conteudo-principal col-md-6 col-xs-12">
 					<figure>
+				
 						<img src="http://placehold.it/335x270">
+
 						<figcaption>
 							<span> Veículos</span>
 						</figcaption>
@@ -70,54 +93,90 @@
 						<p>orem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.</p>
 					</div>
 				</div>
-				<div class="anuncio-conteudo-secundario col-md-6">
-					<div class="secundario-imagem col-md-5">
+				<div class="anuncio-conteudo-secundario col-md-6 col-xs-12">
+					<div class="secundario-imagem col-md-5 col-xs-12">
 						<img class="imagem-secundario" src="http://placehold.it/200x130">
 					</div>
-					<div class="secundario-descricao col-md-7">
+					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
 						<p>Lorem ipsum lorem ipsum</p>
 					</div>
 				</div>
-				<div class="anuncio-conteudo-secundario col-md-6">
-					<div class="secundario-imagem col-md-5">
+				<div class="anuncio-conteudo-secundario col-md-6 col-xs-12">
+					<div class="secundario-imagem col-md-5 col-xs-12">
 						<img class="imagem-secundario" src="http://placehold.it/200x130">
 					</div>
-					<div class="secundario-descricao col-md-7">
+					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
 						<p>Lorem ipsum lorem ipsum</p>
 					</div>
 				</div>
-				<div class="anuncio-conteudo-secundario col-md-6">
-					<div class="secundario-imagem col-md-5">
+				<div class="anuncio-conteudo-secundario col-md-6 col-xs-12">
+					<div class="secundario-imagem col-md-5 col-xs-12">
 						<img class="imagem-secundario" src="http://placehold.it/200x130">
 					</div>
-					<div class="secundario-descricao col-md-7">
+					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
 						<p>Lorem ipsum lorem ipsum</p>
 					</div>
 				</div>
-				<div class="anuncio-conteudo-secundario col-md-6">
-					<div class="secundario-imagem col-md-5">
+				<div class="anuncio-conteudo-secundario col-md-6 col-xs-12">
+					<div class="secundario-imagem col-md-5 col-xs-12">
 						<img class="imagem-secundario" src="http://placehold.it/200x130">
 					</div>
-					<div class="secundario-descricao col-md-7">
+					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
 						<p>Lorem ipsum lorem ipsum</p>
 					</div>
 				</div>
-				<div class="anuncio-conteudo-secundario col-md-6">
-					<div class="secundario-imagem col-md-5">
+				<div class="anuncio-conteudo-secundario col-md-6 col-xs-12">
+					<div class="secundario-imagem col-md-5 col-xs-12">
 						<img class="imagem-secundario" src="http://placehold.it/200x130">
 					</div>
-					<div class="secundario-descricao col-md-7">
+					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
 						<p>Lorem ipsum lorem ipsum</p>
 					</div>
 				</div>
 			</div>
+
+			<div class="galeria-anuncios ofertas col-md-12 col-xs-12">
+	<div class="nome-sessao">
+		<span>Ofertas</span>
 		</div>
-		<div class="logo-anuncio col-md-4">
+	</div>
+	<div class="anuncio-conteudo-secundario col-md-12 col-xs-12">
+		<div class="secundario-imagem col-md-5 col-xs-12">
+			<img class="imagem-secundario" src="http://placehold.it/316x186">
+		</div>
+		<div class="secundario-descricao col-md-7 col-xs-12">
+			<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
+			<p>Lorem ipsum lorem ipsum</p>
+			<h3>Lorem lorem lorem lorem lorem lorem lorem</h3>
+		</div>
+	</div>
+	<div class="anuncio-conteudo-secundario col-md-12 col-xs-12">
+		<div class="secundario-imagem col-md-5 col-xs-12">
+			<img class="imagem-secundario" src="http://placehold.it/316x186">
+		</div>
+		<div class="secundario-descricao col-md-7 col-xs-12">
+			<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
+			<p>Lorem ipsum lorem ipsum</p>
+			<h3>Lorem lorem lorem lorem lorem lorem lorem</h3>
+		</div>
+	</div>
+	<div class="anuncio-conteudo-secundario col-md-12 col-xs-12">
+		<div class="secundario-imagem col-md-5 col-xs-12">
+			<img class="imagem-secundario" src="http://placehold.it/316x186">
+		</div>
+		<div class="secundario-descricao col-md-7 col-xs-12">
+			<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
+			<p>Lorem ipsum lorem ipsum</p>
+			<h3>Lorem lorem lorem lorem lorem lorem lorem</h3>
+		</div>
+	</div>
+		</div>
+		<div class="logo-anuncio col-md-4 col-xs-12">
 			<img src="<?php echo $this->request->webroot;?>img/logo-anuncio.png"/>
 			<div class="anuncio-lateral">
 				<div class="imagem-anuncio-lateral col-md-12">
@@ -127,58 +186,60 @@
 			</div>
 
 			<div class="galeria-anuncios anuncios-virtuais">
+			<div class="nome-sessao">
 			<span>Anuncios Virtuais</span>
+			</div>
 			<div class="anuncios-virtuais">
-				<div class="anuncio-conteudo-secundario col-md-12">
-					<div class="secundario-imagem col-md-5">
+				<div class="anuncio-conteudo-secundario col-md-12 col-xs-12">
+					<div class="secundario-imagem col-md-5 col-xs-12">
 						<img class="imagem-secundario" src="http://placehold.it/200x130">
 					</div>
-					<div class="secundario-descricao col-md-7">
+					<div class="secundario-descricao col-md-7 col-xs-12">
+						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
+						<p>Lorem ipsum lorem ipsum</p>
+					</div>
+				</div>
+				<div class="anuncio-conteudo-secundario col-md-12 col-xs-12">
+					<div class="secundario-imagem col-md-5 col-xs-12">
+						<img class="imagem-secundario" src="http://placehold.it/200x130">
+					</div>
+					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
 						<p>Lorem ipsum lorem ipsum</p>
 					</div>
 				</div>
 				<div class="anuncio-conteudo-secundario col-md-12">
-					<div class="secundario-imagem col-md-5">
+					<div class="secundario-imagem col-md-5 col-xs-12">
 						<img class="imagem-secundario" src="http://placehold.it/200x130">
 					</div>
-					<div class="secundario-descricao col-md-7">
+					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
 						<p>Lorem ipsum lorem ipsum</p>
 					</div>
 				</div>
-				<div class="anuncio-conteudo-secundario col-md-12">
-					<div class="secundario-imagem col-md-5">
+				<div class="anuncio-conteudo-secundario col-md-12 col-xs-12">
+					<div class="secundario-imagem col-md-5 col-xs-12">
 						<img class="imagem-secundario" src="http://placehold.it/200x130">
 					</div>
-					<div class="secundario-descricao col-md-7">
+					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
 						<p>Lorem ipsum lorem ipsum</p>
 					</div>
 				</div>
-				<div class="anuncio-conteudo-secundario col-md-12">
-					<div class="secundario-imagem col-md-5">
+				<div class="anuncio-conteudo-secundario col-md-12 col-xs-12">
+					<div class="secundario-imagem col-md-5 col-xs-12">
 						<img class="imagem-secundario" src="http://placehold.it/200x130">
 					</div>
-					<div class="secundario-descricao col-md-7">
+					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
 						<p>Lorem ipsum lorem ipsum</p>
 					</div>
 				</div>
-				<div class="anuncio-conteudo-secundario col-md-12">
-					<div class="secundario-imagem col-md-5">
+				<div class="anuncio-conteudo-secundario col-md-12 col-xs-12">
+					<div class="secundario-imagem col-md-5 col-xs-12">
 						<img class="imagem-secundario" src="http://placehold.it/200x130">
 					</div>
-					<div class="secundario-descricao col-md-7">
-						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-						<p>Lorem ipsum lorem ipsum</p>
-					</div>
-				</div>
-				<div class="anuncio-conteudo-secundario col-md-12">
-					<div class="secundario-imagem col-md-5">
-						<img class="imagem-secundario" src="http://placehold.it/200x130">
-					</div>
-					<div class="secundario-descricao col-md-7">
+					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
 						<p>Lorem ipsum lorem ipsum</p>
 					</div>
@@ -188,51 +249,21 @@
 		</div>
 
 		</div>
+
+
 		
 	</div>
 </div>
 <div class="container">
-	<div class="galeria-anuncios ofertas col-md-8">
-		<span>Ofertas</span>
-	</div>
-	<div class="anuncio-conteudo-secundario col-md-8">
-		<div class="secundario-imagem col-md-5">
-			<img class="imagem-secundario" src="http://placehold.it/316x186">
-		</div>
-		<div class="secundario-descricao col-md-7">
-			<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-			<p>Lorem ipsum lorem ipsum</p>
-			<h3>Lorem lorem lorem lorem lorem lorem lorem</h3>
-		</div>
-	</div>
-	<div class="anuncio-conteudo-secundario col-md-8">
-		<div class="secundario-imagem col-md-5">
-			<img class="imagem-secundario" src="http://placehold.it/316x186">
-		</div>
-		<div class="secundario-descricao col-md-7">
-			<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-			<p>Lorem ipsum lorem ipsum</p>
-			<h3>Lorem lorem lorem lorem lorem lorem lorem</h3>
-		</div>
-	</div>
-	<div class="anuncio-conteudo-secundario col-md-8">
-		<div class="secundario-imagem col-md-5">
-			<img class="imagem-secundario" src="http://placehold.it/316x186">
-		</div>
-		<div class="secundario-descricao col-md-7">
-			<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-			<p>Lorem ipsum lorem ipsum</p>
-			<h3>Lorem lorem lorem lorem lorem lorem lorem</h3>
-		</div>
-	</div>
+	
 </div>
-<div class="banner-anuncios col-md-12">
-	<div class="col-md-6 anuncio-centro">
+<div class="banner-anuncios col-md-12 col-xs-12">
+	<div class="col-md-6 col-xs-12 anuncio-centro">
 		<div class="fundo-anuncio-centro">
 			<span>anuncio</span>
 		</div>
 	</div>
-	<div class="col-md-6 anuncio-centro1">
+	<div class="col-md-6 col-xs-12 anuncio-centro1">
 		<div class="fundo-anuncio-centro">
 			<span>anuncio</span>
 		</div>
@@ -240,10 +271,12 @@
 </div>
 
 <div class="container">
-	<div class="outros-anuncios col-md-12">
-		<div class="outros-anuncios-1 col-md-8">
+	<div class="outros-anuncios col-md-12 col-xs-12">
+		<div class="outros-anuncios-1 col-md-8 col-xs-12">
 			<div class="galeria-anuncios titulo-outros">
+			<div class="nome-sessao">
 				<span>Imóveis</span>
+			</div>
 			</div>
 
 			<div class="col-md-6 alinha-coluna">
@@ -261,36 +294,36 @@
 					</div>
 				</div>
 				<div class="anuncio-conteudo-secundario col-md-12">
-					<div class="secundario-imagem col-md-5">
+					<div class="secundario-imagem col-md-5 col-xs-12">
 						<img class="imagem-secundario" src="http://placehold.it/200x130">
 					</div>
-					<div class="secundario-descricao col-md-7">
+					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
 						<p>Lorem lorem lorem lorem lorem lorem</p>
 					</div>
 				</div>
 				<div class="anuncio-conteudo-secundario col-md-12">
-					<div class="secundario-imagem col-md-5">
+					<div class="secundario-imagem col-md-5 col-xs-12">
 						<img class="imagem-secundario" src="http://placehold.it/200x130">
 					</div>
-					<div class="secundario-descricao col-md-7">
+					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
 						<p>Lorem lorem lorem lorem lorem lorem</p>
 						
 					</div>
 				</div>
-				<div class="anuncio-conteudo-secundario col-md-12">
-					<div class="secundario-imagem col-md-5">
+				<div class="anuncio-conteudo-secundario col-md-12 col-xs-12">
+					<div class="secundario-imagem col-md-5 col-xs-12">
 						<img class="imagem-secundario" src="http://placehold.it/200x130">
 					</div>
-					<div class="secundario-descricao col-md-7">
+					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
 						<p>Lorem lorem lorem lorem lorem lorem</p>	
 					</div>
 				</div>
 				
 			</div>
-			<div class="col-md-6 alinha-coluna1">
+			<div class="col-md-6 col-xs-12 alinha-coluna1">
 				<div class="anuncio-conteudo-principal">
 					<figure>
 						<img src="http://placehold.it/352x284">
@@ -306,63 +339,65 @@
 				</div>
 
 				<div class="anuncio-conteudo-secundario col-md-12">
-					<div class="secundario-imagem col-md-5">
+					<div class="secundario-imagem col-md-5 col-xs-12">
 						<img class="imagem-secundario" src="http://placehold.it/200x130">
 					</div>
-					<div class="secundario-descricao col-md-7">
+					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
 						<p>Lorem lorem lorem lorem lorem lorem</p>
 					</div>
 				</div>
 				<div class="anuncio-conteudo-secundario col-md-12">
-					<div class="secundario-imagem col-md-5">
+					<div class="secundario-imagem col-md-5 col-xs-12">
 						<img class="imagem-secundario" src="http://placehold.it/200x130">
 					</div>
-					<div class="secundario-descricao col-md-7">
+					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
 						<p>Lorem lorem lorem lorem lorem lorem</p>
 						
 					</div>
 				</div>
 				<div class="anuncio-conteudo-secundario col-md-12">
-					<div class="secundario-imagem col-md-5">
+					<div class="secundario-imagem col-md-5 col-xs-12">
 						<img class="imagem-secundario" src="http://placehold.it/200x130">
 					</div>
-					<div class="secundario-descricao col-md-7">
+					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
 						<p>Lorem lorem lorem lorem lorem lorem</p>	
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="outros-anuncios-2 col-md-4">
+		<div class="outros-anuncios-2 col-md-4 col-xs-12">
 			<div class="galeria-anuncios titulo-outros">
+			<div class="nome-sessao">
 				<span>Serviços domésticos</span>
+			</div>
 			</div>
 
 				<div class="anuncio-conteudo-secundario col-md-12">
-					<div class="secundario-imagem col-md-5">
+					<div class="secundario-imagem col-md-5 col-xs-12">
 						<img class="imagem-secundario" src="http://placehold.it/200x130">
 					</div>
-					<div class="secundario-descricao col-md-7">
+					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
 						
 					</div>
 				</div>
 				<div class="anuncio-conteudo-secundario col-md-12">
-					<div class="secundario-imagem col-md-5">
+					<div class="secundario-imagem col-md-5 col-xs-12">
 						<img class="imagem-secundario" src="http://placehold.it/200x130">
 					</div>
-					<div class="secundario-descricao col-md-7">
+					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
 						
 					</div>
 				</div>
 				<div class="anuncio-conteudo-secundario col-md-12">
-					<div class="secundario-imagem col-md-5">
+					<div class="secundario-imagem col-md-5 col-xs-12">
 						<img class="imagem-secundario" src="http://placehold.it/200x130">
 					</div>
-					<div class="secundario-descricao col-md-7">
+					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
 						
 					</div>

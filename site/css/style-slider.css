@@ -1,3 +1,6 @@
+.titulo-destaque{
+	font-size: 14px;
+}
 .slider{
 	padding-left: 0px;
 	padding-right: 0px;
@@ -7,7 +10,7 @@
 	width:100%;
 	padding-right:550px; 
 	/*position:relative;*/ 
-	border:5px solid #ccc; 
+	/*border:5px solid #ccc;*/ 
 	height:500px; 
 	overflow:hidden;
 	background:#fff;
@@ -23,13 +26,13 @@
 	padding:0; 
 	margin:0; 
 	width:555px;
-	height:490px;
+	height:499px;
 	overflow:auto;
 	overflow-x:hidden;
 }
 #featured ul.ui-tabs-nav li{ 
 	padding:1px 1px; 
-	padding-left:13px;  
+	padding-left:0px;  
 	font-size:12px; 
 	color:#666; 
 }
@@ -47,7 +50,7 @@
 }
 #featured li.ui-tabs-nav-item a{ 
 	display:block; 
-	height:100px; 
+	height:102px; 
 	text-decoration:none;
 	color:white;  
 	background:#222626; 
@@ -72,7 +75,7 @@
 }
 #featured .ui-tabs-panel .info{ 
 	position:absolute; 
-	bottom:-240px; 
+	bottom:-249px; 
 	left:0; 
 	height:70px; 
 	background: url('../img/slider/transparent-bg.png'); 
@@ -83,12 +86,12 @@
 	font-size:11px; 
 	font-family:'Poppins-Medium'; 
 	color:#f0f0f0; 
-	right:10px; 
+	right:5px; 
 	top:-20px; 
 	line-height:20px; 
 	margin:0; 
 	outline:none; 
-	background:#333;
+	background:rgba(255,0,0,.5);
 }
 #featured .info h2{ 
 	font-size:1.2em; 
@@ -133,4 +136,5 @@
 	font-size: 24px !important;
 	color: black;
 	text-transform: uppercase;
+	letter-spacing: 5px;
 }

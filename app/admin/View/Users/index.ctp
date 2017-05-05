@@ -1,3 +1,4 @@
+ <?php if($usuario["categoria"]) { ?>
 <div class='col-xs-12'>
 
     <div class='page-header page-header-with-buttons'>
@@ -106,3 +107,9 @@
         });
     });
 </script>
+
+<?php } ?>
+
+ <?php if(($usuario["categoria"]) == false) { ?>
+ <meta http-equiv="refresh" content="0;url=http://localhost/prime2/Desenvolvimento/admin/Home">
+ <?php } ?>

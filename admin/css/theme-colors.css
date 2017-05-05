@@ -320,8 +320,8 @@
 .contrast-orange .dd-placeholder {
   border-color: #f8a326; }
 
-.contrast-blue header .navbar {
-  background-color: #00acec; }
+/*.contrast-blue header .navbar {
+  background-color: #00acec; }*/
   .contrast-blue header .navbar .toggle-nav {
     background-color: #00acec; }
     .contrast-blue header .navbar .toggle-nav:active, .contrast-blue header .navbar .toggle-nav.active, .contrast-blue header .navbar .toggle-nav:hover {
@@ -1588,7 +1588,7 @@
 .contrast-sea-blue .box .box-header.contrast-background .actions .btn-link:hover {
   color: #0163ac !important; }
 .contrast-sea-blue.contrast-background, .contrast-sea-blue .contrast-background {
-  background: #0163ac !important; }
+  background: #d3e3d3 !important; }
 .contrast-sea-blue .text-contrast, .contrast-sea-blue .contrast {
   color: #0163ac !important; }
 .contrast-sea-blue .contrast-border {

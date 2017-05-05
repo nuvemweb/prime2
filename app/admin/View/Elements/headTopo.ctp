@@ -1,7 +1,12 @@
 <header>
-    <nav class='navbar navbar-default'>
-        <a class='navbar-brand' href='http://aquainterativa.com.br' target='_blank' title='Aqua interativa' alt='Aqua interativa'>
-            <img src="<?php echo $this->webroot; ?>/img/logo_.png" title="Aqua interativa" alt="Aqua interativa" height="60%" style="margin: 0 50px; " />
+    <!-- INICIO HEADER -->
+
+<?php echo $this->Element('header'); ?>
+
+    <!-- FINAL HEADER -->
+    <!--<nav class='navbar navbar-default'>
+        <a class='navbar-brand' href='http://nuvemdesenvolvimentoweb.com.br' target='_blank' title='Nuvem Desenvolvimento Web' alt='Nuvem Desenvolvimento Web'>
+            <img src="<?php echo $this->webroot; ?>/img/logo_.png" title="Nuvem Desenvolvimento Web" alt="Nuvem Desenvolvimento Web" height="60%" style="margin: 0 50px; " />
         </a>
         <!-- Abre e fecha menu -->
         <ul class='nav'>
@@ -49,5 +54,5 @@
                 </ul>
             </li>                
         </ul>
-    </nav>
+    <!--</nav>-->
 </header>

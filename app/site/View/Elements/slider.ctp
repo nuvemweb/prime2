@@ -29,25 +29,31 @@
 
 <div id="featured" >
 	<ul class="ui-tabs-nav">
-		<li class="prime-top"><span>Prime Informática</span></li>
-	    <li class="ui-tabs-nav-item ui-tabs-selected" id="nav-fragment-1"><a href="#fragment-1"><img src="<?php echo $this->request->webroot;?>img/slider/image1-small.jpg" alt="" /><span>Nome do Item 1</span></a></li>
-	    <li class="ui-tabs-nav-item" id="nav-fragment-2"><a href="#fragment-2"><img src="<?php echo $this->request->webroot;?>img/slider/image2-small.jpg" alt="" /><span>Nome do Item 2</span></a></li>
+	<li class="prime-top"><span>Classificados prime</span></li>
+	<?php foreach($Anuncios as $Anuncio):?>
+		
+		<?php if($Anuncio['Anuncio']['destaque'] == "1") { ?>
+
+	    <li class="ui-tabs-nav-item" id="nav-fragment-<?php echo $Anuncio['Anuncio']['id'] ?>"><a href="#fragment-<?php echo $Anuncio['Anuncio']['id'] ?>"><img src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/250x184-<?php echo $Anuncio['Anuncio']['imagem'] ?>" alt="" /><span><p class="titulo-destaque"><?php echo $Anuncio['Anuncio']['titulo'];?></p><p><?php echo $Anuncio['Anuncio']['descricao'];?></p></span></a></li>
+	    <!--<li class="ui-tabs-nav-item" id="nav-fragment-2"><a href="#fragment-2"><img src="<?php echo $this->request->webroot;?>img/slider/image2-small.jpg" alt="" /><span>Nome do Item 2</span></a></li>
 	    <li class="ui-tabs-nav-item" id="nav-fragment-3"><a href="#fragment-3"><img src="<?php echo $this->request->webroot;?>img/slider/image3-small.jpg" alt="" /><span>Nome do Item 3</span></a></li>
-	    <li class="ui-tabs-nav-item" id="nav-fragment-4"><a href="#fragment-4"><img src="<?php echo $this->request->webroot;?>img/slider/image4-small.jpg" alt="" /><span>Nome do Item 4</span></a></li>
-	    
+	    <li class="ui-tabs-nav-item" id="nav-fragment-4"><a href="#fragment-4"><img src="<?php echo $this->request->webroot;?>img/slider/image4-small.jpg" alt="" /><span>Nome do Item 4</span></a></li>-->
+	     <?php } ?>
+	 <?php endforeach;?>
 	</ul>
 
 	    <!-- First Content -->
-	<div id="fragment-1" class="ui-tabs-panel" style="">
-		<img src="<?php echo $this->request->webroot;?>/img/slider/image1.jpg" class="img-responsive" alt="" />
-		<div class="info" >
-			<a class="hideshow" href="#" >Esconder</a>
-			<h2><a href="#" >Nome do Item 1</a></h2>
-			<p>Descrição do item 1</a></p>
-		</div>
+	 <?php foreach($Anuncios as $Anuncio):?>
+	 	<?php if($Anuncio['Anuncio']['destaque'] == "1") { ?>
+	<div id="fragment-<?php echo $Anuncio['Anuncio']['id'] ?>" class="ui-tabs-panel" style="">
+		<img src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/400x250-<?php echo $Anuncio['Anuncio']['imagem'] ?>" class="img-responsive" alt="" />
 	</div>
+	<?php } ?>
 
-	    <!-- Second Content -->
+	 <?php endforeach;?>
+
+
+	    <!-- Second Content 
 	<div id="fragment-2" class="ui-tabs-panel ui-tabs-hide" style="">
 		<img src="<?php echo $this->request->webroot;?>/img/slider/image2.jpg" class="img-responsive" alt="" />
 		<div class="info" >
@@ -57,7 +63,7 @@
 		</div>
 	</div>
 
-	    <!-- Third Content -->
+	    <!-- Third Content 
 	<div id="fragment-3" class="ui-tabs-panel ui-tabs-hide" style="">
 		<img src="<?php echo $this->request->webroot;?>/img/slider/image3.jpg" class="img-responsive" alt="" />
 		<div class="info" >
@@ -67,7 +73,7 @@
 	    </div>
 	</div>
 
-	    <!-- Fourth Content -->
+	    <!-- Fourth Content 
 	<div id="fragment-4" class="ui-tabs-panel ui-tabs-hide" style="">
 		<img src="<?php echo $this->request->webroot;?>/img/slider/image4.jpg" class="img-responsive" alt="" />
 		<div class="info" >

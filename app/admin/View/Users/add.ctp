@@ -25,11 +25,14 @@
                     "data-rule-required" => 'true',
                     "placeholder" => 'E-mail'
                 ));
+
                 echo $this->Form->input('password');
 
                 //echo $this->Form->input('funcao');
                 //echo $this->Form->input('tipo');
                 echo $this->Form->input('status', array('options' => array(1 => "Ativo", 0 => "Inativo"), 'empty' => 'Selecione'));
+
+                 echo $this->Form->input('categoria', array('options' => array(1 => "Administrador", 0 => "Usuario"), 'empty' => 'Selecione'));
 
                 echo $this->Form->input("imagem", array('type' => 'file', "accept" => "image/gif, image/png, image/jpeg"));
                 ?>

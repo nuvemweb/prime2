@@ -1644,7 +1644,7 @@ hr {
     margin-top: 40px;
     margin-bottom: 40px; }
 
-header .navbar {
+/*header .navbar {
   margin: 0;
   padding: 0 15px;
   background-color: #f34541;
@@ -1655,7 +1655,7 @@ header .navbar {
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
-  border-radius: 0; }
+  border-radius: 0; }*/
   header .navbar .navbar-brand {
     color: white;
     font-size: 20px;
@@ -2225,7 +2225,7 @@ body {
       margin-left: 0 !important; } }
 
 .container {
-  max-width: 100% !important; }
+ /* max-width: 100% !important;*/ }
 
 #footer {
   color: #aaaaaa;
@@ -4285,7 +4285,7 @@ html {
 
 body.login {
   width: 100%;
-  height: 100%;
+ 
   position: relative; }
   body.login .middle-container {
     overflow: visible;
@@ -4314,6 +4314,7 @@ body.login {
     background-color: white;
     position: relative;
     padding: 40px 0;
+    margin-bottom: 30px;
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }

@@ -8,6 +8,8 @@ class HomeController extends AppController {
 
     public function index() {
 
+    	
+
         //$this->set('users', $this->Paginator->paginate());
     }
 

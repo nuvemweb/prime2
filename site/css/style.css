@@ -1,16 +1,43 @@
 a:hover,
 a:focus {
     text-decoration:none;
+    color: inherit;
 }
+
 a{
-	color: initial;
+	color: inherit;
+}
+
+html{
+	overflow-x: hidden;
 }
 
 /*HEADER*/
 
+.navbar-default{
+	background-color: black;
+	margin-bottom: 0px;
+	border: none;
+	min-height: 70px;
+	
+}
+
+.navbar{
+	border-radius: initial;
+}
 
 input[type="text" i]:disabled{
 	background-color: #222626;
+}
+
+
+
+.redes-sociais{
+	height: 30px;	
+}
+
+.pesquisar-menu{
+	float: right;
 }
 
 .input-data{
@@ -19,14 +46,35 @@ input[type="text" i]:disabled{
 	text-align: center;
 }
 
-form{
+.itens-menu li:hover{
+	color: yellow;
+}
+
+.form_relogio{
 	color: white;
 	width: 230px;
 	font-family: 'microsoft-new-tai-lue';
 }
 
+.construcao{
+	background-color: red;
+	border-color: red;
+}
+.construcao:hover{
+	color: red;
+	background-color: white;
+	border-color: white;
+}
+.modal-body{
+	text-align: center;
+}
+.itens-menu .btnconstrucao{
+	top: 17px;
+	left: 110px;
+}
 .header-content{
-	height: 260px;
+	height: auto;
+	
 	width: 100%;
 	background-color: #222626;
 	padding-top: 20px;
@@ -36,17 +84,55 @@ form{
 	color: #c40001 !important;
 	font-family: 'microsoft-new-tai-lue';
 	position: relative;
-	right: 70px;
+	
 }
 
 .login a{
 	color: #c40001 !important;
+
+}
+
+.login a:hover{
+	text-decoration: underline;
+}
+
+.login .btn{
+	padding: 0px 5px;
+	color: red;
+	border: 1px solid white;
+	border-radius: 0px;
+	background-color: black;
+	text-transform: uppercase;
+	font-family: 'Poppins';
+	font-size: 11px;
+}
+
+.cadastrar-btn{
+	padding: 0px 5px;
+	color: red;
+	border: 1px solid white;
+	border-radius: 0px;
+	background-color: black;
+	text-transform: uppercase;
+	font-family: 'Poppins';
+	font-size: 11px;
+	position: relative;
+	right: 20px;
+}
+.cadastrar-btn:hover{
+	color: black;
+	background-color: red;
+	border:none;
+}
+
+.login .form-control{
+	height: 25px;
 }
 
 .redes-sociais ul li{
 	display: inline;
 	list-style: none;
-	margin-left: 50px;
+	margin-left: 45px;
 }
 
 .redes-sociais ul{
@@ -64,34 +150,39 @@ form{
 }
 
 .logo{
-	font-size: 24pt;
+	font-size: 22pt;
 	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
 	font-weight: bold;
 	color: white;
 	height: 179px;
-	margin-bottom: 25px;
+	
 }
 
 .logo img{
 	width: 40%;
 }
 
-.logo span{
-	position: relative;
-	top: -20px;
+.texto-logo-header{
+	float: right;
+	top: -130px;
+	left: 60px;
+	text-align: center;
 }
 
 .logo p{
-	position: relative;
-	float: right;
-	padding-right: 70px;
+	
 	font-size: 13pt;
-	top: -80px;
+	
 }
-.anuncio-topo{
+.prime-tel{
+	left:30px;
+	
+}
+.anuncio-topo,
+.anuncio-topo2{
 	height: 100px;
-	margin-top: 55px;
+	margin-top: 45px;
 	border: 1px solid white;
 	font-family: 'miriad-pro-regular';
 	text-transform: uppercase;
@@ -100,11 +191,13 @@ form{
 
 }
 
-.anuncio-topo p{
+.anuncio-topo p,
+.anuncio-topo2 p{
 	transform: translate(0, 190%);
 }
 
-.anuncio-topo a{
+.anuncio-topo a,
+.anuncio-topo2 a{
 	float: right;
 	color: white;
 	font-weight: bold;
@@ -120,6 +213,10 @@ form{
 	height: 70px;
 }
 
+.itens-menu {
+	width: 80%;
+}
+
 .itens-menu li{
 	list-style: none;
 	display: inline;
@@ -127,17 +224,27 @@ form{
 	text-transform: uppercase;
 	color: white;
 	font-weight: bold;
-	margin-left: 50px;
+	
 	position: relative;
-	top: 25px;
+	top: 12px;
+}
+.itens-menu a:hover{
+	color: yellow !important;
 }
 .itens-menu a{
 	color: white ;
 }
 .botao-chat{
-	margin-left: 120px !important;
-	padding: 10px 5px;
+	margin-left: 150px !important;
+	/*padding: 10px 5px;*/
 	border: 1px solid white;
+	margin-top: 6px;
+	float: right !important;
+
+}
+
+.botao-chat a{
+	padding: 5px !important;
 }
 
 .active{
@@ -219,7 +326,12 @@ figcaption span{
 }
 
 /*GALERIA DE ANUNCIOS */
-
+.nome-sessao{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #e8e9e9;
+	border-left: 2px solid yellow;
+}
 .galeria{
 	padding-right: 0px;
 	padding-left: 0px;
@@ -228,9 +340,7 @@ figcaption span{
 .galeria-anuncios {
 	margin-top: 30px;
 	margin-bottom: 30px;
-	height: 40px;
-	border: 1px solid #e8e9e9;
-	border-left:2px solid yellow;
+	
 	padding-left: 0px;
 }
 
@@ -256,6 +366,19 @@ figcaption span{
 	position: relative;
 	top: 10px;
 	margin-left: 15px;
+}
+
+.nome-sessao-galeria a{
+	float: right;
+	padding-right: 15px;
+	padding-top: 12px;
+	font-family: 'Poppins';
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+.nome-sessao-galeria a:hover{
+	color: red;
 }
 
 .logo-anuncio{
@@ -483,7 +606,7 @@ figcaption span{
 /*FOOTER*/
 
 .fundo-footer{
-	height: 470px;
+	height: 500px;
 	padding-left: 0px;
 	padding-right: 0px;
 	background-color: #222626;
@@ -494,7 +617,7 @@ figcaption span{
 	padding-right: 0px;
 	color: #a4abab;
 	margin-top: 30px;
-	padding-bottom: 30px;
+	
 	border-bottom: 1px solid #a4abab;
 	font-family: 'Poppins-SemiBold';
 	text-transform: uppercase;
@@ -578,7 +701,7 @@ figcaption span{
 .footer-categoria ul li{
 	list-style: none;
 	font-family: 'Poppins-Regular';
-	color: #a4abab;
+	color: #a4abab !important;
 	font-size: 9pt;
 	padding-top: 20px;
 }
@@ -622,6 +745,10 @@ figcaption span{
 	height: 35px;
 }
 
+.footer-paginas ul a:hover{
+	color:yellow;
+}
+
 /*GALERIA*/
 
 .fundo-subpaginas{
@@ -647,9 +774,9 @@ figcaption span{
 }
 
 .dropdown{
-	float: right;
+	/*float: right;*/
 	position: relative;
-	bottom: 50px;
+	bottom: 40px;
 }
 
 .galeria-conteudo,
@@ -674,7 +801,7 @@ figcaption span{
 }
 
 .lista-galeria {
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 	padding-left: 0px;
 }
 
@@ -736,7 +863,7 @@ figcaption span{
 .formularios-cadastro {
 	margin-top: 15px;
 	text-align: center;
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 
 }
 
@@ -772,6 +899,10 @@ figcaption span{
 	letter-spacing: 2px;
 }
 
+.botao-formularios button:hover{
+	background-color: black;
+}
+
 .esquecer-senha{
 	color: black;
 	font-family: 'Poppins';
@@ -785,37 +916,141 @@ figcaption span{
 
 
 
+/*Fale Conosco*/
 
 
+.alinhar-faleconosco{
+    padding-left: 0px;
+    padding-right: 0px;    
+}
+
+.container-dados{
+    font-family: 'Poppins-SemiBold';
+}
+
+.container-dados span{
+    color: red;   
+    font-weight: bold;
+}
+
+.retira-padding{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 20px;  
+
+}
+
+.mais-vistos{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.container-dados iframe{
+	margin-top: 30px;
+	padding-right: 15px;
+}
+
+.formulario{
+    font-family: 'Poppins';
+    height: 600px;
+}
+
+.fa-whatsapp{
+	margin-bottom: 30px;
+}
+
+.dados .fa-whatsapp{
+	color: #f8c41d;
+}
+
+.dados-formulario p{
+    font-size: 18pt;
+    font-family: 'Poppins-SemiBold'; 
+
+}
+
+.dados{
+	font-size: 12px;
+	font-family: 'Poppins';
+}
+
+.form-fale-conosco{
+    color: red;
+    font-family: 'Poppins-SemiBold';
+}
+
+.retira-padding-form{
+    padding-left: 0px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form-fale-conosco input{
+    float: right;
+}
+
+.dados{
+	height: 81px;
+}
+
+.dados span{
+	font-size: 12px;
+	font-family: 'Poppins-SemiBold';
+}
 
 
+.botao-fala-conosco button{
+	color: white;
+	font-family: 'Poppins';
+	font-weight: bold;
+	text-transform: uppercase;
+	background: red;
+	border-style: none;
+	font-size: 10px;
+	padding: 7px 20px;
+	letter-spacing: 2px;
+    margin-bottom: 50px;
+}
 
 
+.anuncio-centro-ajusta{
+	padding-right: 30px;
+}
 
+.dados-formulario{
+    position: relative;
+    top: -120px;
+}
 
+.form-group ::-webkit-input-placeholder,{ 
+	color:red; 
 
+}
 
-
-
-
-
-@media (max-width: 480px) {  
-    /*celular vertical*/
+.formulario-faleconosco input,
+.formulario-faleconosco textarea{
     
 }
-@media (min-width:481px) and (max-width: 767px) {  
-    /*celular horizontal*/
-    
+
+.botao-fala-conosco {
+	text-align: center;
+
 }
-@media (min-width: 768px) and (max-width: 979px) {
-    /*tablet vertical*/
-    
-    
+
+.mapa-contato {
+	padding-left: 0px;
+	padding-right: 0px;
+	position: relative;
+	top: -50px;
 }
-@media (min-width: 979px) and (max-width: 1199px) {
-    /*tablet horizontal*/
-    
-}
-@media (min-width: 1200px) { 
-    
-}
+
+
+
+
+
+
+
+
+
+

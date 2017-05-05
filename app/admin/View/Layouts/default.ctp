@@ -43,6 +43,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
         echo $this->Html->css(
                 array(
                     'bootstrap/bootstrap',
+                    'style',
                     'light-theme',
                     'theme-colors.css',
                     'demo',
@@ -52,6 +53,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                     'plugins/bootstrap_datetimepicker/bootstrap-datetimepicker.min.css',
                     'plugins/bootstrap_switch/bootstrap-switch.css',
                     'plugins/common/bootstrap-wysihtml5.css',
+                    '/fonts/stylesheet',
+                    'font-awesome',
+                    'font-awesome.min',
         ));
         echo $this->Html->script(
                 array(
@@ -92,19 +96,20 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 
                     </div>
-                    <footer id='footer'>
+                    <!--<footer id='footer'>
                         <div class='footer-wrapper'>
                             <div class='row'>
                                 <div class='col-sm-6 text'>
-                                    Aqua interativa © 2016            </div>
+                                    Nuvem Desenvolvimento Web © 2017            
+                                </div>
                             </div>
                         </div>
-                    </footer>  
+                    </footer>  -->
                 </div>
             </section>
         </div>
         <?php //echo $this->element('sql_dump');     ?>
-
+        <?php echo $this->Element('footer'); ?>
     </body>
 
     <script>

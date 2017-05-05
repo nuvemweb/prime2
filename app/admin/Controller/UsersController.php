@@ -42,6 +42,9 @@ class UsersController extends AppController {
 
     public function index() {
 
+        $this->set('CadastrarUsuario');
+
+
         $this->paginate = array('order' => array('created' => 'desc',), 'limit' => 10);
         $this->set('users', $this->Paginator->paginate());
     }
@@ -52,6 +55,18 @@ class UsersController extends AppController {
      * @return void
      */
     public function add() {
+        if ($this->request->is('post')) {
+            $this->User->create();
+            if ($this->User->save($this->request->data)) {
+                $this->Session->setFlash('Registro salvo com sucesso!', 'default', array('class' => 'alert alert-success space'));
+                return $this->redirect(array('action' => 'index'));
+            } else {
+                $this->Session->setFlash('Registro não pode ser salvo. Por favor, tente novamente', 'default', array('class' => 'alert alert-danger space'));
+            }
+        }
+    }
+
+    public function cadastrar() {
         if ($this->request->is('post')) {
             $this->User->create();
             if ($this->User->save($this->request->data)) {
