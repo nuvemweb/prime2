@@ -19,10 +19,13 @@
         echo $this->Form->input('telefone');
         echo $this->Form->input('preco');
         echo $this->Form->input('titulo');
-        echo $this->Form->input('categoria', array('options' => array("animais" => "animais", "automoveis" => "automóveis", "bicicletas" => "bicicletas", "caminhoes" => "caminhões", "celulares" => "celulares", "computadores" => "computadores", "construcao" => "construção", "diversos" => "diversos", "eletrodomesticos" => "eletrodomésticos", "empregos" => "empregos", "imoveis" => "imóveis", "maquinas" => "máquinas", "motos" => "motos", "multimidia" => "multimídia", "servicos" => "serviços"  ), 'empty' => 'Selecione')); 
+        echo $this->Form->input('categoria', array('options' => array("animais" => "animais", "automoveis" => "automóveis", "bicicletas" => "bicicletas", "caminhoes" => "caminhões", "celulares" => "celulares", "computadores" => "computadores", "construcao" => "construção", "diversos" => "diversos", "eletrodomesticos" => "eletrodomésticos", "empregos" => "empregos", "imoveisalugar" => "imóveis alugar", "imoveisvenda" => "imóveis vender/comprar", "maquinas" => "máquinas", "motos" => "motos", "multimidia" => "multimídia", "servicos" => "serviços"  ), 'empty' => 'Selecione')); 
         
         echo $this->Form->input('descricao'); 
         echo $this->Form->input('destaque', array('options' => array(1 => "Sim", 0 => "Não"), 'empty' => 'Selecione'));
+        echo $this->Form->input('destaquecategoria', array('options' => array(1 => "Sim", 0 => "Não"), 'empty' => 'Selecione'));
+        echo $this->Form->input('destaquegaleria', array('options' => array(1 => "Sim", 0 => "Não"), 'empty' => 'Selecione'));
+        echo $this->Form->input('subdestaque', array('options' => array(1 => "Sim", 0 => "Não"), 'empty' => 'Selecione'));
         echo $this->Form->input('liberado', array('options' => array(1 => "Sim", 0 => "Não"), 'empty' => 'Selecione'));
 		echo $this->Form->input("imagem", array('type' => 'file', "accept" => "image/gif, image/png, image/jpeg"));
 

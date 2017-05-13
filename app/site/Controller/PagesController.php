@@ -35,7 +35,7 @@ class PagesController extends AppController {
      *
      * @var array
      */
-    public $uses = array('Video', 'Musica', 'Agenda');
+    public $uses = array('Anuncio');
 
    
 

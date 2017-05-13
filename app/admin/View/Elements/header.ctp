@@ -52,9 +52,9 @@
 		<div class="collapse navbar-collapse" id="navbar">
 		<div class="container">
 	        <ul class="nav navbar-nav itens-menu">
-	            <li><a href="<?php echo $this->request->base; ?>/home">home</a></li>
-				<li><a href="<?php echo $this->request->base; ?>/galeria">galeria de anúncios</a></li>
-				<li><a href="<?php echo $this->request->base; ?>/faleconosco">fale conosco</a></li>
+	            <li><a href="http://localhost/prime2/Desenvolvimento/site">home</a></li>
+				<li><a href="http://localhost/prime2/Desenvolvimento/site/galeria">galeria de anúncios</a></li>
+				<li><a href="http://localhost/prime2/Desenvolvimento/site/faleconosco">fale conosco</a></li>
 
 				<li class="botao-chat"><a class="active" href="">chat online</a></li>
 	        </ul>
@@ -66,15 +66,20 @@
 	</nav>
 	<div class="container">
 		<div class="logo col-md-6 col-xs-12">
-			<a href="<?php echo $this->request->base; ?>/home"><img class="col-md-3" src="<?php echo $this->request->webroot;?>img/logo2.png"></a>
-			<a href="<?php echo $this->request->base; ?>/home"><div class="col-md-9 texto-logo-header">
+			<a href="http://localhost/prime2/Desenvolvimento/site"><img class="col-md-3" src="<?php echo $this->request->webroot;?>img/logo.png"></a>
+			<a href="http://localhost/prime2/Desenvolvimento/site"><div class="col-md-9 texto-logo-header">
 			<span>Classificados Prime <p class="prime">Prime Informática </p> <p class="prime-tel"> (34) 3814-1165/98443-4343</p></span>
 			</div></a>
 		</div>
+		<?php foreach($Publicidades as $Publicidade):?>
+						<?php if($Publicidade['Publicidade']['local'] == "hometopo") { ?>
 		<div class="anuncio-topo col-md-5 col-md-offset-1">
-			<p>Anuncio Topo
-			<a href="">Anunciar</a></p>
+		<img class="img-responsive" src="<?php echo $this->request->base ?>/upload/publicidade/<?php echo $Publicidade['Publicidade']['id'] ?>/475x100-<?php echo $Publicidade['Publicidade']['imagem'] ?>">
+			<!--<p>Anuncio Topo
+			<a href="">Anunciar</a></p>-->
 		</div>
+		 <?php } ?>
+					<?php endforeach;?>
 	</div>
 
 	
@@ -109,9 +114,9 @@
 	<div class="collapse navbar-collapse" id="navbar">
 		<div class="container">
 	        <ul class="nav navbar-nav itens-menu">
-	            <li><a href="<?php echo $this->request->base; ?>/home">home</a></li>
-				<li><a href="<?php echo $this->request->base; ?>/galeria">galeria de anúncios</a></li>
-				<li><a href="<?php echo $this->request->base; ?>/faleconosco">fale conosco</a></li>
+	            <li><a href="http://localhost/prime2/Desenvolvimento/site">home</a></li>
+				<li><a href="http://localhost/prime2/Desenvolvimento/site/galeria">galeria de anúncios</a></li>
+				<li><a href="http://localhost/prime2/Desenvolvimento/site/faleconosco">fale conosco</a></li>
 				
 				<li class="botao-chat"><a class="active" href="">chat online</a></li>
 	        </ul>

@@ -71,10 +71,15 @@
 			<span>Classificados Prime <p class="prime">Prime Informática </p> <p class="prime-tel"> (34) 3814-1165/98443-4343</p></span>
 			</div></a>
 		</div>
+		<?php foreach($Publicidades as $Publicidade):?>
+						<?php if($Publicidade['Publicidade']['local'] == "hometopo") { ?>
 		<div class="anuncio-topo col-md-5 col-md-offset-1">
-			<p>Anuncio Topo
-			<a href="">Anunciar</a></p>
+		<img class="img-responsive" src="<?php echo $this->request->base ?>/upload/publicidade/<?php echo $Publicidade['Publicidade']['id'] ?>/475x100-<?php echo $Publicidade['Publicidade']['imagem'] ?>">
+			<!--<p>Anuncio Topo
+			<a href="">Anunciar</a></p>-->
 		</div>
+		 <?php } ?>
+					<?php endforeach;?>
 	</div>
 
 	

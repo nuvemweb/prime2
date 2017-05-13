@@ -11,15 +11,21 @@
 <div class="container">
 	<div class="row">
 		<div class="anuncios-principais">
-		<?php foreach($Anunciosultimos as $Anuncio):?>
+		<?php for($i = 0; $i <= 3; $i++) { ?>
+		
 			<figure class="col-md-3 col-xs-12 anuncio-principal">
-				<img class="img-responsive" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/263x350-<?php echo $Anuncio['Anuncio']['imagem'] ?>"/>
+			<?php if ($Anuncios[$i]['Anuncio']['imagem'] != "") {?>
+				<img class="img-responsive" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncios[$i]['Anuncio']['id'] ?>/263x350-<?php echo $Anuncios[$i]['Anuncio']['imagem'] ?>"/>
+			<?php } else { ?>
+						<img class="img-responsive" src="<?php echo $this->request->webroot;?>/img/logo-anuncio350.png">
+						<?php } ?>
 				<figcaption>
-					<h4><span><?php echo $Anuncio['Anuncio']['titulo'];?></span></h4><br/>
-					<p><?php echo $Anuncio['Anuncio']['descricao'];?></p>
+					<h4><span><?php echo $Anuncios[$i]['Anuncio']['categoria'];?></span></h4><br/>
+					<p><?php echo $Anuncios[$i]['Anuncio']['titulo'];?></p>
 				</figcaption>
 			</figure>
-		<?php endforeach;?>
+		
+		<?php } ?>
 
 			<!--<figure class="col-md-3 col-xs-12 anuncio-principal">
 				<img src="http://placehold.it/300x400"/>
@@ -79,171 +85,115 @@
 
 			<div class="galeria-anuncios-conteudo col-md-12 col-xs-12">
 				<div class="anuncio-conteudo-principal col-md-6 col-xs-12">
-					<figure>
-				
-						<img src="http://placehold.it/335x270">
-
+					<figure> 
+					<?php foreach($Anuncios as $Anuncio):?>
+						<?php if(($Anuncio['Anuncio']['categoria'] == "automoveis") && ($Anuncio['Anuncio']['destaquecategoria'] == "1")) { ?>
+						<?php if ($Anuncio['Anuncio']['imagem'] != "") {?>
+						<img src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/335x270-<?php echo $Anuncio['Anuncio']['imagem'] ?>">
+						<?php } else { ?>
+						<img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio.png">
+						<?php } ?>
+						  <?php } ?>
+					<?php endforeach;?>
 						<figcaption>
-							<span> Veículos</span>
+							<span> Automóveis</span>
 						</figcaption>
 					</figure>
 					<div class="anuncio-conteudo-descricao">
-						<h4>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum</h4>
-						<p class="data-anuncio">balbalbalbal </p>
-						<p>orem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.</p>
+					<?php foreach($Anuncios as $Anuncio):?>
+					<?php if(($Anuncio['Anuncio']['categoria'] == "automoveis") && ($Anuncio['Anuncio']['destaquecategoria'] == "1")) { ?>
+						<h4><?php echo $Anuncio['Anuncio']['titulo'];?></h4>
+						<p class="data-anuncio"><?php echo $Anuncio['Anuncio']['created'];?> </p>
+						<p><?php echo $Anuncio['Anuncio']['descricao'];?></p>
+					<?php } ?>
+					<?php endforeach;?>
 					</div>
 				</div>
+
+
+				<?php foreach($Anuncios as $Anuncio):?>
+				<?php if(($Anuncio['Anuncio']['categoria'] != "automoveis") && ($Anuncio['Anuncio']['destaquegaleria'] == "1")) { ?>
 				<div class="anuncio-conteudo-secundario col-md-6 col-xs-12">
 					<div class="secundario-imagem col-md-5 col-xs-12">
-						<img class="imagem-secundario" src="http://placehold.it/200x130">
+						<?php if ($Anuncio['Anuncio']['imagem'] != "") {?>
+						<img class="imagem-secundario" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/200x200-<?php echo $Anuncio['Anuncio']['imagem'] ?>">
+						<?php } else { ?>
+						<img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio.png">
+						<?php } ?>
 					</div>
 					<div class="secundario-descricao col-md-7 col-xs-12">
-						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-						<p>Lorem ipsum lorem ipsum</p>
+						<h4><?php echo $Anuncio['Anuncio']['titulo'];?></h4>
+						<p class="p-categoria"><?php echo $Anuncio['Anuncio']['categoria'];?></p>
+						<p><?php echo $Anuncio['Anuncio']['descricao'];?></p>
+
 					</div>
 				</div>
-				<div class="anuncio-conteudo-secundario col-md-6 col-xs-12">
-					<div class="secundario-imagem col-md-5 col-xs-12">
-						<img class="imagem-secundario" src="http://placehold.it/200x130">
-					</div>
-					<div class="secundario-descricao col-md-7 col-xs-12">
-						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-						<p>Lorem ipsum lorem ipsum</p>
-					</div>
-				</div>
-				<div class="anuncio-conteudo-secundario col-md-6 col-xs-12">
-					<div class="secundario-imagem col-md-5 col-xs-12">
-						<img class="imagem-secundario" src="http://placehold.it/200x130">
-					</div>
-					<div class="secundario-descricao col-md-7 col-xs-12">
-						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-						<p>Lorem ipsum lorem ipsum</p>
-					</div>
-				</div>
-				<div class="anuncio-conteudo-secundario col-md-6 col-xs-12">
-					<div class="secundario-imagem col-md-5 col-xs-12">
-						<img class="imagem-secundario" src="http://placehold.it/200x130">
-					</div>
-					<div class="secundario-descricao col-md-7 col-xs-12">
-						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-						<p>Lorem ipsum lorem ipsum</p>
-					</div>
-				</div>
-				<div class="anuncio-conteudo-secundario col-md-6 col-xs-12">
-					<div class="secundario-imagem col-md-5 col-xs-12">
-						<img class="imagem-secundario" src="http://placehold.it/200x130">
-					</div>
-					<div class="secundario-descricao col-md-7 col-xs-12">
-						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-						<p>Lorem ipsum lorem ipsum</p>
-					</div>
-				</div>
+				<?php } ?>
+				<?php endforeach;?>
+					
+			
 			</div>
 
 			<div class="galeria-anuncios ofertas col-md-12 col-xs-12">
 	<div class="nome-sessao">
-		<span>Ofertas</span>
+		<span>Celulares</span>
 		</div>
 	</div>
+			<?php foreach($Anuncios as $Anuncio):?>
+				<?php if(($Anuncio['Anuncio']['categoria'] == "celulares") && ($Anuncio['Anuncio']['destaquecategoria'] == "1")) { ?>
 	<div class="anuncio-conteudo-secundario col-md-12 col-xs-12">
 		<div class="secundario-imagem col-md-5 col-xs-12">
-			<img class="imagem-secundario" src="http://placehold.it/316x186">
+		<?php if ($Anuncio['Anuncio']['imagem'] != "") {?>
+			<img class="imagem-secundario" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/316x186-<?php echo $Anuncio['Anuncio']['imagem'] ?>">
+		<?php } else { ?>
+						<img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio.png">
+						<?php } ?>
 		</div>
 		<div class="secundario-descricao col-md-7 col-xs-12">
-			<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-			<p>Lorem ipsum lorem ipsum</p>
-			<h3>Lorem lorem lorem lorem lorem lorem lorem</h3>
+			<h4><?php echo $Anuncio['Anuncio']['titulo'];?></h4>
+			<p><?php echo $Anuncio['Anuncio']['created'];?></p>
+			<h3><?php echo $Anuncio['Anuncio']['descricao'];?></h3>
 		</div>
 	</div>
-	<div class="anuncio-conteudo-secundario col-md-12 col-xs-12">
-		<div class="secundario-imagem col-md-5 col-xs-12">
-			<img class="imagem-secundario" src="http://placehold.it/316x186">
-		</div>
-		<div class="secundario-descricao col-md-7 col-xs-12">
-			<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-			<p>Lorem ipsum lorem ipsum</p>
-			<h3>Lorem lorem lorem lorem lorem lorem lorem</h3>
-		</div>
-	</div>
-	<div class="anuncio-conteudo-secundario col-md-12 col-xs-12">
-		<div class="secundario-imagem col-md-5 col-xs-12">
-			<img class="imagem-secundario" src="http://placehold.it/316x186">
-		</div>
-		<div class="secundario-descricao col-md-7 col-xs-12">
-			<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-			<p>Lorem ipsum lorem ipsum</p>
-			<h3>Lorem lorem lorem lorem lorem lorem lorem</h3>
-		</div>
-	</div>
+	<?php } ?>
+	<?php endforeach;?>
+				
 		</div>
 		<div class="logo-anuncio col-md-4 col-xs-12">
 			<img src="<?php echo $this->request->webroot;?>img/logo-anuncio.png"/>
-			<div class="anuncio-lateral">
+			<div class="anuncio-lateral col-md-12">
+			<?php foreach($Publicidades as $Publicidade):?>
+						<?php if($Publicidade['Publicidade']['local'] == "homelateral") { ?>
 				<div class="imagem-anuncio-lateral col-md-12">
-					<p>Anúncio<br/> Lateral</p><br/>
-					<a href="#">Anunciar</a>
+					<img class="img-responsive" src="<?php echo $this->request->base ?>/upload/publicidade/<?php echo $Publicidade['Publicidade']['id'] ?>/350x250-<?php echo $Publicidade['Publicidade']['imagem'] ?>">
 				</div>
+			<?php } ?>
+					<?php endforeach;?>
 			</div>
 
 			<div class="galeria-anuncios anuncios-virtuais">
 			<div class="nome-sessao">
-			<span>Anuncios Virtuais</span>
+			<span>Diversos</span>
 			</div>
 			<div class="anuncios-virtuais">
+			<?php foreach($Anuncios as $Anuncio):?>
+				<?php if(($Anuncio['Anuncio']['categoria'] == "diversos") && ($Anuncio['Anuncio']['destaquecategoria'] == "1")) { ?>
 				<div class="anuncio-conteudo-secundario col-md-12 col-xs-12">
 					<div class="secundario-imagem col-md-5 col-xs-12">
-						<img class="imagem-secundario" src="http://placehold.it/200x130">
+					<?php if ($Anuncio['Anuncio']['imagem'] != "") {?>
+						<img class="imagem-secundario" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/200x200-<?php echo $Anuncio['Anuncio']['imagem'] ?>">
+					<?php } else { ?>
+						<img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio.png">
+						<?php } ?>
 					</div>
 					<div class="secundario-descricao col-md-7 col-xs-12">
-						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-						<p>Lorem ipsum lorem ipsum</p>
+						<h4><?php echo $Anuncio['Anuncio']['titulo'];?></h4>
+						<p><?php echo $Anuncio['Anuncio']['descricao'];?></p>
 					</div>
 				</div>
-				<div class="anuncio-conteudo-secundario col-md-12 col-xs-12">
-					<div class="secundario-imagem col-md-5 col-xs-12">
-						<img class="imagem-secundario" src="http://placehold.it/200x130">
-					</div>
-					<div class="secundario-descricao col-md-7 col-xs-12">
-						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-						<p>Lorem ipsum lorem ipsum</p>
-					</div>
-				</div>
-				<div class="anuncio-conteudo-secundario col-md-12">
-					<div class="secundario-imagem col-md-5 col-xs-12">
-						<img class="imagem-secundario" src="http://placehold.it/200x130">
-					</div>
-					<div class="secundario-descricao col-md-7 col-xs-12">
-						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-						<p>Lorem ipsum lorem ipsum</p>
-					</div>
-				</div>
-				<div class="anuncio-conteudo-secundario col-md-12 col-xs-12">
-					<div class="secundario-imagem col-md-5 col-xs-12">
-						<img class="imagem-secundario" src="http://placehold.it/200x130">
-					</div>
-					<div class="secundario-descricao col-md-7 col-xs-12">
-						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-						<p>Lorem ipsum lorem ipsum</p>
-					</div>
-				</div>
-				<div class="anuncio-conteudo-secundario col-md-12 col-xs-12">
-					<div class="secundario-imagem col-md-5 col-xs-12">
-						<img class="imagem-secundario" src="http://placehold.it/200x130">
-					</div>
-					<div class="secundario-descricao col-md-7 col-xs-12">
-						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-						<p>Lorem ipsum lorem ipsum</p>
-					</div>
-				</div>
-				<div class="anuncio-conteudo-secundario col-md-12 col-xs-12">
-					<div class="secundario-imagem col-md-5 col-xs-12">
-						<img class="imagem-secundario" src="http://placehold.it/200x130">
-					</div>
-					<div class="secundario-descricao col-md-7 col-xs-12">
-						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-						<p>Lorem ipsum lorem ipsum</p>
-					</div>
-				</div>
+			<?php } ?>
+				<?php endforeach;?>
+				
 				
 			</div>
 		</div>
@@ -259,14 +209,22 @@
 </div>
 <div class="banner-anuncios col-md-12 col-xs-12">
 	<div class="col-md-6 col-xs-12 anuncio-centro">
+	<?php foreach($Publicidades as $Publicidade):?>
+						<?php if($Publicidade['Publicidade']['local'] == "homecentro1") { ?>
 		<div class="fundo-anuncio-centro">
-			<span>anuncio</span>
+			<img class="img-responsive" src="<?php echo $this->request->base ?>/upload/publicidade/<?php echo $Publicidade['Publicidade']['id'] ?>/660x100-<?php echo $Publicidade['Publicidade']['imagem'] ?>">
 		</div>
+	<?php } ?>
+				<?php endforeach;?>
 	</div>
 	<div class="col-md-6 col-xs-12 anuncio-centro1">
+	<?php foreach($Publicidades as $Publicidade):?>
+						<?php if($Publicidade['Publicidade']['local'] == "homecentro2") { ?>
 		<div class="fundo-anuncio-centro">
-			<span>anuncio</span>
+			<img class="img-responsive" src="<?php echo $this->request->base ?>/upload/publicidade/<?php echo $Publicidade['Publicidade']['id'] ?>/660x100-<?php echo $Publicidade['Publicidade']['imagem'] ?>">
 		</div>
+	<?php } ?>
+				<?php endforeach;?>
 	</div>
 </div>
 
@@ -282,27 +240,50 @@
 			<div class="col-md-6 alinha-coluna">
 				<div class="anuncio-conteudo-principal">
 					<figure>
-						<img src="http://placehold.it/352x284">
+					<?php foreach($Anuncios as $Anuncio):?>
+						<?php if(($Anuncio['Anuncio']['categoria'] == "imoveisalugar") && ($Anuncio['Anuncio']['destaquecategoria'] == "1")) { ?>
+						<?php if ($Anuncio['Anuncio']['imagem'] != "") {?>
+						<img src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/352x284-<?php echo $Anuncio['Anuncio']['imagem'] ?>">
+						<?php } else { ?>
+						<img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio.png">
+						<?php } ?>
+						  <?php } ?>
+
+					<?php endforeach;?>
 						<figcaption>
-							<span> Veículos</span>
+							<span> Imóveis Aluguel</span>
 						</figcaption>
 					</figure>
 					<div class="anuncio-conteudo-descricao">
-						<h4>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum</h4>
-						<p class="data-anuncio">balbalbalbal </p>
-						<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.</p>
+					<?php foreach($Anuncios as $Anuncio):?>
+					<?php if(($Anuncio['Anuncio']['categoria'] == "imoveisalugar") && ($Anuncio['Anuncio']['destaquecategoria'] == "1")) { ?>
+						<h4><?php echo $Anuncio['Anuncio']['titulo'];?></h4>
+						<p class="data-anuncio"><?php echo $Anuncio['Anuncio']['created'];?></p>
+						<p><?php echo $Anuncio['Anuncio']['descricao'];?></p>
+						<?php } ?>
+
+					<?php endforeach;?>
 					</div>
 				</div>
+				<?php foreach($Anuncios as $Anuncio):?>
+					<?php if(($Anuncio['Anuncio']['categoria'] == "imoveisalugar") && ($Anuncio['Anuncio']['destaquecategoria'] == "0") && ($Anuncio['Anuncio']['subdestaque'] == "1")) { ?>
 				<div class="anuncio-conteudo-secundario col-md-12">
 					<div class="secundario-imagem col-md-5 col-xs-12">
-						<img class="imagem-secundario" src="http://placehold.it/200x130">
+					<?php if ($Anuncio['Anuncio']['imagem'] != "") {?>
+						<img class="imagem-secundario" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/200x200-<?php echo $Anuncio['Anuncio']['imagem'] ?>">
+					<?php } else { ?>
+						<img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio.png">
+						<?php } ?>
+						  
 					</div>
 					<div class="secundario-descricao col-md-7 col-xs-12">
-						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-						<p>Lorem lorem lorem lorem lorem lorem</p>
+						<h4><?php echo $Anuncio['Anuncio']['titulo'];?></h4>
+						<p><?php echo $Anuncio['Anuncio']['descricao'];?></p>
 					</div>
 				</div>
-				<div class="anuncio-conteudo-secundario col-md-12">
+				<?php } ?>
+				<?php endforeach;?>
+				<!--<div class="anuncio-conteudo-secundario col-md-12">
 					<div class="secundario-imagem col-md-5 col-xs-12">
 						<img class="imagem-secundario" src="http://placehold.it/200x130">
 					</div>
@@ -320,62 +301,85 @@
 						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
 						<p>Lorem lorem lorem lorem lorem lorem</p>	
 					</div>
-				</div>
+				</div>-->
 				
 			</div>
 			<div class="col-md-6 col-xs-12 alinha-coluna1">
 				<div class="anuncio-conteudo-principal">
 					<figure>
-						<img src="http://placehold.it/352x284">
+					<?php foreach($Anuncios as $Anuncio):?>
+						<?php if(($Anuncio['Anuncio']['categoria'] == "imoveisvenda") && ($Anuncio['Anuncio']['destaquecategoria'] == "1")) { ?>
+						<?php if ($Anuncio['Anuncio']['imagem'] != "") {?>
+						<img src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/352x284-<?php echo $Anuncio['Anuncio']['imagem'] ?>">
+						<?php } else { ?>
+						<img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio.png">
+						<?php } ?>
+						  <?php } ?>
+
+					<?php endforeach;?>
 						<figcaption>
-							<span> Veículos</span>
+							<span> Imóveis Vender/Comprar</span>
 						</figcaption>
 					</figure>
 					<div class="anuncio-conteudo-descricao">
-						<h4>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum</h4>
-						<p class="data-anuncio">balbalbalbal </p>
-						<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.</p>
+					<?php foreach($Anuncios as $Anuncio):?>
+					<?php if(($Anuncio['Anuncio']['categoria'] == "imoveisvenda") && ($Anuncio['Anuncio']['destaquecategoria'] == "1")) { ?>
+						<h4><?php echo $Anuncio['Anuncio']['titulo'];?></h4>
+						<p class="data-anuncio"><?php echo $Anuncio['Anuncio']['created'];?></p>
+						<p><?php echo $Anuncio['Anuncio']['descricao'];?></p>
+						<?php } ?>
+
+					<?php endforeach;?>
 					</div>
 				</div>
 
+				<?php foreach($Anuncios as $Anuncio):?>
+					<?php if(($Anuncio['Anuncio']['categoria'] == "imoveisvenda") && ($Anuncio['Anuncio']['destaquecategoria'] == "0") && ($Anuncio['Anuncio']['subdestaque'] == "1")) { ?>
 				<div class="anuncio-conteudo-secundario col-md-12">
 					<div class="secundario-imagem col-md-5 col-xs-12">
-						<img class="imagem-secundario" src="http://placehold.it/200x130">
+					<?php if ($Anuncio['Anuncio']['imagem'] != "") {?>
+						<img class="imagem-secundario" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/200x200-<?php echo $Anuncio['Anuncio']['imagem'] ?>">
+					<?php } else { ?>
+						<img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio.png">
+						<?php } ?>
+						  
 					</div>
 					<div class="secundario-descricao col-md-7 col-xs-12">
-						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-						<p>Lorem lorem lorem lorem lorem lorem</p>
+						<h4><?php echo $Anuncio['Anuncio']['titulo'];?></h4>
+						<p><?php echo $Anuncio['Anuncio']['descricao'];?></p>
 					</div>
 				</div>
-				<div class="anuncio-conteudo-secundario col-md-12">
-					<div class="secundario-imagem col-md-5 col-xs-12">
-						<img class="imagem-secundario" src="http://placehold.it/200x130">
-					</div>
-					<div class="secundario-descricao col-md-7 col-xs-12">
-						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-						<p>Lorem lorem lorem lorem lorem lorem</p>
-						
-					</div>
-				</div>
-				<div class="anuncio-conteudo-secundario col-md-12">
-					<div class="secundario-imagem col-md-5 col-xs-12">
-						<img class="imagem-secundario" src="http://placehold.it/200x130">
-					</div>
-					<div class="secundario-descricao col-md-7 col-xs-12">
-						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-						<p>Lorem lorem lorem lorem lorem lorem</p>	
-					</div>
-				</div>
+				<?php } ?>
+				<?php endforeach;?>
+				
 			</div>
 		</div>
 		<div class="outros-anuncios-2 col-md-4 col-xs-12">
 			<div class="galeria-anuncios titulo-outros">
 			<div class="nome-sessao">
-				<span>Serviços domésticos</span>
+				<span>Motos</span>
 			</div>
 			</div>
 
+				<?php foreach($Anuncios as $Anuncio):?>
+					<?php if(($Anuncio['Anuncio']['categoria'] == "motos") && ($Anuncio['Anuncio']['destaquecategoria'] == "1")) { ?>
 				<div class="anuncio-conteudo-secundario col-md-12">
+					<div class="secundario-imagem col-md-5 col-xs-12">
+					<?php if ($Anuncio['Anuncio']['imagem'] != "") {?>
+						<img class="imagem-secundario" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/200x200-<?php echo $Anuncio['Anuncio']['imagem'] ?>">
+					<?php } else { ?>
+						<img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio.png">
+						<?php } ?>
+					</div>
+					<div class="secundario-descricao col-md-7 col-xs-12">
+						<h4><?php echo $Anuncio['Anuncio']['titulo'];?></h4>
+						<p><?php echo $Anuncio['Anuncio']['descricao'];?></p>
+						
+					</div>
+				</div>
+				<?php } ?>
+				<?php endforeach;?>
+				<!--<div class="anuncio-conteudo-secundario col-md-12">
 					<div class="secundario-imagem col-md-5 col-xs-12">
 						<img class="imagem-secundario" src="http://placehold.it/200x130">
 					</div>
@@ -392,18 +396,9 @@
 						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
 						
 					</div>
-				</div>
-				<div class="anuncio-conteudo-secundario col-md-12">
-					<div class="secundario-imagem col-md-5 col-xs-12">
-						<img class="imagem-secundario" src="http://placehold.it/200x130">
-					</div>
-					<div class="secundario-descricao col-md-7 col-xs-12">
-						<h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-						
-					</div>
-				</div>
+				</div>-->
 				<div class="outros-redesocial col-md-12">
-					<img src="<?php echo $this->request->webroot;?>img/instagram.jpg">
+					<div class="fb-page" data-href="https://www.facebook.com/primeinforpatos" data-tabs="timeline" data-width="345" data-height="468" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/primeinforpatos" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/primeinforpatos">Prime Informática</a></blockquote></div>
 				</div>
 		</div>
 	</div>
@@ -415,3 +410,12 @@
 		<a class="banner-chat-botao"> Chat Online</a>
 	</div>
 </div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>

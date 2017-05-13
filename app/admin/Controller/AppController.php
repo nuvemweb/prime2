@@ -34,6 +34,8 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
 
   public $helpers = array('FormAdmin', 'Link');
+  public $uses = array('Publicidade');
+
     //public $colorTheme = "blue";
     //$this->Session->set("colorTheme", 'blue');
   public $components = array(
@@ -68,6 +70,10 @@ class AppController extends Controller {
     $this->Session->write('colorTheme', 'contrast-blue');
 
     $this->renovaLogin(false);
+
+    $Publicidades  = $this->Publicidade->find('all');
+
+     $this->set(compact('Publicidades'));
 
     $usuario = $this->Auth->user();
     $this->set('usuario', $usuario);

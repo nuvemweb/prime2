@@ -186,13 +186,15 @@ input[type="text" i]:disabled{
 }
 .anuncio-topo,
 .anuncio-topo2{
-	height: 100px;
+	
 	margin-top: 45px;
 	border: 1px solid white;
 	font-family: 'miriad-pro-regular';
 	text-transform: uppercase;
 	color: white;
 	text-align: center;
+	padding-left: 0px;
+	padding-right: 0px;
 
 }
 
@@ -337,6 +339,13 @@ figcaption span{
 	border: 1px solid #e8e9e9;
 	border-left: 2px solid yellow;
 }
+
+.galeria-esquerda{
+	margin-top: 40px; 
+}
+.anuncio-conteudo-outros{
+	margin-top: 10px;
+}
 .galeria{
 	padding-right: 0px;
 	padding-left: 0px;
@@ -448,14 +457,11 @@ figcaption span{
 }
 
 .anuncio-lateral{
-	border: 1px solid #e8e9e9;
-	height: 250px;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	
+	
 	margin-top: 15px;
 	text-align: center;
-	padding-left: 15px;
-	padding-right: 15px;
+	
 }
 
 .imagem-anuncio-lateral{
@@ -463,6 +469,9 @@ figcaption span{
 	font-family: 'Poppins';
 	height: 100%;
 	text-transform: uppercase;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 15px;
 }
 
 .imagem-anuncio-lateral p{
@@ -526,7 +535,7 @@ figcaption span{
 }
 
 .fundo-anuncio-centro{
-	background-color: #222626;
+	
 	color: white;
 	height: 100%;
 	width: 100%;
@@ -800,10 +809,12 @@ figcaption span{
 .alinha-esquerda {
 	padding-left: 0px !important;
 }
-
+.fb-like{
+	margin-top: 35px;
+}
 .bloco-redes-sociais{
 	height: 140px;
-	margin-top: 50px;
+	margin-top: 15px;
 	border: 1px solid #e8e9e9;	
 }
 .galeria-facebook i{
@@ -823,6 +834,7 @@ figcaption span{
 	font-family: 'Poppins-SemiBold';
 	font-size: 14pt;
 	color: #222626;
+	text-align: center;
 }
 .bloco-redes-sociais .seguidores{
 	font-size: 9pt;

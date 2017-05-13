@@ -54,7 +54,14 @@
 		<div class="footer-parceiro col-md-4 col-xs-12">
 			<span>Parceiros</span>
 			<div class="footer-parceiros col-md-12">
+			<?php foreach($Publicidades as $Publicidade):?>
+						<?php if($Publicidade['Publicidade']['local'] == "parceiros") { ?>
 				<div class="col-md-4 col-xs-4 logo-parceiro">
+					<img src="<?php echo $this->request->base ?>/upload/publicidade/<?php echo $Publicidade['Publicidade']['id'] ?>/200x200-<?php echo $Publicidade['Publicidade']['imagem'] ?>">
+				</div>
+			<?php } ?>
+					<?php endforeach;?>
+				<!--<div class="col-md-4 col-xs-4 logo-parceiro">
 					<img src="http://placehold.it/200x200">
 				</div>
 				<div class="col-md-4 col-xs-4 logo-parceiro">
@@ -68,10 +75,7 @@
 				</div>
 				<div class="col-md-4 col-xs-4 logo-parceiro">
 					<img src="http://placehold.it/200x200">
-				</div>
-				<div class="col-md-4 col-xs-4 logo-parceiro">
-					<img src="http://placehold.it/200x200">
-				</div>
+				</div>-->
 			</div>
 		</div>
 	</div>

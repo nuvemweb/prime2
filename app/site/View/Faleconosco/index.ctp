@@ -38,23 +38,19 @@
         <div class="container-galeria retira-padding col-md-4">
             <div class="galeria-esquerda alinhar-faleconosco col-md-12">
                 <div class="bloco-redes-sociais retira-padding col-md-12 col-xs-12">
-                    <div class="galeria-facebook col-md-6 col-xs-6">
-                        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-                        <p>4.000</p>
-                        <p class="seguidores">Fans</p>
-                    </div>
-                    <div class="galeria-instagram col-md-6 col-xs-6">
-                        <img src="<?php echo $this->request->webroot;?>img/icons/instagram.png">
-                        <p>2.000</p>
-                        <p class="seguidores">Seguidores</p>
-                    </div>
+                   <div class="fb-like" data-href="https://www.facebook.com/primeinforpatos/" data-width="370" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
                 </div>
             </div>
-            <div class="anuncio-lateral col-md-12 col-xs-12">
-                <div class="imagem-anuncio-lateral col-md-12 col-xs-12">
-                    <p>Anúncio<br/> Lateral</p><br/>
-                    <a href="#">Anunciar</a>
+           <div class="anuncio-lateral col-md-12">
+            <?php foreach($Publicidades as $Publicidade):?>
+                        <?php if($Publicidade['Publicidade']['local'] == "contatolateral") { ?>
+                <div class="imagem-anuncio-lateral col-md-12">
+                
+                    <img class="img-responsive" src="<?php echo $this->request->base ?>/upload/publicidade/<?php echo $Publicidade['Publicidade']['id'] ?>/350x250-<?php echo $Publicidade['Publicidade']['imagem'] ?>">
+                
                 </div>
+            <?php } ?>
+                    <?php endforeach;?>
             </div>
         </div>
     </div>
@@ -84,11 +80,13 @@
                 </form>
             </div>
              <div class="banner-anuncios banner-faleconosco col-md-12">
+                <?php foreach($Publicidades as $Publicidade):?>
+                        <?php if($Publicidade['Publicidade']['local'] == "contatofim") { ?>
                 <div class="col-md-12 anuncio-centro anuncio-centro-ajusta">
-                    <div class="fundo-anuncio-centro">
-                        <span>anuncio</span>
-                    </div>
+                    <img class="img-responsive" src="<?php echo $this->request->base ?>/upload/publicidade/<?php echo $Publicidade['Publicidade']['id'] ?>/730x100-<?php echo $Publicidade['Publicidade']['imagem'] ?>">
                 </div>
+                 <?php } ?>
+                    <?php endforeach;?>
             </div>
 
 
@@ -96,10 +94,27 @@
         <div class="mais-vistos col-md-4">
             <div class="galeria-anuncios anuncios-virtuais">
             <div class="nome-sessao">
-                <span>Mais Vistos</span>
+                <span>Serviços</span>
             </div>
                 <div class="anuncios-virtuais">
+                    <?php foreach($Anuncios as $Anuncio):?>
+                <?php if(($Anuncio['Anuncio']['categoria'] == "servicos") && ($Anuncio['Anuncio']['destaquecategoria'] == "1")) { ?>
                     <div class="anuncio-conteudo-secundario col-md-12">
+                        <div class="secundario-imagem col-md-5">
+                        <?php if ($Anuncio['Anuncio']['imagem'] != "") {?>
+                            <img class="imagem-secundario" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/200x200-<?php echo $Anuncio['Anuncio']['imagem'] ?>">
+                        <?php } else { ?>
+                        <img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio.png">
+                        <?php } ?>
+                        </div>
+                        <div class="secundario-descricao col-md-7">
+                            <h4><?php echo $Anuncio['Anuncio']['titulo'];?></h4>
+                            <p><?php echo $Anuncio['Anuncio']['descricao'];?></p>
+                        </div>
+                    </div>
+                <?php } ?>
+                <?php endforeach;?>
+                    <!--<div class="anuncio-conteudo-secundario col-md-12">
                         <div class="secundario-imagem col-md-5">
                             <img class="imagem-secundario" src="http://placehold.it/200x130">
                         </div>
@@ -125,16 +140,7 @@
                             <h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
                             <p>Lorem ipsum lorem ipsum</p>
                         </div>
-                    </div>
-                    <div class="anuncio-conteudo-secundario col-md-12">
-                        <div class="secundario-imagem col-md-5">
-                            <img class="imagem-secundario" src="http://placehold.it/200x130">
-                        </div>
-                        <div class="secundario-descricao col-md-7">
-                            <h4>Lorem ipsum lorem lorem lorem lorem lorem lorem</h4>
-                            <p>Lorem ipsum lorem ipsum</p>
-                        </div>
-                    </div>
+                    </div>-->
 
 
                 </div>
@@ -145,3 +151,12 @@
 <div class="mapa-contato col-md-12">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7563.980785357605!2d-46.51988992200527!3d-18.574471865699056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94aef4d4970f76a7%3A0xf31d9349738abcb5!2sPrime+Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1490709722191" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>

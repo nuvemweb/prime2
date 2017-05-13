@@ -54,6 +54,13 @@
         ?>
     </li>
 
+    <li class='depoimentos' id="depoimentos">
+        <?php
+        echo $this->Html->link("<i class='icon-group'></i>Publicidade", array("controller" => "Publicidades",
+            "action" => "index"), array("escape" => false));
+        ?>
+    </li>
+
   <?php } ?>
 </ul>
 

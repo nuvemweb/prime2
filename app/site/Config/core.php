@@ -33,6 +33,9 @@
  */
 Configure::write('debug', 2);
 
+setlocale(LC_ALL, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese'); 
+date_default_timezone_set('America/Sao_Paulo'); 
+
 /**
  * Configure the Error handler used to handle errors for your application. By default
  * ErrorHandler::handleError() is used. It will display errors using Debugger, when debug > 0

@@ -40,7 +40,10 @@
     </head>
 
     <body onload="moveRelogio()">
+
+
     <?php echo $this->Element('header'); ?>
+    <?php echo $this->Session->flash(); ?>
     <?php echo $this->fetch('content'); ?>
     <?php echo $this->Element('footer'); ?>
     </body>

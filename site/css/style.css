@@ -181,7 +181,8 @@ input[type="text" i]:disabled{
 }
 .anuncio-topo,
 .anuncio-topo2{
-	height: 100px;
+	padding-left: 0px;
+	padding-right: 0px;
 	margin-top: 45px;
 	border: 1px solid white;
 	font-family: 'miriad-pro-regular';
@@ -268,8 +269,19 @@ input[type="text" i]:disabled{
 
 /*ANUNCIOS PRINCIPAIS*/
 
+
+
 .titulo{
 	margin-top: 30px;
+}
+
+.anuncio-principal{
+	height: 350px;
+}
+
+.p-categoria{
+	font-weight: bold;
+	font-family: 'Merriweather-Bold' !important;
 }
 
 .titulo a{
@@ -326,6 +338,14 @@ figcaption span{
 }
 
 /*GALERIA DE ANUNCIOS */
+
+.anuncio-conteudo-outros{
+	margin-top: 10px;
+}
+
+.galeria-esquerda{
+	margin-top: 40px; 
+}
 .nome-sessao{
 	width: 100%;
 	height: 40px;
@@ -456,14 +476,12 @@ figcaption span{
 }
 
 .anuncio-lateral{
-	border: 1px solid #e8e9e9;
-	height: 250px;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	
+	/*height: 250px;*/
+	
 	margin-top: 15px;
 	text-align: center;
-	padding-left: 15px;
-	padding-right: 15px;
+	
 }
 
 .imagem-anuncio-lateral{
@@ -471,6 +489,9 @@ figcaption span{
 	font-family: 'Poppins';
 	height: 100%;
 	text-transform: uppercase;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 15px;
 }
 
 .imagem-anuncio-lateral p{
@@ -500,6 +521,7 @@ figcaption span{
 
 
 .anuncios-virtuais{
+	width: 100%;
 	position: relative;
 	/*top: -700px;*/
 	float: right;
@@ -534,7 +556,7 @@ figcaption span{
 }
 
 .fundo-anuncio-centro{
-	background-color: #222626;
+
 	color: white;
 	height: 100%;
 	width: 100%;
@@ -751,6 +773,10 @@ figcaption span{
 
 /*GALERIA*/
 
+.fb-like{
+	margin-top: 35px;
+}
+
 .fundo-subpaginas{
 	height: 150px;
 	padding-left: 0px;
@@ -811,7 +837,7 @@ figcaption span{
 
 .bloco-redes-sociais{
 	height: 140px;
-	margin-top: 50px;
+	margin-top: 15px;
 	border: 1px solid #e8e9e9;	
 }
 .galeria-facebook i{
@@ -831,6 +857,7 @@ figcaption span{
 	font-family: 'Poppins-SemiBold';
 	font-size: 14pt;
 	color: #222626;
+	text-align: center;
 }
 .bloco-redes-sociais .seguidores{
 	font-size: 9pt;

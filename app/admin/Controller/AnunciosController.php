@@ -24,12 +24,12 @@ class AnunciosController extends AppController {
  */
 	public function index() {
 		$this->Anuncio->recursive = 0;
-		$this->set('anuncios', $this->Paginator->paginate());
+		$this->set('anuncios', $this->Paginator->paginate(array('liberado' => 0)));
 	}
 
 	public function index2() {
 		$this->Anuncio->recursive = 0;
-		$this->set('anuncios', $this->Paginator->paginate());
+		$this->set('anuncios', $this->Paginator->paginate(array('liberado' => 1)));
 	}
 
 /**
