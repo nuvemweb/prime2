@@ -8,14 +8,16 @@
     .outros-redesocial,
     .slider,
     .anuncio-topo,
-    .logo-anuncio img,
     .titulo,
     .anuncios-principais,
     .footer-redessociais span,
-    .login,
     .cadastrar-btn
     {
     	display: none;
+    }
+
+    .anuncio-topo{
+        margin-top: 0px;
     }
 
     .modal-body img{
@@ -37,7 +39,8 @@
     }
 
     .logo img{
-    	width: 50%;
+    	width: 80%;
+        left: 15px;
     }
     
     .logo{
@@ -106,7 +109,7 @@
     	padding-right: 0px;
     }
     .anuncio-lateral{
-    	margin-top: 0px;
+    	margin-top: 80px;
     	margin-bottom: 20px;
     }
     .anuncio-centro{
@@ -128,8 +131,18 @@
     	padding-left: 0px;
     }
     .nome-sessao-galeria{
-    	height: 100px !important;
         margin-top: 20px;
+    }
+
+    .anuncio-conteudo-descricao,
+    .secundario-descricao {
+        text-align: center;
+    }
+
+    .galeriaview img{
+        width: 300px;
+        height: 250px;
+        padding-right: 15px;
     }
 
     .galeria-anuncios ul li{
@@ -274,24 +287,25 @@
        /*HOME / HEADER / FOOTER */
     
 
-      .fundo-banner-chat,
+    .fundo-banner-chat,
     .outros-redesocial,
     .slider,
     .anuncio-topo,
-    .logo-anuncio img,
     .titulo,
     .anuncios-principais,
     .footer-redessociais span,
-    .login,
     .cadastrar-btn
     {
         display: none;
     }
 
+    .anuncio-topo{
+        margin-top: 0px;
+    }
+
     .modal-body img{
         width: 100%;
     }
-
 
 
     .redes-sociais ul{
@@ -377,7 +391,7 @@
         padding-right: 0px;
     }
     .anuncio-lateral{
-        margin-top: 0px;
+        margin-top: 80px;
         margin-bottom: 20px;
     }
     .anuncio-centro{
@@ -399,8 +413,18 @@
         padding-left: 0px;
     }
     .nome-sessao-galeria{
-        height: 100px !important;
         margin-top: 20px;
+    }
+
+    .anuncio-conteudo-descricao,
+    .secundario-descricao {
+        text-align: center;
+    }
+
+    .galeriaview img{
+        width: 300px;
+        height: 250px;
+        padding-right: 15px;
     }
 
     .galeria-anuncios ul li{
@@ -533,27 +557,30 @@
     .formulario-login {
         margin-bottom: 20px;
     }
+
 
     
 }
 @media (min-width: 768px) and (max-width: 979px) {
     /*tablet vertical*/
 
-       /*HOME / HEADER / FOOTER */
+      /*HOME / HEADER / FOOTER */
     
 
-      .fundo-banner-chat,
+    .fundo-banner-chat,
     .outros-redesocial,
     .slider,
     .anuncio-topo,
-    .logo-anuncio img,
     .titulo,
     .anuncios-principais,
     .footer-redessociais span,
-    .login,
     .cadastrar-btn
     {
         display: none;
+    }
+
+    .anuncio-topo{
+        margin-top: 0px;
     }
 
     .modal-body img{
@@ -644,7 +671,7 @@
         padding-right: 0px;
     }
     .anuncio-lateral{
-        margin-top: 0px;
+        margin-top: 80px;
         margin-bottom: 20px;
     }
     .anuncio-centro{
@@ -666,8 +693,18 @@
         padding-left: 0px;
     }
     .nome-sessao-galeria{
-        height: 100px !important;
         margin-top: 20px;
+    }
+
+    .anuncio-conteudo-descricao,
+    .secundario-descricao {
+        text-align: center;
+    }
+
+    .galeriaview img{
+        width: 300px;
+        height: 250px;
+        padding-right: 15px;
     }
 
     .galeria-anuncios ul li{
@@ -800,6 +837,7 @@
     .formulario-login {
         margin-bottom: 20px;
     }
+
 
     
     
@@ -807,20 +845,23 @@
 @media (min-width: 979px) and (max-width: 1199px) {
     /*tablet horizontal*/
 
-       /*HOME / HEADER / FOOTER */
+      /*HOME / HEADER / FOOTER */
     
-  .fundo-banner-chat,
+
+    .fundo-banner-chat,
     .outros-redesocial,
     .slider,
     .anuncio-topo,
-    .logo-anuncio img,
     .titulo,
     .anuncios-principais,
     .footer-redessociais span,
-    .login,
     .cadastrar-btn
     {
         display: none;
+    }
+
+    .anuncio-topo{
+        margin-top: 0px;
     }
 
     .modal-body img{
@@ -911,7 +952,7 @@
         padding-right: 0px;
     }
     .anuncio-lateral{
-        margin-top: 0px;
+        margin-top: 80px;
         margin-bottom: 20px;
     }
     .anuncio-centro{
@@ -933,8 +974,18 @@
         padding-left: 0px;
     }
     .nome-sessao-galeria{
-        height: 100px !important;
         margin-top: 20px;
+    }
+
+    .anuncio-conteudo-descricao,
+    .secundario-descricao {
+        text-align: center;
+    }
+
+    .galeriaview img{
+        width: 300px;
+        height: 250px;
+        padding-right: 15px;
     }
 
     .galeria-anuncios ul li{
@@ -1071,5 +1122,9 @@
     
 }
 @media (min-width: 1200px) { 
+    
+}
+
+@media (min-width: 1600px) { 
     
 }

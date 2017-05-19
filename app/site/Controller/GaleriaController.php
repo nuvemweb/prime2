@@ -11,7 +11,7 @@ class GaleriaController extends AppController {
     public function index() {
 
          $this->Paginator->settings = array(
-      'limit' => 6
+      'limit' => 7
       );
 
     	$this->Anuncio->recursive = 0;
@@ -22,10 +22,22 @@ class GaleriaController extends AppController {
         $this->set(compact('Computadores'));
     	
     }
+
+    public function view($id = null) {
+        $this->Anuncio->id = $id;
+
+        if(!$this->Anuncio->exists()){
+            $this->redirect(array('action'=>'index'));
+        }
+
+        $Anuncio = $this->Anuncio->read();
+        $this->set(compact('Anuncio'));
+
+      }
     public function animais() {
 
          $this->Paginator->settings = array(
-      'limit' => 6
+      'limit' => 7
       );
 
       $this->Anuncio->recursive = 0;
@@ -39,7 +51,7 @@ class GaleriaController extends AppController {
     public function automoveis() {
 
          $this->Paginator->settings = array(
-      'limit' => 6
+      'limit' => 7
       );
 
       $this->Anuncio->recursive = 0;
@@ -53,7 +65,7 @@ class GaleriaController extends AppController {
     public function bicicletas() {
 
          $this->Paginator->settings = array(
-      'limit' => 6
+      'limit' => 7
       );
 
       $this->Anuncio->recursive = 0;
@@ -67,7 +79,7 @@ class GaleriaController extends AppController {
     public function caminhoes() {
 
          $this->Paginator->settings = array(
-      'limit' => 6
+      'limit' => 7
       );
 
       $this->Anuncio->recursive = 0;
@@ -82,7 +94,7 @@ class GaleriaController extends AppController {
     public function celulares() {
 
          $this->Paginator->settings = array(
-      'limit' => 6
+      'limit' => 7
       );
 
       $this->Anuncio->recursive = 0;
@@ -97,7 +109,7 @@ class GaleriaController extends AppController {
     public function computadores() {
 
          $this->Paginator->settings = array(
-      'limit' => 6
+      'limit' => 7
       );
 
       $this->Anuncio->recursive = 0;
@@ -111,7 +123,7 @@ class GaleriaController extends AppController {
     public function construcao() {
 
          $this->Paginator->settings = array(
-      'limit' => 6
+      'limit' => 7
       );
 
       $this->Anuncio->recursive = 0;
@@ -126,7 +138,7 @@ class GaleriaController extends AppController {
     public function diversos() {
 
          $this->Paginator->settings = array(
-      'limit' => 6
+      'limit' => 7
       );
 
       $this->Anuncio->recursive = 0;
@@ -141,7 +153,7 @@ class GaleriaController extends AppController {
     public function eletrodomesticos() {
 
          $this->Paginator->settings = array(
-      'limit' => 6
+      'limit' => 7
       );
 
       $this->Anuncio->recursive = 0;
@@ -156,7 +168,7 @@ class GaleriaController extends AppController {
     public function empregos() {
 
          $this->Paginator->settings = array(
-      'limit' => 6
+      'limit' => 7
       );
 
       $this->Anuncio->recursive = 0;
@@ -171,7 +183,7 @@ class GaleriaController extends AppController {
     public function imoveisalugar() {
 
          $this->Paginator->settings = array(
-      'limit' => 6
+      'limit' => 7
       );
 
       $this->Anuncio->recursive = 0;
@@ -186,7 +198,7 @@ class GaleriaController extends AppController {
      public function imoveisvenda() {
 
          $this->Paginator->settings = array(
-      'limit' => 6
+      'limit' => 7
       );
 
       $this->Anuncio->recursive = 0;
@@ -201,7 +213,7 @@ class GaleriaController extends AppController {
     public function maquinas() {
 
          $this->Paginator->settings = array(
-      'limit' => 6
+      'limit' => 7
       );
 
       $this->Anuncio->recursive = 0;
@@ -216,7 +228,7 @@ class GaleriaController extends AppController {
     public function motos() {
 
          $this->Paginator->settings = array(
-      'limit' => 6
+      'limit' => 7
       );
 
       $this->Anuncio->recursive = 0;
@@ -231,7 +243,7 @@ class GaleriaController extends AppController {
     public function multimidia() {
 
          $this->Paginator->settings = array(
-      'limit' => 6
+      'limit' => 7
       );
 
       $this->Anuncio->recursive = 0;
@@ -246,7 +258,7 @@ class GaleriaController extends AppController {
     public function servicos() {
 
          $this->Paginator->settings = array(
-      'limit' => 6
+      'limit' => 7
       );
 
       $this->Anuncio->recursive = 0;

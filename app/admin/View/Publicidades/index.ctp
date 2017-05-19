@@ -1,10 +1,10 @@
 <div class='col-xs-12'>
     <div class='page-header page-header-with-buttons'>
         <h1 class='pull-left'>
-            <i class='icon-picture'></i>
-            <span><?php echo __('Publicidades'); ?></span>
+            <i class='fa fa-address-card-o' aria-hidden='true'></i>
+            <span><?php echo __(' Publicidades'); ?></span>
         </h1>
-        <?php echo $this->Html->link('<i class=\'icon-plus\'></i><span> Adicionar</span>', array('action' => 'add'), array('class' => 'btn btn-primary btn-lg', 'title' => 'Adicionar novo Registro', 'style' => 'float: right; margin: 18px 0 0 0;', 'escape' => false)); ?>
+        <?php echo $this->Html->link('<i class=\'icon-plus\'></i><span> Adicionar</span>', array('action' => 'add'), array('class' => 'btn btn-primary btn-lg  BtnSubmit', 'title' => 'Adicionar novo Registro', 'style' => 'float: right; margin: 18px 0 0 0;', 'escape' => false)); ?>
     </div>
     <div class='row'>
         <div class='col-sm-12'>

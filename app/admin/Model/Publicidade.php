@@ -25,10 +25,12 @@ class Publicidade extends AppModel {
                     '660' => '100',
                     '730' => '100',
                     '350' => '250',
-                    '200' => '200'
+                    '200' => '200',
+                    '87' => '117'
                     //defina o tamanho da imagem aqui
                 );
                 $this->data[$this->alias]['imagem'] = $Upload->upload($this->imagem_upload, "upload" . DS . "publicidade" . DS . $this->data[$this->alias]['id'] . DS, false, $tamanhos, true);
+                $this->data[$this->alias]['imagem'] = $Upload->upload($this->imagem_upload, "upload" . DS . "publicidade" . DS . $this->data[$this->alias]['id'] . DS, true, $tamanhos, true);
             }
         } else {
             $this->imagem_upload = $this->data[$this->alias]['imagem'];

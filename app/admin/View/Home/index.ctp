@@ -16,23 +16,37 @@
 
                         <div class='box-content text-center' >
 
+                            <?php if ($usuario['imagem'] != "") {?>
                             <?php echo $this->Html->image('/upload/users/' . $usuario["id"] . '/m_' . $usuario["imagem"]); ?>
+                            <?php }?>
 
-                            <h4>Bem Vindo <?php echo($usuario["nome"]); ?>,</h4>
+                            <h4>Bem Vindo ao Classificados Prime <?php echo($usuario["nome"]); ?>,</h4>
+                            <p>Anunciamos Tudo! Faça seu anúncio! É Grátis!</p><br/>
                             <ul class="list-unstyled">
                                 <li>
-                                    <i class="icon-envelope text-purple"></i>
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i> 
                                     <?php echo($usuario["email"]); ?>
                                 </li>
 
-                                <li>
-                                    <i class="icon-user text-red"></i>
+                                <br/><li>
+                                    <i class="fa fa-user-circle" aria-hidden="true"></i>
                                     <?php
-                                    echo $this->Html->link("Alterar dados", array("controller" => "users",
+                                    echo $this->Html->link("Alterar dados/Adicionar imagem", array("controller" => "users",
                                         "action" => "edit", $usuario["id"]
                                             ), array("escape" => false));
                                     ?>
                                 </li>
+
+                                <div class="visible-xs">
+                                     <br/><li>
+                                    <i class="fa fa-globe" aria-hidden="true"></i>
+                                    <?php
+                                    echo $this->Html->link("Anunciar", array("controller" => "anuncios",
+                                        "action" => "add"
+                                            ), array("escape" => false));
+                                    ?>
+                                </li>
+                                </div>
                             </ul>
                         </div>
                     </div>

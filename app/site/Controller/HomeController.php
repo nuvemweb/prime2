@@ -8,6 +8,8 @@ class HomeController extends AppController {
 
     public function index() {
 
+    	$this->Anuncio->recursive = 0;
+
 		$Anuncios = $this->Anuncio->find("all", array('conditions' => array('liberado' => 1), 'order' => array('created' => 'desc')));
 		
 		

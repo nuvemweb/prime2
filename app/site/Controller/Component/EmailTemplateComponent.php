@@ -33,19 +33,115 @@ class EmailTemplateComponent extends Component {
             $strHtml = $this->SubstituiValores($strHtml, "NOME", $obj["Contato"]["nome"]);
             $strHtml = $this->SubstituiValores($strHtml, "EMAIL", $obj["Contato"]["email"]);
             $strHtml = $this->SubstituiValores($strHtml, "TELEFONE", $obj["Contato"]["telefone"]);
+            
             $strHtml = $this->SubstituiValores($strHtml, "MENSAGEM", $obj["Contato"]["mensagem"]);
-            $strHtml = $this->SubstituiValores($strHtml, "ASSUNTO", $obj["Contato"]["assunto"]);
 
 
-            $assunto = "Contato - HarasRecanto";
+            $assunto = "Contato - Classificados Prime";
 
             $Email = new CakeEmail('smtp');
-            $Email->to('nelmaralves@terra.com.br');
-            $Email->from("no-reply@harasrecanto.com");
+            $Email->to('contato@classificadosprime.com.br');
+            $Email->from('contato@classificadosprime.com.br');  //contato
+            //$Email->cc('rogeriovaz@interativads.com.br');
+            $Email->cc('diasdeoliveira22@classificadosprime.com.br');
+
+            //$Email->from($obj['Contato']['email']);
+
+
             $Email->subject($assunto);
             $Email->send($strHtml);
         }
     }
+
+    /*public function EmailOrcamentoAluguel($obj) {
+        App::uses('CakeEmail', 'Network/Email');
+
+        //exit(debug($dir));
+        if ($obj != null) {
+            $dir = dirname(WWW_ROOT) . DS . "site" . DS;
+            $strHtml = $this->RetornaStrArquivo($dir . "templates/email_orcamento_aluguel.html");
+            //exit(debug($strHtml));
+            $strHtml = $this->SubstituiValores($strHtml, "NOME", $obj["Orcamento"]["nome"]);
+            $strHtml = $this->SubstituiValores($strHtml, "EMAIL", $obj["Orcamento"]["email"]);
+            $strHtml = $this->SubstituiValores($strHtml, "TELEFONE", $obj["Orcamento"]["telefone"]);
+            $strHtml = $this->SubstituiValores($strHtml, "EMPRESA", $obj["Orcamento"]["empresa"]);
+            $strHtml = $this->SubstituiValores($strHtml, "PERIODO", $obj["Orcamento"]["periodo"]);
+            $strHtml = $this->SubstituiValores($strHtml, "MODELO", $obj["Orcamento"]["modelo"]);
+            $strHtml = $this->SubstituiValores($strHtml, "LOCAL", $obj["Orcamento"]["local"]);
+            $strHtml = $this->SubstituiValores($strHtml, "QUANTIDADE", $obj["Orcamento"]["quantidade"]);
+            // $strHtml = $this->SubstituiValores($strHtml, "OPCIONAIS", $obj["Orcamento"]["opcionais"]);
+           
+            $strHtml = $this->SubstituiValores($strHtml, "POSSUIR", $obj["Orcamento"]["possuir"]);
+            $strHtml = $this->SubstituiValores($strHtml, "ATUALIZAR", $obj["Orcamento"]["atualizar"]);
+            $strHtml = $this->SubstituiValores($strHtml, "OBSERVACAO", $obj["Orcamento"]["observacao"]);
+
+
+            $assunto = "Orçamento Aluguel - interativaDS";
+
+            $Email = new CakeEmail('smtp');            
+            $Email->to('contato@interativads.com.br'); //contato
+            //$Email->cc('rogeriovaz@interativads.com.br');
+            $Email->cc('vendas@interativads.com.br');
+           
+           
+            //$Email->from($obj['Orcamento']['email']);
+            
+            
+           
+
+            $Email->subject($assunto);
+            $Email->send($strHtml);
+        }
+    }
+
+    public function EmailOrcamentoCompra($obj) {
+        App::uses('CakeEmail', 'Network/Email');
+
+        //exit(debug($dir));
+        if ($obj != null) {
+            $dir = dirname(WWW_ROOT) . DS . "site" . DS;
+            $strHtml = $this->RetornaStrArquivo($dir . "templates/email_orcamento_compra.html");
+            $servicos = "";
+
+            $servicos .= !empty($obj["Orcamento"]["CkDispositivo"])?$obj["Orcamento"]["CkDispositivo"].', ':"";
+            $servicos .= !empty($obj["Orcamento"]["CkImpressora"])?$obj["Orcamento"]["CkImpressora"].', ':"";
+            $servicos .= !empty($obj["Orcamento"]["CkCartao"])?$obj["Orcamento"]["CkCartao"].', ':"";
+            $servicos .= !empty($obj["Orcamento"]["CkCodigodeBarras"])?$obj["Orcamento"]["CkCodigodeBarras"].', ':"";
+      
+
+            if (strlen($servicos) > 2) {
+                $servicos = substr($servicos,0,-2);
+            }
+            
+            //exit(debug($strHtml));
+            $strHtml = $this->SubstituiValores($strHtml, "NOME", $obj["Orcamento"]["nome"]);
+            $strHtml = $this->SubstituiValores($strHtml, "EMAIL", $obj["Orcamento"]["email"]);
+            $strHtml = $this->SubstituiValores($strHtml, "TELEFONE", $obj["Orcamento"]["telefone"]);
+            $strHtml = $this->SubstituiValores($strHtml, "EMPRESA", $obj["Orcamento"]["empresa"]);
+            $strHtml = $this->SubstituiValores($strHtml, "MODELO", $obj["Orcamento"]["modelo"]);
+            $strHtml = $this->SubstituiValores($strHtml, "QUANTIDADE", $obj["Orcamento"]["quantidade"]);
+            $strHtml = $this->SubstituiValores($strHtml, "SERVICOS", $servicos);
+
+            $strHtml = $this->SubstituiValores($strHtml, "POSSUIR", $obj["Orcamento"]["possuir"]);
+            $strHtml = $this->SubstituiValores($strHtml, "ATUALIZAR", $obj["Orcamento"]["atualizar"]);
+            $strHtml = $this->SubstituiValores($strHtml, "OBSERVACAO", $obj["Orcamento"]["observacao"]);
+
+
+            $assunto = "Orçamento Compra - interativaDS";
+
+            $Email = new CakeEmail('smtp');            
+            $Email->to('contato@interativads.com.br'); //contato
+            $Email->cc('vendas@interativads.com.br');
+            //$Email->cc('rogeriovaz@interativads.com.br');
+          
+            //$Email->from($obj['Orcamento']['email']);
+            
+            
+
+            $Email->subject($assunto);
+            $Email->send($strHtml);
+        }
+    }*/
 
     public function SubstituiValores($strEntrada, $chave, $valor) {
         return str_replace("%%" . $chave . "%%", $valor, $strEntrada);

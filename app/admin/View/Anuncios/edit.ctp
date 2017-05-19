@@ -1,8 +1,8 @@
 <div class='col-xs-12'>
     <div class='page-header page-header-with-buttons'>
         <h1 class='pull-left'>
-            <i class='icon-user'></i>
-            <span><?php echo __('Anuncios'); ?></span>
+            <i class='fa fa-thumbs-o-up' aria-hidden='true'></i>
+            <span><?php echo __(' Publicar / Editar Anuncio'); ?></span>
         </h1>
     </div>
 </div>
@@ -17,15 +17,19 @@
         echo $this->Form->input('id');
 		echo $this->Form->input('anunciante');
         echo $this->Form->input('telefone');
-        echo $this->Form->input('preco');
+        echo $this->Form->input('facebook');
+        echo $this->Form->input('tiponegocio', array('options' => array("Comprar" => "Comprar", "Vender" => "Vender"), 'empty' => 'Selecione'));
         echo $this->Form->input('titulo');
         echo $this->Form->input('categoria', array('options' => array("animais" => "animais", "automoveis" => "automóveis", "bicicletas" => "bicicletas", "caminhoes" => "caminhões", "celulares" => "celulares", "computadores" => "computadores", "construcao" => "construção", "diversos" => "diversos", "eletrodomesticos" => "eletrodomésticos", "empregos" => "empregos", "imoveisalugar" => "imóveis alugar", "imoveisvenda" => "imóveis vender/comprar", "maquinas" => "máquinas", "motos" => "motos", "multimidia" => "multimídia", "servicos" => "serviços"  ), 'empty' => 'Selecione')); 
         
-        echo $this->Form->input('descricao'); 
+        echo $this->Form->input('descricao');
+         echo $this->Form->input('preco'); 
         echo $this->Form->input('destaque', array('options' => array(1 => "Sim", 0 => "Não"), 'empty' => 'Selecione'));
+        echo $this->Form->input('publicidadeprincipal', array('options' => array(1 => "Sim", 0 => "Não"), 'empty' => 'Selecione'));
         echo $this->Form->input('destaquecategoria', array('options' => array(1 => "Sim", 0 => "Não"), 'empty' => 'Selecione'));
         echo $this->Form->input('destaquegaleria', array('options' => array(1 => "Sim", 0 => "Não"), 'empty' => 'Selecione'));
         echo $this->Form->input('subdestaque', array('options' => array(1 => "Sim", 0 => "Não"), 'empty' => 'Selecione'));
+
         echo $this->Form->input('liberado', array('options' => array(1 => "Sim", 0 => "Não"), 'empty' => 'Selecione'));
 		echo $this->Form->input("imagem", array('type' => 'file', "accept" => "image/gif, image/png, image/jpeg"));
 

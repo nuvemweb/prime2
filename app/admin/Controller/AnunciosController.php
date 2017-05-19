@@ -56,7 +56,7 @@ class AnunciosController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Anuncio->create();
 			if ($this->Anuncio->save($this->request->data)) {
-				$this->Session->setFlash('Registro salvo com sucesso!', 'default', array('class' => 'alert alert-success space'));
+				$this->Session->setFlash('Aguardando aprovação do administrador!', 'default', array('class' => 'alert alert-success space'));
 				return $this->redirect(array('action' => 'add'));
 			} else {
 				$this->Session->setFlash('Registro não pode ser salvo. Por favor, tente novamente', 'default', array('class' => 'alert alert-danger space'));

@@ -5,10 +5,10 @@ class DATABASE_CONFIG {
     public $default = array(
         'datasource' => 'Database/Mysql',
         'persistent' => false,
-        'host' => 'mysql01.queijosriominas.hospedagemdesites.ws',
-        'login' => 'queijosriominas',
-        'password' => 'QHBjI3MT7Z',
-        'database' => 'queijosriominas',
+        'host' => 'primeclassi2.mysql.uhserver.com',
+        'login' => 'prime22',
+        'password' => 'diasoliveira22@',
+        'database' => 'primeclassi2',
         'prefix' => 'tb_',
         'encoding' => 'utf8',
     );

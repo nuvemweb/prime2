@@ -9,7 +9,7 @@
 			</form>
 
 			<div class="login col-md-5">
-				<a href="http://localhost/prime2/Desenvolvimento/admin/users">Entrar </a> | <a href="http://localhost/prime2/Desenvolvimento/site/cadastro"> Cadastrar</a>	
+				<a href="http://www.classificadosprime.com.br/admin/users/login">Entrar </a> | <a href="http://www.classificadosprime.com.br/admin/users/cadastrar"> Cadastrar</a>	
 
 				<!--<form class="form-inline" method="POST" action="login.php">
   					<div class="form-group">
@@ -52,11 +52,11 @@
 		<div class="collapse navbar-collapse" id="navbar">
 		<div class="container">
 	        <ul class="nav navbar-nav itens-menu">
-	            <li><a href="http://localhost/prime2/Desenvolvimento/site">home</a></li>
-				<li><a href="http://localhost/prime2/Desenvolvimento/site/galeria">galeria de anúncios</a></li>
-				<li><a href="http://localhost/prime2/Desenvolvimento/site/faleconosco">fale conosco</a></li>
+	            <li><a href="http://www.classificadosprime.com.br/site">home</a></li>
+				<li><a href="http://www.classificadosprime.com.br/site/galeria">galeria de anúncios</a></li>
+				<li><a href="http://www.classificadosprime.com.br/site/contato">fale conosco</a></li>
 
-				<li class="botao-chat"><a class="active" href="">chat online</a></li>
+				<!--<li class="botao-chat"><a class="active" href="">chat online</a></li>-->
 	        </ul>
 	        <div class="pesquisar-menu col-md-2 hidden-xs">
 				<input type="text" placeholder="pesquisar"><i class="fa fa-search" aria-hidden="true"></i></input>
@@ -66,15 +66,15 @@
 	</nav>
 	<div class="container">
 		<div class="logo col-md-6 col-xs-12">
-			<a href="http://localhost/prime2/Desenvolvimento/site"><img class="col-md-3" src="<?php echo $this->request->webroot;?>img/logo.png"></a>
-			<a href="http://localhost/prime2/Desenvolvimento/site"><div class="col-md-9 texto-logo-header">
+			<a href="http://www.classificadosprime.com.br/site"><img class="col-md-3" src="<?php echo $this->request->webroot;?>img/logoprime3.png"></a>
+			<a href="http://www.classificadosprime.com.br/site"><div class="col-md-9 texto-logo-header">
 			<span>Classificados Prime <p class="prime">Prime Informática </p> <p class="prime-tel"> (34) 3814-1165/98443-4343</p></span>
 			</div></a>
 		</div>
 		<?php foreach($Publicidades as $Publicidade):?>
 						<?php if($Publicidade['Publicidade']['local'] == "hometopo") { ?>
 		<div class="anuncio-topo col-md-5 col-md-offset-1">
-		<img class="img-responsive" src="<?php echo $this->request->base ?>/upload/publicidade/<?php echo $Publicidade['Publicidade']['id'] ?>/475x100-<?php echo $Publicidade['Publicidade']['imagem'] ?>">
+		<a href="<?php echo $Publicidade['Publicidade']['link'] ?>" target="_blank"><img class="img-responsive" title="<?php echo $Publicidade['Publicidade']['nome'] ?>" alt="<?php echo $Publicidade['Publicidade']['nome'] ?>" src="<?php echo $this->request->base ?>/upload/publicidade/<?php echo $Publicidade['Publicidade']['id'] ?>/475x100-<?php echo $Publicidade['Publicidade']['imagem'] ?>"></a>
 			<!--<p>Anuncio Topo
 			<a href="">Anunciar</a></p>-->
 		</div>
@@ -114,22 +114,27 @@
 	<div class="collapse navbar-collapse" id="navbar">
 		<div class="container">
 	        <ul class="nav navbar-nav itens-menu">
-	            <li><a href="http://localhost/prime2/Desenvolvimento/site">home</a></li>
-				<li><a href="http://localhost/prime2/Desenvolvimento/site/galeria">galeria de anúncios</a></li>
-				<li><a href="http://localhost/prime2/Desenvolvimento/site/faleconosco">fale conosco</a></li>
+	            <li><a href="http://www.classificadosprime.com.br/site">home</a></li>
+				<li><a href="http://www.classificadosprime.com.br/site/galeria">galeria de anúncios</a></li>
+				<li><a href="http://www.classificadosprime.com.br/site/contato">fale conosco</a></li>
 				
-				<li class="botao-chat"><a class="active" href="">chat online</a></li>
+				<!--<li class="botao-chat"><a class="active" href="">chat online</a></li>-->
 	        </ul>
-	        <div class="pesquisar-menu col-md-2 hidden-xs">
+	        <!--<div class="pesquisar-menu col-md-2 hidden-xs">
 				<input type="text" placeholder="pesquisar"><i class="fa fa-search" aria-hidden="true"></i></input>
-			</div>
+			</div>-->
 	    </div>
 	</div>
 </nav>	
-<div class="anuncio-topo2 col-md-5 col-md-offset-1 visible-xs">
-	<p>Anuncio Topo
-	<a href="">Anunciar</a></p>
-</div>
+<?php foreach($Publicidades as $Publicidade):?>
+						<?php if($Publicidade['Publicidade']['local'] == "hometopo") { ?>
+		<div class="anuncio-topo col-md-5 col-md-offset-1 visible-xs">
+		<a href="<?php echo $Publicidade['Publicidade']['link'] ?>" target="_blank"><img class="img-responsive" title="<?php echo $Publicidade['Publicidade']['nome'] ?>" alt="<?php echo $Publicidade['Publicidade']['nome'] ?>" src="<?php echo $this->request->base ?>/upload/publicidade/<?php echo $Publicidade['Publicidade']['id'] ?>/475x100-<?php echo $Publicidade['Publicidade']['imagem'] ?>"></a>
+			<!--<p>Anuncio Topo
+			<a href="">Anunciar</a></p>-->
+		</div>
+		 <?php } ?>
+					<?php endforeach;?>
 
 <div class="modal fade" id="exemplomodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
   <div class="modal-dialog modal-lg" role="document">

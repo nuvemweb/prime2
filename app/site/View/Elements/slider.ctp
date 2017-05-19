@@ -1,4 +1,6 @@
 
+
+
 <script type="text/javascript">
 	$(document).ready(function(){
 		$("#featured").tabs({fx:[{opacity: "toggle", duration: 'slow'}, {opacity: "toggle", duration: 'normal'}],
@@ -34,7 +36,7 @@
 		
 		<?php if($Anuncio['Anuncio']['destaque'] == "1") { ?>
 
-	    <li class="ui-tabs-nav-item" id="nav-fragment-<?php echo $Anuncio['Anuncio']['id'] ?>"><a href="#fragment-<?php echo $Anuncio['Anuncio']['id'] ?>"><img src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/250x184-<?php echo $Anuncio['Anuncio']['imagem'] ?>" alt="" /><span><p class="titulo-destaque"><?php echo $Anuncio['Anuncio']['titulo'];?></p><p><?php echo $Anuncio['Anuncio']['descricao'];?></p></span></a></li>
+	    <li class="ui-tabs-nav-item" id="nav-fragment-<?php echo $Anuncio['Anuncio']['id'] ?>"><a href="#fragment-<?php echo $Anuncio['Anuncio']['id'] ?>"><img src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/250x184-<?php echo $Anuncio['Anuncio']['imagem'] ?>" alt="" /><span><p class="titulo-destaque"><?php echo $Anuncio['Anuncio']['titulo'];?></p><p><?php echo showReadMore($Anuncio['Anuncio']['descricao']);?></p></span></a></li>
 	    <!--<li class="ui-tabs-nav-item" id="nav-fragment-2"><a href="#fragment-2"><img src="<?php echo $this->request->webroot;?>img/slider/image2-small.jpg" alt="" /><span>Nome do Item 2</span></a></li>
 	    <li class="ui-tabs-nav-item" id="nav-fragment-3"><a href="#fragment-3"><img src="<?php echo $this->request->webroot;?>img/slider/image3-small.jpg" alt="" /><span>Nome do Item 3</span></a></li>
 	    <li class="ui-tabs-nav-item" id="nav-fragment-4"><a href="#fragment-4"><img src="<?php echo $this->request->webroot;?>img/slider/image4-small.jpg" alt="" /><span>Nome do Item 4</span></a></li>-->
@@ -46,7 +48,7 @@
 	 <?php foreach($Anuncios as $Anuncio):?>
 	 	<?php if($Anuncio['Anuncio']['destaque'] == "1") { ?>
 	<div id="fragment-<?php echo $Anuncio['Anuncio']['id'] ?>" class="ui-tabs-panel" style="">
-		<img src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/400x250-<?php echo $Anuncio['Anuncio']['imagem'] ?>" class="img-responsive" alt="" />
+		<?php if($Anuncio['Anuncio']['publicidadeprincipal'] == "0") { ?><a href="http://www.classificadosprime.com.br/var/www/html/classificadosprime.com.br/web/site/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><?php } ?><img src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/400x250-<?php echo $Anuncio['Anuncio']['imagem'] ?>" class="img-responsive" alt="" /></a>
 	</div>
 	<?php } ?>
 

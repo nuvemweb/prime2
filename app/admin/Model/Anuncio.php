@@ -73,6 +73,7 @@ class Anuncio extends AppModel {
                 $Upload = new UploadComponent();
                 $tamanhos = array(
                     '250' => '184',
+                    '131' => '131',
                     '800' => '600',
                     '400' => '250',
                     '263' => '350',

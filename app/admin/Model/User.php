@@ -38,7 +38,7 @@ class User extends AppModel {
         'Session',
         'Auth' => array(
             'loginRedirect' => array('controller' => 'home', 'action' => 'index'),
-            'logoutRedirect' => array('controller' => 'home', 'action' => 'inde')
+            'logoutRedirect' => array('controller' => 'home', 'action' => 'index')
         )
     );
 
@@ -51,7 +51,7 @@ class User extends AppModel {
         }
 
         //INICIO - Editar - Método de upload para pastas com ID 
-        if (!empty($this->data[$this->alias]['id'])) {
+       if (!empty($this->data[$this->alias]['id'])) {
             $this->imagem_upload = $this->data[$this->alias]['imagem'];
             unset($this->data[$this->alias]['imagem']);
             if (!empty($this->imagem_upload) && !empty($this->imagem_upload['name'])) {
@@ -64,12 +64,11 @@ class User extends AppModel {
             $this->data[$this->alias]['imagem'] = "";
         }
         //FIM - Editar - Método de upload para pastas com ID 
-
-        return true;
     }
 
     public function afterSave($created = true, $options = null) {
         //INICIO - Adicionar - Método de upload para pastas com ID 
+
         if (!empty($this->imagem_upload)) {
             $imagem_salva = $this->find("first", array(
                 'conditions' => array($this->alias . ".id =" => $this->data[$this->alias]['id']),
@@ -84,5 +83,4 @@ class User extends AppModel {
         }
         //Fim - Adicionar - Método de upload para pastas com ID 
     }
-
 }

@@ -9,7 +9,7 @@
             <img src="<?php echo $this->webroot; ?>/img/logo_.png" title="Nuvem Desenvolvimento Web" alt="Nuvem Desenvolvimento Web" height="60%" style="margin: 0 50px; " />
         </a>
         <!-- Abre e fecha menu -->
-        <ul class='nav'>
+        <!--<ul class='nav'>
 
             <li class='dropdown dark user-menu'>
                 <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
@@ -53,6 +53,6 @@
                     </li>
                 </ul>
             </li>                
-        </ul>
+        </ul>-->
     <!--</nav>-->
 </header>

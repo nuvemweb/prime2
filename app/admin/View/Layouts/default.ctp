@@ -25,11 +25,11 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
         <?php echo $this->Html->charset(); ?>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <meta content='text/html;charset=utf-8' http-equiv='content-type'>
-        <link href='img/meta_icons/favicon.png' rel='shortcut icon' type='image/x-icon'>
+        <link href='img/favicon.png' rel='shortcut icon' type='image/x-icon'>
         <title>
 
             <?php echo $title_for_layout; ?>
-            | Administração
+            Administração
         </title>
         <script type="text/javascript" src="<?php echo $this->webroot; ?>imgadmin/js/ckeditor/ckeditor.js"></script>
         <script type="text/javascript">
@@ -37,7 +37,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
         </script> 
 
         <?php
-        echo $this->Html->meta('meta_icons/favicon');
+        echo $this->Html->meta('favicon');
 
 
         echo $this->Html->css(
@@ -56,6 +56,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                     '/fonts/stylesheet',
                     'font-awesome',
                     'font-awesome.min',
+                    'style-mobile'
         ));
         echo $this->Html->script(
                 array(
@@ -69,6 +70,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                     'plugins/retina/retina.js',
                     'theme.js',
                     'demo.js',
+                    'moveRelogio.js'
         ));
 
 
@@ -80,7 +82,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 
     </head>
-    <body class='<?php echo $this->Session->read('colorTheme'); ?>'>
+    <body class='<?php echo $this->Session->read('colorTheme'); ?>' onload="moveRelogio()">
         <?php echo $this->element('headTopo'); ?>
 
         <div id='wrapper'>

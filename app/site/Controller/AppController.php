@@ -24,7 +24,7 @@ class AppController extends Controller {
 
      $Publicidades  = $this->Publicidade->find('all');
 
-   
+ 
 
 
      $this->set(compact('Publicidades'));

@@ -1,8 +1,8 @@
 <div class='col-xs-12'>
     <div class='page-header page-header-with-buttons'>
         <h1 class='pull-left'>
-            <i class='icon-picture'></i>
-            <span><?php echo __('Publicidades'); ?></span>
+            <i class='fa fa-address-card-o' aria-hidden='true'></i>
+            <span><?php echo __(' Publicidades'); ?></span>
         </h1>
     </div>
 </div>
@@ -15,7 +15,9 @@
                     <?php echo $this->Form->create('Publicidade', $this->FormAdmin->formConfigs); ?>
                         <?php
                         echo $this->Form->input('nome');
+                         echo $this->Form->input('link');
                        echo $this->Form->input('local', array('options' => array("hometopo" => "hometopo", "homelateral" => "homelateral", "homecentro1" => "homecentro1", "homecentro2" => "homecentro2", "galeria" => "galeria", "contatolateral" => "contatolateral", "contatofim" => "contatofim", "parceiros" => "parceiros"), 'empty' => 'Selecione')); 
+
                         echo $this->Form->input("imagem", array('type' => 'file', "accept" => "image/gif, image/png, image/jpeg"));
                         ?>
                     <div class='form-actions form-actions-padding-sm'>

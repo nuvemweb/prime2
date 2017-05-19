@@ -1,0 +1,1142 @@
+@media (max-width: 480px) {  
+    /*celular vertical*/
+
+    /*HOME / HEADER / FOOTER */
+    
+
+    .fundo-banner-chat,
+    .outros-redesocial,
+    .slider,
+    .anuncio-topo,
+    .titulo,
+    .anuncios-principais,
+    .footer-redessociais span,
+   
+    .cadastrar-btn
+    {
+    	display: none;
+    }
+
+    .anuncio-topo{
+        margin-top: 0px;
+    }
+
+    .page-header {
+        margin-right: 0px;
+        margin-top: 40px;
+        min-height: initial;
+    }
+
+    .modal-body img{
+        width: 100%;
+    }
+
+
+    .redes-sociais ul{
+    	float: initial;
+    	text-align: center;
+    	padding-left: 0px;
+    	margin-top: 15px;
+    }
+
+    .redes-sociais ul li{
+    	margin-left: 0px;
+    	padding-left: 15px;
+    	padding-right: 15px;
+    }
+
+    .logo img{
+    	width: 80%;
+        left: 15px;
+    }
+    
+    .logo{
+    	text-align: center;
+    	font-size: 15pt;
+    	height: initial;
+    	margin-bottom: 20px;
+    	margin-top: 10px;
+    }
+    .logo span{
+    	top: initial;
+    }
+    .logo p{
+    	top: initial;
+    	font-size: 10pt;
+    }
+
+    .texto-logo-header {
+    	float: initial;
+    	top: 10px;
+    	left: initial;
+
+    }
+    .itens-menu li{
+    	top: initial;
+
+    }
+    .itens-menu{
+    	width: 100%;
+    }
+    .botao-chat{
+    	margin-left: initial;
+
+    }
+    .navbar-collapse {
+    	margin-top: 18px;
+    }
+    .navbar-toggle{
+    	top: 10px;
+    }
+
+    .anuncio-principal {
+    	margin-bottom: 20px;
+    }
+
+    .anuncio-principal img{
+    	height: initial;
+    }
+
+    .galeria-anuncios {
+    	margin-top: initial;
+    	padding-right: 0px;
+    }
+    .galeria-anuncios-conteudo,
+    .anuncio-conteudo-principal,
+    .secundario-imagem,
+    .anuncio-centro,
+    .outros-anuncios,
+    .outros-anuncios-1,
+    .alinha-coluna {
+    	padding-right: 0px;
+    }
+    .logo-anuncio {
+    	margin-top: 0px;
+    	padding-left: 0px;
+    	padding-right: 0px;
+    }
+    .anuncio-lateral{
+    	margin-top: 80px;
+    	margin-bottom: 20px;
+    }
+    .anuncio-centro{
+    	margin-bottom: 10px;
+    }
+    .alinha-coluna1{
+    	padding-left: 0px;
+    }
+    .anuncio-centro,
+    .anuncio-centro1{
+        padding-left: 15px;
+        
+    }
+    .banner-anuncios{
+        padding-right: 15px;
+    }
+    .outros-anuncios-2{
+    	padding-right: 0px;
+    	padding-left: 0px;
+    }
+    .nome-sessao-galeria{
+        margin-top: 20px;
+    }
+
+    .anuncio-conteudo-descricao,
+    .secundario-descricao {
+        text-align: center;
+    }
+
+    .galeriaview img{
+        width: 300px;
+        height: 250px;
+        padding-right: 15px;
+    }
+
+    .galeria-anuncios ul li{
+    	padding: 20px;
+    }
+
+    .anuncio-topo2{
+    	margin-top: 0px;
+    	background: #222626;
+    }
+    .footer-facebook{
+    	text-align: center;
+    }
+    .footer-whatsapp{
+    	text-align: center;
+    }
+    .fa-whatsapp{
+    	margin-bottom: 0px;
+    }
+    .footer-facebook,
+    .footer-instagram,
+    .footer-snapchat,
+    .footer-whatsapp{
+    	margin-bottom: 10px;
+    	margin-top: 10px;
+    }
+
+    .footer-institucional,
+    .footer-logo,
+    .footer-sobre {
+    	padding-right: 0px;
+    }
+    .footer-sobre{
+    	text-align: center;
+    }
+
+    .footer-paginas{
+    	padding-top: 10px;
+    	text-align: center;
+    }
+
+    .footer-categoria{
+    	padding-top: 5px;
+    	text-align: center;
+    }
+
+    .footer-paginas ul,
+    .footer-categoria ul{
+    	margin-top: 0px;
+    }
+
+    .fundo-footer{
+    	height: initial;
+    }
+    .footer-parceiros{
+    	margin-top: 0px;
+
+    }
+
+    .footer-parceiro{
+    	padding-top: 10px;
+    	text-align: center;
+    	margin-bottom: 20px;
+    }
+    .footer-email{
+    	text-align: center;
+    	padding-right: 0px;
+    }
+
+
+    /*GALERIA DE ANUNCIOS*/
+
+    .dropdown{
+        float: initial;
+        bottom: initial;
+    }
+
+    .galeria-direita,
+    .galeria-conteudo {
+        padding-right: 0px;
+    }
+
+    .titulo-interna {
+        text-align: center;
+    }
+
+
+    /*FALE CONOSCO */
+
+
+    .retira-padding{
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .dados-formulario{
+        top: 0px;
+    }
+
+    .bloco-redes-sociais{
+       margin-top: 0px;
+       margin-bottom: 20px;
+    }
+
+    .mapa-contato{
+        top: 0px;
+    }
+
+    .retira-padding-form{
+        padding-right: 0px;
+    }
+
+    .banner-faleconosco{
+        margin-top: 0px !important;
+        padding-right: 0px !important;
+
+    }
+
+    .anuncio-centro-ajusta{
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    /*CADASTRAR*/
+
+    .botao-formularios{
+        float: initial;
+    }
+
+    .formulario-login {
+        margin-bottom: 20px;
+    }
+
+
+
+
+}
+@media (min-width:481px) and (max-width: 767px) {  
+    /*celular horizontal*/
+
+
+        .fundo-banner-chat,
+    .outros-redesocial,
+    .slider,
+    .anuncio-topo,
+    .titulo,
+    .anuncios-principais,
+    .footer-redessociais span,
+   
+    .cadastrar-btn
+    {
+        display: none;
+    }
+
+    .anuncio-topo{
+        margin-top: 0px;
+    }
+
+    .page-header {
+        margin-right: 0px;
+        margin-top: 40px;
+        min-height: initial;
+    }
+
+    .modal-body img{
+        width: 100%;
+    }
+
+
+    .redes-sociais ul{
+        float: initial;
+        text-align: center;
+        padding-left: 0px;
+        margin-top: 15px;
+    }
+
+    .redes-sociais ul li{
+        margin-left: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .logo img{
+        width: 50%;
+    }
+    
+    .logo{
+        text-align: center;
+        font-size: 15pt;
+        height: initial;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .logo span{
+        top: initial;
+    }
+    .logo p{
+        top: initial;
+        font-size: 10pt;
+    }
+
+    .texto-logo-header {
+        float: initial;
+        top: 10px;
+        left: initial;
+
+    }
+    .itens-menu li{
+        top: initial;
+
+    }
+    .itens-menu{
+        width: 100%;
+    }
+    .botao-chat{
+        margin-left: initial;
+
+    }
+    .navbar-collapse {
+        margin-top: 18px;
+    }
+    .navbar-toggle{
+        top: 10px;
+    }
+
+    .anuncio-principal {
+        margin-bottom: 20px;
+    }
+
+    .anuncio-principal img{
+        height: initial;
+    }
+
+    .galeria-anuncios {
+        margin-top: initial;
+        padding-right: 0px;
+    }
+    .galeria-anuncios-conteudo,
+    .anuncio-conteudo-principal,
+    .secundario-imagem,
+    .anuncio-centro,
+    .outros-anuncios,
+    .outros-anuncios-1,
+    .alinha-coluna {
+        padding-right: 0px;
+    }
+    .logo-anuncio {
+        margin-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .anuncio-lateral{
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+    .anuncio-centro{
+        margin-bottom: 10px;
+    }
+    .alinha-coluna1{
+        padding-left: 0px;
+    }
+    .anuncio-centro,
+    .anuncio-centro1{
+        padding-left: 15px;
+        
+    }
+    .banner-anuncios{
+        padding-right: 15px;
+    }
+    .outros-anuncios-2{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .nome-sessao-galeria{
+        margin-top: 20px;
+    }
+
+    .anuncio-conteudo-descricao,
+    .secundario-descricao {
+        text-align: center;
+    }
+
+    .galeriaview img{
+        width: 300px;
+        height: 250px;
+        padding-right: 15px;
+    }
+
+    .galeria-anuncios ul li{
+        padding: 20px;
+    }
+
+    .anuncio-topo2{
+        margin-top: 0px;
+        background: #222626;
+    }
+    .footer-facebook{
+        text-align: center;
+    }
+    .footer-whatsapp{
+        text-align: center;
+    }
+    .fa-whatsapp{
+        margin-bottom: 0px;
+    }
+    .footer-facebook,
+    .footer-instagram,
+    .footer-snapchat,
+    .footer-whatsapp{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .footer-institucional,
+    .footer-logo,
+    .footer-sobre {
+        padding-right: 0px;
+    }
+    .footer-sobre{
+        text-align: center;
+    }
+
+    .footer-paginas{
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .footer-categoria{
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    .footer-paginas ul,
+    .footer-categoria ul{
+        margin-top: 0px;
+    }
+
+    .fundo-footer{
+        height: initial;
+    }
+    .footer-parceiros{
+        margin-top: 0px;
+
+    }
+
+    .footer-parceiro{
+        padding-top: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer-email{
+        text-align: center;
+        padding-right: 0px;
+    }
+
+
+    /*GALERIA DE ANUNCIOS*/
+
+    .dropdown{
+        float: initial;
+        bottom: initial;
+    }
+
+    .galeria-direita,
+    .galeria-conteudo {
+        padding-right: 0px;
+    }
+
+    .titulo-interna {
+        text-align: center;
+    }
+
+
+    /*FALE CONOSCO */
+
+
+    .retira-padding{
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .dados-formulario{
+        top: 0px;
+    }
+
+    .bloco-redes-sociais{
+       margin-top: 0px;
+       margin-bottom: 20px;
+    }
+
+    .mapa-contato{
+        top: 0px;
+    }
+
+    .retira-padding-form{
+        padding-right: 0px;
+    }
+
+    .banner-faleconosco{
+        margin-top: 0px !important;
+        padding-right: 0px !important;
+
+    }
+
+    .anuncio-centro-ajusta{
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    /*CADASTRAR*/
+
+    .botao-formularios{
+        float: initial;
+    }
+
+    .formulario-login {
+        margin-bottom: 20px;
+    }
+
+    
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    /*tablet vertical*/
+
+      .fundo-banner-chat,
+    .outros-redesocial,
+    .slider,
+    .anuncio-topo,
+    .titulo,
+    .anuncios-principais,
+    .footer-redessociais span,
+   
+    .cadastrar-btn
+    {
+        display: none;
+    }
+
+    .anuncio-topo{
+        margin-top: 0px;
+    }
+
+    .page-header {
+        margin-right: 0px;
+        margin-top: 40px;
+        min-height: initial;
+    }
+
+    .modal-body img{
+        width: 100%;
+    }
+
+
+    .redes-sociais ul{
+        float: initial;
+        text-align: center;
+        padding-left: 0px;
+        margin-top: 15px;
+    }
+
+    .redes-sociais ul li{
+        margin-left: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .logo img{
+        width: 50%;
+    }
+    
+    .logo{
+        text-align: center;
+        font-size: 15pt;
+        height: initial;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .logo span{
+        top: initial;
+    }
+    .logo p{
+        top: initial;
+        font-size: 10pt;
+    }
+
+    .texto-logo-header {
+        float: initial;
+        top: 10px;
+        left: initial;
+
+    }
+    .itens-menu li{
+        top: initial;
+
+    }
+    .itens-menu{
+        width: 100%;
+    }
+    .botao-chat{
+        margin-left: initial;
+
+    }
+    .navbar-collapse {
+        margin-top: 18px;
+    }
+    .navbar-toggle{
+        top: 10px;
+    }
+
+    .anuncio-principal {
+        margin-bottom: 20px;
+    }
+
+    .anuncio-principal img{
+        height: initial;
+    }
+
+    .galeria-anuncios {
+        margin-top: initial;
+        padding-right: 0px;
+    }
+    .galeria-anuncios-conteudo,
+    .anuncio-conteudo-principal,
+    .secundario-imagem,
+    .anuncio-centro,
+    .outros-anuncios,
+    .outros-anuncios-1,
+    .alinha-coluna {
+        padding-right: 0px;
+    }
+    .logo-anuncio {
+        margin-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .anuncio-lateral{
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+    .anuncio-centro{
+        margin-bottom: 10px;
+    }
+    .alinha-coluna1{
+        padding-left: 0px;
+    }
+    .anuncio-centro,
+    .anuncio-centro1{
+        padding-left: 15px;
+        
+    }
+    .banner-anuncios{
+        padding-right: 15px;
+    }
+    .outros-anuncios-2{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .nome-sessao-galeria{
+        margin-top: 20px;
+    }
+
+    .anuncio-conteudo-descricao,
+    .secundario-descricao {
+        text-align: center;
+    }
+
+    .galeriaview img{
+        width: 300px;
+        height: 250px;
+        padding-right: 15px;
+    }
+
+    .galeria-anuncios ul li{
+        padding: 20px;
+    }
+
+    .anuncio-topo2{
+        margin-top: 0px;
+        background: #222626;
+    }
+    .footer-facebook{
+        text-align: center;
+    }
+    .footer-whatsapp{
+        text-align: center;
+    }
+    .fa-whatsapp{
+        margin-bottom: 0px;
+    }
+    .footer-facebook,
+    .footer-instagram,
+    .footer-snapchat,
+    .footer-whatsapp{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .footer-institucional,
+    .footer-logo,
+    .footer-sobre {
+        padding-right: 0px;
+    }
+    .footer-sobre{
+        text-align: center;
+    }
+
+    .footer-paginas{
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .footer-categoria{
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    .footer-paginas ul,
+    .footer-categoria ul{
+        margin-top: 0px;
+    }
+
+    .fundo-footer{
+        height: initial;
+    }
+    .footer-parceiros{
+        margin-top: 0px;
+
+    }
+
+    .footer-parceiro{
+        padding-top: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer-email{
+        text-align: center;
+        padding-right: 0px;
+    }
+
+
+    /*GALERIA DE ANUNCIOS*/
+
+    .dropdown{
+        float: initial;
+        bottom: initial;
+    }
+
+    .galeria-direita,
+    .galeria-conteudo {
+        padding-right: 0px;
+    }
+
+    .titulo-interna {
+        text-align: center;
+    }
+
+
+    /*FALE CONOSCO */
+
+
+    .retira-padding{
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .dados-formulario{
+        top: 0px;
+    }
+
+    .bloco-redes-sociais{
+       margin-top: 0px;
+       margin-bottom: 20px;
+    }
+
+    .mapa-contato{
+        top: 0px;
+    }
+
+    .retira-padding-form{
+        padding-right: 0px;
+    }
+
+    .banner-faleconosco{
+        margin-top: 0px !important;
+        padding-right: 0px !important;
+
+    }
+
+    .anuncio-centro-ajusta{
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    /*CADASTRAR*/
+
+    .botao-formularios{
+        float: initial;
+    }
+
+    .formulario-login {
+        margin-bottom: 20px;
+    }
+
+    
+    
+}
+@media (min-width: 979px) and (max-width: 1199px) {
+    /*tablet horizontal*/
+
+      .fundo-banner-chat,
+    .outros-redesocial,
+    .slider,
+    .anuncio-topo,
+    .titulo,
+    .anuncios-principais,
+    .footer-redessociais span,
+   
+    .cadastrar-btn
+    {
+        display: none;
+    }
+
+    .anuncio-topo{
+        margin-top: 0px;
+    }
+
+    .page-header {
+        margin-right: 0px;
+        margin-top: 40px;
+        min-height: initial;
+    }
+
+    .modal-body img{
+        width: 100%;
+    }
+
+
+    .redes-sociais ul{
+        float: initial;
+        text-align: center;
+        padding-left: 0px;
+        margin-top: 15px;
+    }
+
+    .redes-sociais ul li{
+        margin-left: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .logo img{
+        width: 50%;
+    }
+    
+    .logo{
+        text-align: center;
+        font-size: 15pt;
+        height: initial;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .logo span{
+        top: initial;
+    }
+    .logo p{
+        top: initial;
+        font-size: 10pt;
+    }
+
+    .texto-logo-header {
+        float: initial;
+        top: 10px;
+        left: initial;
+
+    }
+    .itens-menu li{
+        top: initial;
+
+    }
+    .itens-menu{
+        width: 100%;
+    }
+    .botao-chat{
+        margin-left: initial;
+
+    }
+    .navbar-collapse {
+        margin-top: 18px;
+    }
+    .navbar-toggle{
+        top: 10px;
+    }
+
+    .anuncio-principal {
+        margin-bottom: 20px;
+    }
+
+    .anuncio-principal img{
+        height: initial;
+    }
+
+    .galeria-anuncios {
+        margin-top: initial;
+        padding-right: 0px;
+    }
+    .galeria-anuncios-conteudo,
+    .anuncio-conteudo-principal,
+    .secundario-imagem,
+    .anuncio-centro,
+    .outros-anuncios,
+    .outros-anuncios-1,
+    .alinha-coluna {
+        padding-right: 0px;
+    }
+    .logo-anuncio {
+        margin-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .anuncio-lateral{
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+    .anuncio-centro{
+        margin-bottom: 10px;
+    }
+    .alinha-coluna1{
+        padding-left: 0px;
+    }
+    .anuncio-centro,
+    .anuncio-centro1{
+        padding-left: 15px;
+        
+    }
+    .banner-anuncios{
+        padding-right: 15px;
+    }
+    .outros-anuncios-2{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .nome-sessao-galeria{
+        margin-top: 20px;
+    }
+
+    .anuncio-conteudo-descricao,
+    .secundario-descricao {
+        text-align: center;
+    }
+
+    .galeriaview img{
+        width: 300px;
+        height: 250px;
+        padding-right: 15px;
+    }
+
+    .galeria-anuncios ul li{
+        padding: 20px;
+    }
+
+    .anuncio-topo2{
+        margin-top: 0px;
+        background: #222626;
+    }
+    .footer-facebook{
+        text-align: center;
+    }
+    .footer-whatsapp{
+        text-align: center;
+    }
+    .fa-whatsapp{
+        margin-bottom: 0px;
+    }
+    .footer-facebook,
+    .footer-instagram,
+    .footer-snapchat,
+    .footer-whatsapp{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .footer-institucional,
+    .footer-logo,
+    .footer-sobre {
+        padding-right: 0px;
+    }
+    .footer-sobre{
+        text-align: center;
+    }
+
+    .footer-paginas{
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .footer-categoria{
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    .footer-paginas ul,
+    .footer-categoria ul{
+        margin-top: 0px;
+    }
+
+    .fundo-footer{
+        height: initial;
+    }
+    .footer-parceiros{
+        margin-top: 0px;
+
+    }
+
+    .footer-parceiro{
+        padding-top: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer-email{
+        text-align: center;
+        padding-right: 0px;
+    }
+
+
+    /*GALERIA DE ANUNCIOS*/
+
+    .dropdown{
+        float: initial;
+        bottom: initial;
+    }
+
+    .galeria-direita,
+    .galeria-conteudo {
+        padding-right: 0px;
+    }
+
+    .titulo-interna {
+        text-align: center;
+    }
+
+
+    /*FALE CONOSCO */
+
+
+    .retira-padding{
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .dados-formulario{
+        top: 0px;
+    }
+
+    .bloco-redes-sociais{
+       margin-top: 0px;
+       margin-bottom: 20px;
+    }
+
+    .mapa-contato{
+        top: 0px;
+    }
+
+    .retira-padding-form{
+        padding-right: 0px;
+    }
+
+    .banner-faleconosco{
+        margin-top: 0px !important;
+        padding-right: 0px !important;
+
+    }
+
+    .anuncio-centro-ajusta{
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    /*CADASTRAR*/
+
+    .botao-formularios{
+        float: initial;
+    }
+
+    .formulario-login {
+        margin-bottom: 20px;
+    }
+    
+}
+@media (min-width: 1200px) { 
+    
+}

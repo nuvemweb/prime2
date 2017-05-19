@@ -28,6 +28,12 @@
 //Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
 Router::connect('/', array('controller' => 'home', 'action' => 'index'));
 Router::connect('/admin', array('controller' => 'paginas', 'action' => 'index'));
+Router::connect('/admin/users', array('controller' => 'users', 'action' => 'index'));
+Router::connect('/admin/users/login', array('controller' => 'users', 'action' => 'login'));
+Router::connect('/admin/users/cadastrar', array('controller' => 'users', 'action' => 'cadastrar'));
+
+Router::connect('/site/galeria', array('controller' => 'galeria', 'action' => 'index'));
+Router::connect('/site/contato', array('controller' => 'contato', 'action' => 'index'));
 //Router::connect('/:url', array('controller' => 'paginas', 'action' => 'view'), array('pass' => array("url")));
 /**
  * ...and connect the rest of 'Pages' controller's URLs.

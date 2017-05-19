@@ -272,3 +272,155 @@ Content-Transfer-Encoding: 8bit
 
 
 
+2017-05-15 14:14:03 Debug: 
+From: contato@nuvemdesenvolvimentoweb.com.br
+To: contato@nuvemdesenvolvimentoweb.com.br
+Cc: andre@nuvemdesenvolvimentoweb.com.br
+X-Mailer: CakePHP Email
+Date: Mon, 15 May 2017 14:14:02 -0300
+Message-ID: <5919e1da94a04d0a8e2322f87aa2a7e8@localhost>
+Subject: Contato - Classificados Prime
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+<table width="100%" cellpadding="5" cellspacing="5" >
+    <tr style="width:100%; margin-top:10px; display:block; float:left">
+        <td style="width: 17px;">&nbsp;</td>
+        <td style="width: 583px;"><h2 style="font-size:16px;margin:10px 10px 0 0;">Contato realizado a partir do formulário do site. Os dados da mensagem são:</h2></td>
+    </tr>
+    <tr style="width:100%; margin-top:10px; display:block; float:left">
+        <td style="width: 17px;">&nbsp;</td>
+        <td style="width: 583px;"><p style="font-size:16px;margin:10px 10px 0 0;"><strong>Nome:</strong> testee</p></td>
+    </tr>
+    <tr style="width:100%; margin-top:10px; display:block; float:left">
+        <td style="width: 17px;">&nbsp;</td>
+        <td style="width: 583px;"><p style="font-size:16px;margin:10px 10px 0 0;"><strong>E-mail:</strong> teste@teste2.com</p></td>
+    </tr>
+    
+    <tr style="width:100%; margin-top:10px; display:block; float:left">
+        <td style="width: 17px;">&nbsp;</td>
+        <td style="width: 583px;"><p style="font-size:16px;margin:10px 10px 0 0;"><strong>Telefone:</strong> (22) 22222-2222</p></td>
+    </tr>
+   
+    <tr style="width:100%; margin-top:10px; display:block; float:left">
+        <td style="width: 17px;">&nbsp;</td>
+        <td style="width: 583px;"><p style="font-size:16px;margin:10px 10px 0 0;"><strong>Mensagem:</strong> teste</p></td>
+    </tr>
+</table>
+
+
+
+2017-05-15 14:14:03 Debug: 
+From: contato@nuvemdesenvolvimentoweb.com.br
+To: contato@nuvemdesenvolvimentoweb.com.br
+Cc: andre@nuvemdesenvolvimentoweb.com.br
+X-Mailer: CakePHP Email
+Date: Mon, 15 May 2017 14:14:03 -0300
+Message-ID: <5919e1dbd1d0431aaca322f87aa2a7e8@localhost>
+Subject: Contato - Classificados Prime
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+<table width="100%" cellpadding="5" cellspacing="5" >
+    <tr style="width:100%; margin-top:10px; display:block; float:left">
+        <td style="width: 17px;">&nbsp;</td>
+        <td style="width: 583px;"><h2 style="font-size:16px;margin:10px 10px 0 0;">Contato realizado a partir do formulário do site. Os dados da mensagem são:</h2></td>
+    </tr>
+    <tr style="width:100%; margin-top:10px; display:block; float:left">
+        <td style="width: 17px;">&nbsp;</td>
+        <td style="width: 583px;"><p style="font-size:16px;margin:10px 10px 0 0;"><strong>Nome:</strong> testee</p></td>
+    </tr>
+    <tr style="width:100%; margin-top:10px; display:block; float:left">
+        <td style="width: 17px;">&nbsp;</td>
+        <td style="width: 583px;"><p style="font-size:16px;margin:10px 10px 0 0;"><strong>E-mail:</strong> teste@teste2.com</p></td>
+    </tr>
+    
+    <tr style="width:100%; margin-top:10px; display:block; float:left">
+        <td style="width: 17px;">&nbsp;</td>
+        <td style="width: 583px;"><p style="font-size:16px;margin:10px 10px 0 0;"><strong>Telefone:</strong> (22) 22222-2222</p></td>
+    </tr>
+   
+    <tr style="width:100%; margin-top:10px; display:block; float:left">
+        <td style="width: 17px;">&nbsp;</td>
+        <td style="width: 583px;"><p style="font-size:16px;margin:10px 10px 0 0;"><strong>Mensagem:</strong> teste</p></td>
+    </tr>
+</table>
+
+
+
+2017-05-15 16:56:44 Debug: 
+From: contato@classificadosprime.com.br
+To: contato@classificadosprime.com.br
+Cc: diasdeoliveira22@classificadosprime.com.br
+X-Mailer: CakePHP Email
+Date: Mon, 15 May 2017 16:56:44 -0300
+Message-ID: <591a07fc5e644341a79222f87aa2a7e8@localhost>
+Subject: Contato - Classificados Prime
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+<table width="100%" cellpadding="5" cellspacing="5" >
+    <tr style="width:100%; margin-top:10px; display:block; float:left">
+        <td style="width: 17px;">&nbsp;</td>
+        <td style="width: 583px;"><h2 style="font-size:16px;margin:10px 10px 0 0;">Contato realizado a partir do formulário do site. Os dados da mensagem são:</h2></td>
+    </tr>
+    <tr style="width:100%; margin-top:10px; display:block; float:left">
+        <td style="width: 17px;">&nbsp;</td>
+        <td style="width: 583px;"><p style="font-size:16px;margin:10px 10px 0 0;"><strong>Nome:</strong> teste</p></td>
+    </tr>
+    <tr style="width:100%; margin-top:10px; display:block; float:left">
+        <td style="width: 17px;">&nbsp;</td>
+        <td style="width: 583px;"><p style="font-size:16px;margin:10px 10px 0 0;"><strong>E-mail:</strong> teste@teste.com</p></td>
+    </tr>
+    
+    <tr style="width:100%; margin-top:10px; display:block; float:left">
+        <td style="width: 17px;">&nbsp;</td>
+        <td style="width: 583px;"><p style="font-size:16px;margin:10px 10px 0 0;"><strong>Telefone:</strong> (33) 33333-3333</p></td>
+    </tr>
+   
+    <tr style="width:100%; margin-top:10px; display:block; float:left">
+        <td style="width: 17px;">&nbsp;</td>
+        <td style="width: 583px;"><p style="font-size:16px;margin:10px 10px 0 0;"><strong>Mensagem:</strong> testetesteteste</p></td>
+    </tr>
+</table>
+
+
+
+2017-05-15 16:56:45 Debug: 
+From: contato@classificadosprime.com.br
+To: contato@classificadosprime.com.br
+Cc: diasdeoliveira22@classificadosprime.com.br
+X-Mailer: CakePHP Email
+Date: Mon, 15 May 2017 16:56:44 -0300
+Message-ID: <591a07fc45304a3e9ff422f87aa2a7e8@localhost>
+Subject: Contato - Classificados Prime
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+<table width="100%" cellpadding="5" cellspacing="5" >
+    <tr style="width:100%; margin-top:10px; display:block; float:left">
+        <td style="width: 17px;">&nbsp;</td>
+        <td style="width: 583px;"><h2 style="font-size:16px;margin:10px 10px 0 0;">Contato realizado a partir do formulário do site. Os dados da mensagem são:</h2></td>
+    </tr>
+    <tr style="width:100%; margin-top:10px; display:block; float:left">
+        <td style="width: 17px;">&nbsp;</td>
+        <td style="width: 583px;"><p style="font-size:16px;margin:10px 10px 0 0;"><strong>Nome:</strong> teste</p></td>
+    </tr>
+    <tr style="width:100%; margin-top:10px; display:block; float:left">
+        <td style="width: 17px;">&nbsp;</td>
+        <td style="width: 583px;"><p style="font-size:16px;margin:10px 10px 0 0;"><strong>E-mail:</strong> teste@teste.com</p></td>
+    </tr>
+    
+    <tr style="width:100%; margin-top:10px; display:block; float:left">
+        <td style="width: 17px;">&nbsp;</td>
+        <td style="width: 583px;"><p style="font-size:16px;margin:10px 10px 0 0;"><strong>Telefone:</strong> (33) 33333-3333</p></td>
+    </tr>
+   
+    <tr style="width:100%; margin-top:10px; display:block; float:left">
+        <td style="width: 17px;">&nbsp;</td>
+        <td style="width: 583px;"><p style="font-size:16px;margin:10px 10px 0 0;"><strong>Mensagem:</strong> testetesteteste</p></td>
+    </tr>
+</table>
+
+
+

@@ -1,3 +1,17 @@
+<?php 
+function showReadMore($string){
+	$string = strip_tags($string);
+
+	if (strlen($string) > 80) {
+
+	    $stringCut = substr($string, 0, 80);
+
+	    $string = substr($stringCut, 0, strrpos($stringCut, ' ')).'...'; 
+	}
+	return $string;
+}
+?>
+
 <section class='col-xs-12 col-sm-12 col-md-12 slider'>
 	<?php echo $this->Element('slider'); ?>
 </section>
@@ -15,9 +29,9 @@
 		
 			<figure class="col-md-3 col-xs-12 anuncio-principal">
 			<?php if ($Anuncios[$i]['Anuncio']['imagem'] != "") {?>
-				<img class="img-responsive" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncios[$i]['Anuncio']['id'] ?>/263x350-<?php echo $Anuncios[$i]['Anuncio']['imagem'] ?>"/>
+				<a href="http://www.classificadosprime.com.br/var/www/html/classificadosprime.com.br/web/site/galeria/view/<?php echo $Anuncios[$i]['Anuncio']['id']?>"><img class="img-responsive" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncios[$i]['Anuncio']['id'] ?>/263x350-<?php echo $Anuncios[$i]['Anuncio']['imagem'] ?>"/></a>
 			<?php } else { ?>
-						<img class="img-responsive" src="<?php echo $this->request->webroot;?>/img/logo-anuncio350.png">
+						<a href="http://www.classificadosprime.com.br/var/www/html/classificadosprime.com.br/web/site/galeria/view/<?php echo $Anuncios[$i]['Anuncio']['id']?>"><img class="img-responsive" src="<?php echo $this->request->webroot;?>/img/logo-anuncio350.png"></a>
 						<?php } ?>
 				<figcaption>
 					<h4><span><?php echo $Anuncios[$i]['Anuncio']['categoria'];?></span></h4><br/>
@@ -56,7 +70,7 @@
 		<div class="galeria-anuncios col-md-8 col-xs-12">
 		<div class="nome-sessao nome-sessao-galeria">
 			<span>Galeria</span>
-			<a href="http://localhost/prime2/Desenvolvimento/site/galeria">Ver todos</a>
+			<a href="http://www.classificadosprime.com.br/site/galeria">Ver todos</a>
 			<!--<div class="dropdown">
   			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     			Categorias
@@ -89,9 +103,9 @@
 					<?php foreach($Anuncios as $Anuncio):?>
 						<?php if(($Anuncio['Anuncio']['categoria'] == "automoveis") && ($Anuncio['Anuncio']['destaquecategoria'] == "1")) { ?>
 						<?php if ($Anuncio['Anuncio']['imagem'] != "") {?>
-						<img src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/335x270-<?php echo $Anuncio['Anuncio']['imagem'] ?>">
+						<a href="http://www.classificadosprime.com.br/var/www/html/classificadosprime.com.br/web/site/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><img src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/335x270-<?php echo $Anuncio['Anuncio']['imagem'] ?>"></a>
 						<?php } else { ?>
-						<img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio.png">
+						<a href="http://www.classificadosprime.com.br/var/www/html/classificadosprime.com.br/web/site/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio-335.png"></a>
 						<?php } ?>
 						  <?php } ?>
 					<?php endforeach;?>
@@ -104,7 +118,7 @@
 					<?php if(($Anuncio['Anuncio']['categoria'] == "automoveis") && ($Anuncio['Anuncio']['destaquecategoria'] == "1")) { ?>
 						<h4><?php echo $Anuncio['Anuncio']['titulo'];?></h4>
 						<p class="data-anuncio"><?php echo $Anuncio['Anuncio']['created'];?> </p>
-						<p><?php echo $Anuncio['Anuncio']['descricao'];?></p>
+						<p><?php echo showReadMore($Anuncio['Anuncio']['descricao']);?></p>
 					<?php } ?>
 					<?php endforeach;?>
 					</div>
@@ -116,15 +130,15 @@
 				<div class="anuncio-conteudo-secundario col-md-6 col-xs-12">
 					<div class="secundario-imagem col-md-5 col-xs-12">
 						<?php if ($Anuncio['Anuncio']['imagem'] != "") {?>
-						<img class="imagem-secundario" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/200x200-<?php echo $Anuncio['Anuncio']['imagem'] ?>">
+						<a href="http://www.classificadosprime.com.br/var/www/html/classificadosprime.com.br/web/site/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><img class="imagem-secundario" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/200x200-<?php echo $Anuncio['Anuncio']['imagem'] ?>"></a>
 						<?php } else { ?>
-						<img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio.png">
+						<a href="http://www.classificadosprime.com.br/var/www/html/classificadosprime.com.br/web/site/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio-200.png"></a>
 						<?php } ?>
 					</div>
 					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4><?php echo $Anuncio['Anuncio']['titulo'];?></h4>
 						<p class="p-categoria"><?php echo $Anuncio['Anuncio']['categoria'];?></p>
-						<p><?php echo $Anuncio['Anuncio']['descricao'];?></p>
+						<p><?php echo showReadMore($Anuncio['Anuncio']['descricao']);?></p>
 
 					</div>
 				</div>
@@ -144,15 +158,15 @@
 	<div class="anuncio-conteudo-secundario col-md-12 col-xs-12">
 		<div class="secundario-imagem col-md-5 col-xs-12">
 		<?php if ($Anuncio['Anuncio']['imagem'] != "") {?>
-			<img class="imagem-secundario" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/316x186-<?php echo $Anuncio['Anuncio']['imagem'] ?>">
+			<a href="<http://www.classificadosprime.com.br/var/www/html/classificadosprime.com.br/web/site/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><img class="imagem-secundario" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/316x186-<?php echo $Anuncio['Anuncio']['imagem'] ?>"></a>
 		<?php } else { ?>
-						<img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio.png">
+						<a href="http://www.classificadosprime.com.br/var/www/html/classificadosprime.com.br/web/site/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio-316.png"></a>
 						<?php } ?>
 		</div>
 		<div class="secundario-descricao col-md-7 col-xs-12">
 			<h4><?php echo $Anuncio['Anuncio']['titulo'];?></h4>
 			<p><?php echo $Anuncio['Anuncio']['created'];?></p>
-			<h3><?php echo $Anuncio['Anuncio']['descricao'];?></h3>
+			<h3><?php echo showReadMore($Anuncio['Anuncio']['descricao']);?></h3>
 		</div>
 	</div>
 	<?php } ?>
@@ -165,7 +179,7 @@
 			<?php foreach($Publicidades as $Publicidade):?>
 						<?php if($Publicidade['Publicidade']['local'] == "homelateral") { ?>
 				<div class="imagem-anuncio-lateral col-md-12">
-					<img class="img-responsive" src="<?php echo $this->request->base ?>/upload/publicidade/<?php echo $Publicidade['Publicidade']['id'] ?>/350x250-<?php echo $Publicidade['Publicidade']['imagem'] ?>">
+					<a href="<?php echo $Publicidade['Publicidade']['link'] ?>" target="_blank"><img class="img-responsive" title="<?php echo $Publicidade['Publicidade']['nome'] ?>" alt="<?php echo $Publicidade['Publicidade']['nome'] ?>" src="<?php echo $this->request->base ?>/upload/publicidade/<?php echo $Publicidade['Publicidade']['id'] ?>/350x250-<?php echo $Publicidade['Publicidade']['imagem'] ?>"></a>
 				</div>
 			<?php } ?>
 					<?php endforeach;?>
@@ -181,14 +195,14 @@
 				<div class="anuncio-conteudo-secundario col-md-12 col-xs-12">
 					<div class="secundario-imagem col-md-5 col-xs-12">
 					<?php if ($Anuncio['Anuncio']['imagem'] != "") {?>
-						<img class="imagem-secundario" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/200x200-<?php echo $Anuncio['Anuncio']['imagem'] ?>">
+						<a href="http://www.classificadosprime.com.br/var/www/html/classificadosprime.com.br/web/site/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><img class="imagem-secundario" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/200x200-<?php echo $Anuncio['Anuncio']['imagem'] ?>"></a>
 					<?php } else { ?>
-						<img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio.png">
+						<a href="http://www.classificadosprime.com.br/var/www/html/classificadosprime.com.br/web/site/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio-200.png"></a>
 						<?php } ?>
 					</div>
 					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4><?php echo $Anuncio['Anuncio']['titulo'];?></h4>
-						<p><?php echo $Anuncio['Anuncio']['descricao'];?></p>
+						<p><?php echo showReadMore($Anuncio['Anuncio']['descricao']);?></p>
 					</div>
 				</div>
 			<?php } ?>
@@ -212,7 +226,7 @@
 	<?php foreach($Publicidades as $Publicidade):?>
 						<?php if($Publicidade['Publicidade']['local'] == "homecentro1") { ?>
 		<div class="fundo-anuncio-centro">
-			<img class="img-responsive" src="<?php echo $this->request->base ?>/upload/publicidade/<?php echo $Publicidade['Publicidade']['id'] ?>/660x100-<?php echo $Publicidade['Publicidade']['imagem'] ?>">
+			<a href="<?php echo $Publicidade['Publicidade']['link'] ?>" target="_blank"><img class="img-responsive" title="<?php echo $Publicidade['Publicidade']['nome'] ?>" alt="<?php echo $Publicidade['Publicidade']['nome'] ?>" src="<?php echo $this->request->base ?>/upload/publicidade/<?php echo $Publicidade['Publicidade']['id'] ?>/660x100-<?php echo $Publicidade['Publicidade']['imagem'] ?>"></a>
 		</div>
 	<?php } ?>
 				<?php endforeach;?>
@@ -221,7 +235,7 @@
 	<?php foreach($Publicidades as $Publicidade):?>
 						<?php if($Publicidade['Publicidade']['local'] == "homecentro2") { ?>
 		<div class="fundo-anuncio-centro">
-			<img class="img-responsive" src="<?php echo $this->request->base ?>/upload/publicidade/<?php echo $Publicidade['Publicidade']['id'] ?>/660x100-<?php echo $Publicidade['Publicidade']['imagem'] ?>">
+			<a href="<?php echo $Publicidade['Publicidade']['link'] ?>" target="_blank"><img class="img-responsive" title="<?php echo $Publicidade['Publicidade']['nome'] ?>" alt="<?php echo $Publicidade['Publicidade']['nome'] ?>" src="<?php echo $this->request->base ?>/upload/publicidade/<?php echo $Publicidade['Publicidade']['id'] ?>/660x100-<?php echo $Publicidade['Publicidade']['imagem'] ?>"></a>
 		</div>
 	<?php } ?>
 				<?php endforeach;?>
@@ -243,9 +257,9 @@
 					<?php foreach($Anuncios as $Anuncio):?>
 						<?php if(($Anuncio['Anuncio']['categoria'] == "imoveisalugar") && ($Anuncio['Anuncio']['destaquecategoria'] == "1")) { ?>
 						<?php if ($Anuncio['Anuncio']['imagem'] != "") {?>
-						<img src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/352x284-<?php echo $Anuncio['Anuncio']['imagem'] ?>">
+						<a href="http://www.classificadosprime.com.br/var/www/html/classificadosprime.com.br/web/site/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><img src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/352x284-<?php echo $Anuncio['Anuncio']['imagem'] ?>"></a>
 						<?php } else { ?>
-						<img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio.png">
+						<a href="http://www.classificadosprime.com.br/var/www/html/classificadosprime.com.br/web/site/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio-352.png"></a>
 						<?php } ?>
 						  <?php } ?>
 
@@ -259,7 +273,7 @@
 					<?php if(($Anuncio['Anuncio']['categoria'] == "imoveisalugar") && ($Anuncio['Anuncio']['destaquecategoria'] == "1")) { ?>
 						<h4><?php echo $Anuncio['Anuncio']['titulo'];?></h4>
 						<p class="data-anuncio"><?php echo $Anuncio['Anuncio']['created'];?></p>
-						<p><?php echo $Anuncio['Anuncio']['descricao'];?></p>
+						<p><?php echo showReadMore($Anuncio['Anuncio']['descricao']);?></p>
 						<?php } ?>
 
 					<?php endforeach;?>
@@ -270,15 +284,15 @@
 				<div class="anuncio-conteudo-secundario col-md-12">
 					<div class="secundario-imagem col-md-5 col-xs-12">
 					<?php if ($Anuncio['Anuncio']['imagem'] != "") {?>
-						<img class="imagem-secundario" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/200x200-<?php echo $Anuncio['Anuncio']['imagem'] ?>">
+						<a href="http://www.classificadosprime.com.br/var/www/html/classificadosprime.com.br/web/site/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><img class="imagem-secundario" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/131x131-<?php echo $Anuncio['Anuncio']['imagem'] ?>"></a>
 					<?php } else { ?>
-						<img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio.png">
+						<a href="http://www.classificadosprime.com.br/var/www/html/classificadosprime.com.br/web/site/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><img class="imagem-secundario imagem-imoveis-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio-131.png"></a>
 						<?php } ?>
 						  
 					</div>
 					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4><?php echo $Anuncio['Anuncio']['titulo'];?></h4>
-						<p><?php echo $Anuncio['Anuncio']['descricao'];?></p>
+						<p><?php echo showReadMore($Anuncio['Anuncio']['descricao']);?></p>
 					</div>
 				</div>
 				<?php } ?>
@@ -310,9 +324,9 @@
 					<?php foreach($Anuncios as $Anuncio):?>
 						<?php if(($Anuncio['Anuncio']['categoria'] == "imoveisvenda") && ($Anuncio['Anuncio']['destaquecategoria'] == "1")) { ?>
 						<?php if ($Anuncio['Anuncio']['imagem'] != "") {?>
-						<img src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/352x284-<?php echo $Anuncio['Anuncio']['imagem'] ?>">
+						<a href="http://www.classificadosprime.com.br/var/www/html/classificadosprime.com.br/web/site/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><img src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/352x284-<?php echo $Anuncio['Anuncio']['imagem'] ?>"></a>
 						<?php } else { ?>
-						<img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio.png">
+						<a href="http://www.classificadosprime.com.br/var/www/html/classificadosprime.com.br/web/site/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio-352.png"></a>
 						<?php } ?>
 						  <?php } ?>
 
@@ -326,7 +340,7 @@
 					<?php if(($Anuncio['Anuncio']['categoria'] == "imoveisvenda") && ($Anuncio['Anuncio']['destaquecategoria'] == "1")) { ?>
 						<h4><?php echo $Anuncio['Anuncio']['titulo'];?></h4>
 						<p class="data-anuncio"><?php echo $Anuncio['Anuncio']['created'];?></p>
-						<p><?php echo $Anuncio['Anuncio']['descricao'];?></p>
+						<p><?php echo showReadMore($Anuncio['Anuncio']['descricao']);?></p>
 						<?php } ?>
 
 					<?php endforeach;?>
@@ -338,15 +352,15 @@
 				<div class="anuncio-conteudo-secundario col-md-12">
 					<div class="secundario-imagem col-md-5 col-xs-12">
 					<?php if ($Anuncio['Anuncio']['imagem'] != "") {?>
-						<img class="imagem-secundario" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/200x200-<?php echo $Anuncio['Anuncio']['imagem'] ?>">
+						<a href="http://www.classificadosprime.com.br/var/www/html/classificadosprime.com.br/web/site/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><img class="imagem-secundario" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/131x131-<?php echo $Anuncio['Anuncio']['imagem'] ?>"></a>
 					<?php } else { ?>
-						<img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio.png">
+						<a href="http://www.classificadosprime.com.br/var/www/html/classificadosprime.com.br/web/site/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><img class="imagem-secundario imagem-imoveis-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio-131.png"></a>
 						<?php } ?>
 						  
 					</div>
 					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4><?php echo $Anuncio['Anuncio']['titulo'];?></h4>
-						<p><?php echo $Anuncio['Anuncio']['descricao'];?></p>
+						<p><?php echo showReadMore($Anuncio['Anuncio']['descricao']);?></p>
 					</div>
 				</div>
 				<?php } ?>
@@ -366,14 +380,14 @@
 				<div class="anuncio-conteudo-secundario col-md-12">
 					<div class="secundario-imagem col-md-5 col-xs-12">
 					<?php if ($Anuncio['Anuncio']['imagem'] != "") {?>
-						<img class="imagem-secundario" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/200x200-<?php echo $Anuncio['Anuncio']['imagem'] ?>">
+						<a href="http://www.classificadosprime.com.br/var/www/html/classificadosprime.com.br/web/site/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><img class="imagem-secundario" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/131x131-<?php echo $Anuncio['Anuncio']['imagem'] ?>"></a>
 					<?php } else { ?>
-						<img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio.png">
+						<a href="http://www.classificadosprime.com.br/var/www/html/classificadosprime.com.br/web/site/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio-131.png"></a>
 						<?php } ?>
 					</div>
 					<div class="secundario-descricao col-md-7 col-xs-12">
 						<h4><?php echo $Anuncio['Anuncio']['titulo'];?></h4>
-						<p><?php echo $Anuncio['Anuncio']['descricao'];?></p>
+						<p><?php echo showReadMore($Anuncio['Anuncio']['descricao']);?></p>
 						
 					</div>
 				</div>
@@ -403,13 +417,13 @@
 		</div>
 	</div>
 </div>
-<div class="banner-chat col-md-12">
+<!--<div class="banner-chat col-md-12">
 	<div class="fundo-banner-chat">
 		<span class="ajuda">Precisa de ajuda?
 		<p>Converse com nossos consultores!</p></span>
 		<a class="banner-chat-botao"> Chat Online</a>
 	</div>
-</div>
+</div>-->
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {

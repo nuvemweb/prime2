@@ -5,11 +5,37 @@ a:focus {
 }
 
 a{
-	color: inherit !important;
+	color: inherit;
 }
 
 html{
 	overflow-x: hidden;
+}
+
+.pagination li a{
+	background-color: black;
+	border: none;
+	color: white;
+}
+
+.pagination li a:hover {
+	color: black;
+}
+
+.pagination > .active > a{
+	background-color: red;
+	border-color: black;
+	color: white;
+}
+
+.BtnSubmit {
+	background-color: black !important;
+	color: red !important;
+	padding: 5px 40px;
+}
+
+.conteudo-administrador{
+	min-height: 280px;
 }
 
 /*HEADER*/
@@ -37,6 +63,7 @@ html{
 
 input[type="text" i]:disabled{
 	background-color: #222626;
+	color: white;
 }
 
 .redes-sociais{
@@ -166,6 +193,7 @@ input[type="text" i]:disabled{
 
 .logo img{
 	width: 40%;
+	height: 100%;
 }
 
 .texto-logo-header{
@@ -188,7 +216,7 @@ input[type="text" i]:disabled{
 .anuncio-topo2{
 	
 	margin-top: 45px;
-	border: 1px solid white;
+	/*border: 1px solid white;*/
 	font-family: 'miriad-pro-regular';
 	text-transform: uppercase;
 	color: white;
@@ -203,7 +231,7 @@ input[type="text" i]:disabled{
 	transform: translate(0, 190%);
 }
 
-.anuncio-topo a,
+/*.anuncio-topo a,
 .anuncio-topo2 a{
 	float: right;
 	color: white;
@@ -213,7 +241,7 @@ input[type="text" i]:disabled{
 	padding: 10px 25px;
 	position: relative;
 	top: -10px;
-}
+}*/
 
 .faixa-menu{
 	background-color: black;
@@ -255,7 +283,7 @@ input[type="text" i]:disabled{
 }
 
 .active{
-	color: yellow !important;
+	color: red !important;
 }
 
 .pesquisar-menu input{
@@ -333,6 +361,8 @@ figcaption span{
 }
 
 /*GALERIA DE ANUNCIOS */
+
+
 .nome-sessao{
 	width: 100%;
 	height: 40px;
@@ -481,13 +511,13 @@ figcaption span{
 	color: white;
 }
 
-.imagem-anuncio-lateral a{
+/*.imagem-anuncio-lateral a{
 	border: 1px solid white;
 	padding: 10px 25px;
 	color: white;
 	font-weight: bold;
 
-}
+}*/
 
 .secundario-imagem {
 	padding-left: 0px;
@@ -661,7 +691,7 @@ figcaption span{
 .footer-sobre {
 	font-family: 'Poppins-Regular';
 	color: #a4abab;
-	text-transform: lowercase;
+
 	font-size: 9pt;
 	margin-top: 10px;
 	margin-bottom: 20px;

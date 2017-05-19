@@ -63,7 +63,7 @@ class AppController extends Controller {
 
     $this->renovaLogin(false);
 
-    $this->Auth->allow('');
+    $this->Auth->allow('cadastrar');
   }
 
   public function beforeRender() {

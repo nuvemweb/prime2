@@ -1,21 +1,27 @@
 $(function () {
-    $("#load").hide();
+    // jQuery Masked Input
+
+
+
+
     jQuery('#ContatoIndexForm').submit(function () {
-        if (validaForm()){
+        if (validaForm())
+        {
             var dados = jQuery(this).serialize();
-            $("#load").show();
             jQuery.ajax({
                 type: "POST",
                 url: jQuery(this).attr("action"),
                 data: dados,
-                success: function (data){
-                    $("#load").hide();
+                success: function (data)
+                {
+
                     if ($.trim(data) == "true") {
-                        $("#validacao").html("Mensagem enviada com sucesso!");
-                        jQuery('#ContatoIndexForm')[0].reset();
+                        $("#result_validacao").html("Mensagem enviada com sucesso.");
                     } else {
-                        $("#validacao").html("Houve algum erro no envio.<br />" + data);
+                        $("#result_validacao").html("Houve algum erro no envio.<br />" + data);
                     }
+                    jQuery('#ContatoIndexForm')[0].reset();
+
                 }
             });
         }
@@ -34,12 +40,25 @@ $(function () {
             element.mask("(99) 9999-9999?9");
         }
     });
+
+    $('#ContatoTelefone').focusout(function () {
+        var phone, element;
+        element = $(this);
+        element.unmask();
+        phone = element.val().replace(/\D/g, '');
+        if (phone.length > 10) {
+            element.mask("(99) 99999-999?9");
+        } else {
+            element.mask("(99) 9999-9999?9");
+        }
+    }).trigger('focusout');
 });
 
 function validaForm()
 {
     var ret = true;
-    var msg_validacao = "<ul style='culor:red'>";
+    var msg_validacao = "<ol style='color:red'>";
+    // $.validateEmail($('#ContatoEmail').val());
     if ($('#ContatoEmail').val() != "") {
         if (!$.validateEmail($('#ContatoEmail').val())) {
             msg_validacao += "<li>Digite um e-mail válido.</li>";
@@ -51,25 +70,27 @@ function validaForm()
         ret = false;
     }
     if ($("#ContatoNome").val() == "") {
-        msg_validacao += "<li>Preencha o seu nome.</li>";
+        msg_validacao += "<li>Preencha o seu Nome.</li>";
         ret = false;
     }
 
     if ($("#ContatoTelefone").val() == "") {
-        msg_validacao += "<li>Preencha o seu telefone.</li>";
+        msg_validacao += "<li>Preencha o seu Telefone.</li>";
         ret = false;
     }
 
     if ($("#ContatoMensagem").val() == "") {
-        msg_validacao += "<li>Preencha sua mensagem.</li>";
+        msg_validacao += "<li>Preencha o sua mensagem.</li>";
         ret = false;
     }
-    msg_validacao += "</ul>";
-    $("#validacao").html(msg_validacao);
+
+    msg_validacao += "</ol>";
+    $("#result_validacao").html(msg_validacao);
     return ret;
 }
 
-$.validateEmail = function (email){
+$.validateEmail = function (email)
+{
     er = /^[a-zA-Z0-9][a-zA-Z0-9\._-]+@([a-zA-Z0-9\._-]+\.)[a-zA-Z-0-9]{2}/;
     if (er.exec(email))
         return true;

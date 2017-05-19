@@ -1,9 +1,9 @@
-<div class='col-xs-12'>
+<div class='col-xs-12 conteudo-administrador'>
 
     <div class='page-header page-header-with-buttons'>
         <h1 class='pull-left'>
-            <i class='icon-user'></i>
-            <span><?php echo __('Aprovar Anuncios'); ?></span>
+            <i class='fa fa-thumbs-o-up' aria-hidden='true'></i>
+            <span><?php echo __(' Aprovar Anuncios'); ?></span>
         </h1>
         			 <!--<?php echo $this->Html->link('<i class=\'icon-plus\'></i><span> Adicionar</span>', array('action' => 'add'), array('class' => 'btn btn-primary btn-lg', 'title' => 'Adicionar novo Registro', 'style' => 'float: right; margin: 18px 0 0 0;', 'escape' => false)); ?>-->
     </div>

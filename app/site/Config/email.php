@@ -10,11 +10,11 @@ class EmailConfig {
     
     public $smtp = array(
         'transport' => 'Smtp',
-        'host' => 'smtp.harasrecanto.com',
+        'host' => 'smtp.classificadosprime.com.br',
         'port' => 587,
         'timeout' => 30,
-        'username' => 'no-reply@harasrecanto.com',
-        'password' => '312@harasrecanto',
+        'username' => 'contato@classificadosprime.com.br',
+        'password' => '88546336',
         'client' => null,
         'log' => true,
         'emailFormat' => "html"

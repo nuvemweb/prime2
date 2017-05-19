@@ -16,17 +16,17 @@
         <!-- / END - page related stylesheets [optional] -->
             <?php echo $this->Html->meta('meta_icons/favicon');
                 echo $this->Html->css(
-                    array('bootstrap/bootstrap','light-theme','theme-colors.css','/fonts/stylesheet','font-awesome', 'font-awesome.min','style','demo','plugins/select2/select2','plugins/bootstrap_colorpicker/bootstrap-colorpicker.css','plugins/bootstrap_daterangepicker/bootstrap-daterangepicker.css','plugins/bootstrap_datetimepicker/bootstrap-datetimepicker.min.css','plugins/bootstrap_switch/bootstrap-switch.css','plugins/common/bootstrap-wysihtml5.css',
+                    array('bootstrap/bootstrap','light-theme','theme-colors.css','/fonts/stylesheet','font-awesome', 'font-awesome.min','style', 'style-mobile', 'demo','plugins/select2/select2','plugins/bootstrap_colorpicker/bootstrap-colorpicker.css','plugins/bootstrap_daterangepicker/bootstrap-daterangepicker.css','plugins/bootstrap_datetimepicker/bootstrap-datetimepicker.min.css','plugins/bootstrap_switch/bootstrap-switch.css','plugins/common/bootstrap-wysihtml5.css',
                 ));
                 echo $this->Html->script(
-                    array('jquery/jquery.min','jquery/jquery.mobile.custom.min.js','jquery/jquery-migrate.min.js','jquery/jquery-ui.min.js','plugins/jquery_ui_touch_punch/jquery.ui.touch-punch.min.js','bootstrap/bootstrap.js','plugins/modernizr/modernizr.min.js','plugins/retina/retina.js','theme.js','demo.js',
+                    array('jquery/jquery.min','jquery/jquery.mobile.custom.min.js','jquery/jquery-migrate.min.js','jquery/jquery-ui.min.js','plugins/jquery_ui_touch_punch/jquery.ui.touch-punch.min.js','bootstrap/bootstrap.js','plugins/modernizr/modernizr.min.js','plugins/retina/retina.js','theme.js','demo.js','moveRelogio.js'
                 ));
                 echo $this->fetch('meta');
                 echo $this->fetch('css');
                 echo $this->fetch('script');
             ?>   
         </head>
-        <body class="login">
+        <body class="login" onload="moveRelogio()">
 
         <!--HEADER-->
 

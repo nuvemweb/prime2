@@ -1,8 +1,8 @@
 <div class='col-xs-12'>
     <div class='page-header page-header-with-buttons'>
         <h1 class='pull-left'>
-            <i class='icon-user'></i>
-            <span>Usuário</span>
+            <i class='fa fa-user-circle-o' aria-hidden='true'></i>
+            <span> Usuários</span>
         </h1>
     </div>
 </div>
@@ -15,6 +15,7 @@
             <div class='box-content'>
                 <?php
                 echo $this->Form->create('User', $this->FormAdmin->formConfigs);
+                echo $this->Form->input('id');
                 echo $this->Form->input('nome', array(
                     "data-rule-minlength" => '5',
                     "data-rule-required" => 'true',
@@ -34,7 +35,7 @@
 
                  echo $this->Form->input('categoria', array('options' => array(1 => "Administrador", 0 => "Usuario"), 'empty' => 'Selecione'));
 
-                echo $this->Form->input("imagem", array('type' => 'file', "accept" => "image/gif, image/png, image/jpeg"));
+                echo $this->Form->input("imagem", array('type' => 'file'));
                 ?>
                 <div class='form-actions form-actions-padding-sm'>
                     <div class='row'>

@@ -14,6 +14,22 @@ html{
 
 /*HEADER*/
 
+.pagination li a{
+	background-color: black;
+	border: none;
+	color: white;
+}
+
+.pagination li a:hover {
+	color: black;
+}
+
+.pagination > .active > a{
+	background-color: red;
+	border-color: black;
+	color: white;
+}
+
 .navbar-default{
 	background-color: black;
 	margin-bottom: 0px;
@@ -184,7 +200,7 @@ input[type="text" i]:disabled{
 	padding-left: 0px;
 	padding-right: 0px;
 	margin-top: 45px;
-	border: 1px solid white;
+	/*border: 1px solid white;*/
 	font-family: 'miriad-pro-regular';
 	text-transform: uppercase;
 	color: white;
@@ -197,7 +213,7 @@ input[type="text" i]:disabled{
 	transform: translate(0, 190%);
 }
 
-.anuncio-topo a,
+/*.anuncio-topo a,
 .anuncio-topo2 a{
 	float: right;
 	color: white;
@@ -207,7 +223,7 @@ input[type="text" i]:disabled{
 	padding: 10px 25px;
 	position: relative;
 	top: -10px;
-}
+}*/
 
 .faixa-menu{
 	background-color: black;
@@ -304,7 +320,7 @@ input[type="text" i]:disabled{
 	width: calc(100% - 30px);
 	padding-right: 30px;
 	padding-left: 15px;
-	background: linear-gradient(to bottom, #dcdcdc, #808080);
+	/*background: linear-gradient(to bottom, #dcdcdc, #808080);*/
 
 }
 
@@ -316,7 +332,8 @@ input[type="text" i]:disabled{
 
 }
 
-figcaption span{
+figcaption span,
+figcaption p{
 	background-color: #222626;
 	border-left: 2px solid yellow;
 	padding: 1px 10px;
@@ -337,7 +354,15 @@ figcaption span{
 	margin-top: 30px;
 }
 
+.outros-anuncios{
+	margin-bottom: 30px;
+}
+
 /*GALERIA DE ANUNCIOS */
+
+.galeria-linhas{
+	line-height: 25px;
+}
 
 .anuncio-conteudo-outros{
 	margin-top: 10px;
@@ -355,6 +380,24 @@ figcaption span{
 .galeria{
 	padding-right: 0px;
 	padding-left: 0px;
+}
+
+.galeriaview{
+	font-family: 'Poppins-Regular';
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.tituloview{
+	font-family: 'Poppins-SemiBold';
+	text-transform: uppercase;
+	position: relative;
+	top: -40px;
+}
+
+.camposview{
+	text-transform: uppercase;
+	color: red;
 }
 
 .galeria-anuncios {
@@ -465,7 +508,8 @@ figcaption span{
 	font-size: 12px;
 }
 .secundario-descricao p{
-	color: #a4abab;
+	/*color: #a4abab;*/
+	color: #333;
 	font-size: 12px;
 	font-family: 'Merriweather-LightItalic';
 }
@@ -501,16 +545,21 @@ figcaption span{
 	color: white;
 }
 
-.imagem-anuncio-lateral a{
+/*.imagem-anuncio-lateral a{
 	border: 1px solid white;
 	padding: 10px 25px;
 	color: white;
 	font-weight: bold;
 
-}
+}*/
 
 .secundario-imagem {
 	padding-left: 0px;
+
+}
+
+.imagem-imoveis-secundario{
+	height: 131px;
 }
 
 .ofertas{
@@ -682,7 +731,7 @@ figcaption span{
 .footer-sobre {
 	font-family: 'Poppins-Regular';
 	color: #a4abab;
-	text-transform: lowercase;
+	
 	font-size: 9pt;
 	margin-top: 10px;
 	margin-bottom: 20px;
@@ -836,9 +885,9 @@ figcaption span{
 }
 
 .bloco-redes-sociais{
-	height: 140px;
+	
 	margin-top: 15px;
-	border: 1px solid #e8e9e9;	
+		
 }
 .galeria-facebook i{
 	color: #506dae;

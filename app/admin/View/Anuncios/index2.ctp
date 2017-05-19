@@ -1,9 +1,9 @@
-<div class='col-xs-12'>
+<div class='col-xs-12 conteudo-administrador'>
 
     <div class='page-header page-header-with-buttons'>
         <h1 class='pull-left'>
-            <i class='icon-user'></i>
-            <span><?php echo __('Anuncios no site'); ?></span>
+            <i class='fa fa-globe' aria-hidden='true'></i>
+            <span><?php echo __(' Anuncios no site'); ?></span>
         </h1>
         			 <!--<?php echo $this->Html->link('<i class=\'icon-plus\'></i><span> Adicionar</span>', array('action' => 'add'), array('class' => 'btn btn-primary btn-lg', 'title' => 'Adicionar novo Registro', 'style' => 'float: right; margin: 18px 0 0 0;', 'escape' => false)); ?>-->
     </div>
@@ -19,6 +19,7 @@
                                                                             <th><?php echo $this->Paginator->sort('Anunciante'); ?></th>
                                                                             <th><?php echo $this->Paginator->sort('Titulo'); ?></th>
                                                                             <th><?php echo $this->Paginator->sort('descricao'); ?></th>
+                                                                            <th><?php echo $this->Paginator->sort('created'); ?></th>
                                                                         <th class="actions">Ações</th>
                                 </tr>
                             </thead>
@@ -32,6 +33,7 @@
         <td><?php echo h($anuncio['Anuncio']['anunciante']); ?>&nbsp;</td>
 		<td><?php echo h($anuncio['Anuncio']['titulo']); ?>&nbsp;</td>
         <td><?php echo h($anuncio['Anuncio']['descricao']); ?>&nbsp;</td>
+        <td><?php echo h($anuncio['Anuncio']['created']); ?>&nbsp;</td>
 		<td>
 		<div class="text-center">
 			 <?php 

@@ -1,3 +1,17 @@
+<?php 
+function showReadMore($string){
+	$string = strip_tags($string);
+
+	if (strlen($string) > 250) {
+
+	    $stringCut = substr($string, 0, 250);
+
+	    $string = substr($stringCut, 0, strrpos($stringCut, ' ')).'...'; 
+	}
+	return $string;
+}
+?>
+
 <div class="col-md-12 fundo-subpaginas">
 	<div class="container">
 		<div class="titulo-interna">
@@ -27,22 +41,22 @@
   			</button>
 		<ul class="lista-galeria dropdown-menu" aria-labelledby="dropdownMenu3">
 			
-			<li><a href="http://localhost/prime2/Desenvolvimento/site/galeria/animais">Animais</a></li>
-			<li><a href="http://localhost/prime2/Desenvolvimento/site/galeria/automoveis">Automóveis</a></li>
-			<li><a href="http://localhost/prime2/Desenvolvimento/site/galeria/bicicletas">Bicicletas</a></li>
-			<li><a href="http://localhost/prime2/Desenvolvimento/site/galeria/caminhoes">Caminhões</a></li>
-			<li><a href="http://localhost/prime2/Desenvolvimento/site/galeria/celulares">Celulares</a></li>
-			<li><a href="http://localhost/prime2/Desenvolvimento/site/galeria/computadores">Computadores</a></li>
-			<li><a href="http://localhost/prime2/Desenvolvimento/site/galeria/construcao">Construção</a></li>
-			<li><a href="http://localhost/prime2/Desenvolvimento/site/galeria/diversos">Diversos</a></li>
-			<li><a href="http://localhost/prime2/Desenvolvimento/site/galeria/eletrodomesticos">Eletrodomésticos</a></li>
-			<li><a href="http://localhost/prime2/Desenvolvimento/site/galeria/empregos">Empregos</a></li>
-			<li><a href="http://localhost/prime2/Desenvolvimento/site/galeria/imoveisalugar">Imóveis Alugar</a></li>
-			<li><a href="http://localhost/prime2/Desenvolvimento/site/galeria/imoveisvenda">Imóveis Vender/Comprar</a></li>
-			<li><a href="http://localhost/prime2/Desenvolvimento/site/galeria/maquinas">Máquinas</a></li>
-			<li><a href="http://localhost/prime2/Desenvolvimento/site/galeria/motos">Motos</a></li>
-			<li><a href="http://localhost/prime2/Desenvolvimento/site/galeria/multimidia">Multimidia</a></li>
-			<li><a href="http://localhost/prime2/Desenvolvimento/site/galeria/servicos">Serviços</a></li>
+			<li><a href="<?php echo $this->request->base ?>/galeria/animais">Animais</a></li>
+			<li><a href="<?php echo $this->request->base ?>/galeria/automoveis">Automóveis</a></li>
+			<li><a href="<?php echo $this->request->base ?>/galeria/bicicletas">Bicicletas</a></li>
+			<li><a href="<?php echo $this->request->base ?>/galeria/caminhoes">Caminhões</a></li>
+			<li><a href="<?php echo $this->request->base ?>/galeria/celulares">Celulares</a></li>
+			<li><a href="<?php echo $this->request->base ?>/galeria/computadores">Computadores</a></li>
+			<li><a href="<?php echo $this->request->base ?>/galeria/construcao">Construção</a></li>
+			<li><a href="<?php echo $this->request->base ?>/galeria/diversos">Diversos</a></li>
+			<li><a href="<?php echo $this->request->base ?>/galeria/eletrodomesticos">Eletrodomésticos</a></li>
+			<li><a href="<?php echo $this->request->base ?>/galeria/empregos">Empregos</a></li>
+			<li><a href="<?php echo $this->request->base ?>/galeria/imoveisalugar">Imóveis Alugar</a></li>
+			<li><a href="<?php echo $this->request->base ?>/galeria/imoveisvenda">Imóveis Vender/Comprar</a></li>
+			<li><a href="<?php echo $this->request->base ?>/galeria/maquinas">Máquinas</a></li>
+			<li><a href="<?php echo $this->request->base ?>/galeria/motos">Motos</a></li>
+			<li><a href="<?php echo $this->request->base ?>/galeria/multimidia">Multimidia</a></li>
+			<li><a href="<?php echo $this->request->base ?>/galeria/servicos">Serviços</a></li>
 			
 		</ul>
 		</div>
@@ -51,15 +65,15 @@
 			<div class="anuncio-conteudo-secundario col-md-12">
 				<div class="secundario-imagem col-md-5">
 				<?php if ($Anuncio['Anuncio']['imagem'] != "") {?>
-					<img class="imagem-secundario" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/316x186-<?php echo $Anuncio['Anuncio']['imagem'] ?>">
+					<a href="<?php echo $this->request->base ?>/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><img class="imagem-secundario" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/316x186-<?php echo $Anuncio['Anuncio']['imagem'] ?>"></a>
 				<?php } else { ?>
-						<img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio-galeria.png">
+						<a href="<?php echo $this->request->base ?>/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio-316.png"></a>
 						<?php } ?>
 				</div>
 				<div class="secundario-descricao col-md-7">
 						<h4><?php echo $Anuncio['Anuncio']['titulo'];?></h4>
 						<p><?php echo $Anuncio['Anuncio']['categoria'];?></p>
-						<h3><?php echo $Anuncio['Anuncio']['descricao'];?></h3>
+						<a href="<?php echo $this->request->base ?>/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><h3 class="galeria-linhas"><?php echo showReadMore($Anuncio['Anuncio']['descricao']);?></h3></a>
 				</div>
 			</div>
 			<?php } ?>
@@ -167,9 +181,9 @@
 			<div class="anuncio-conteudo-secundario col-md-12">
 					<div class="secundario-imagem col-md-5">
 					<?php if ($Anuncio['Anuncio']['imagem'] != "") {?>
-						<img class="imagem-secundario" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/200x200-<?php echo $Anuncio['Anuncio']['imagem'] ?>">
+						<a href="<?php echo $this->request->base ?>/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><img class="imagem-secundario" src="<?php echo $this->request->base ?>/upload/anuncio/<?php echo $Anuncio['Anuncio']['id'] ?>/200x200-<?php echo $Anuncio['Anuncio']['imagem'] ?>"></a>
 					<?php } else { ?>
-						<img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio.png">
+						<a href="<?php echo $this->request->base ?>/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><img class="imagem-secundario" src="<?php echo $this->request->webroot;?>/img/logo-anuncio-200.png"></a>
 						<?php } ?>
 					</div>
 					<div class="secundario-descricao col-md-7">
@@ -184,7 +198,7 @@
 			<?php foreach($Computadores as $Anuncio):?>
 				<?php if(($Anuncio['Anuncio']['categoria'] == "empregos") && ($Anuncio['Anuncio']['destaquecategoria'] == "1")) { ?>
 			<div class="anuncio-conteudo-outros col-md-12">
-			<p><span><?php echo $Anuncio['Anuncio']['anunciante'];?></span> <?php echo $Anuncio['Anuncio']['descricao'];?></p>
+			<a href="<?php echo $this->request->base ?>/galeria/view/<?php echo $Anuncio['Anuncio']['id']?>"><p><span><?php echo $Anuncio['Anuncio']['titulo'];?></span> <?php echo showReadMore($Anuncio['Anuncio']['descricao']);?></p></a>
 			</div>
 			<?php } ?>
 			<?php endforeach;?>
@@ -193,12 +207,12 @@
 				<div class="fb-like" data-href="https://www.facebook.com/primeinforpatos/" data-width="345" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 			</div>
 
-			<div class="anuncio-lateral">
+			<div class="anuncio-lateral col-xs-12">
 			<?php foreach($Publicidades as $Publicidade):?>
 						<?php if($Publicidade['Publicidade']['local'] == "galeria") { ?>
 				<div class="imagem-anuncio-lateral col-md-12">
 				
-					<img class="img-responsive" src="<?php echo $this->request->base ?>/upload/publicidade/<?php echo $Publicidade['Publicidade']['id'] ?>/350x250-<?php echo $Publicidade['Publicidade']['imagem'] ?>">
+					<a href="<?php echo $Publicidade['Publicidade']['link'] ?>" target="_blank"><img class="img-responsive" title="<?php echo $Publicidade['Publicidade']['nome'] ?>" alt="<?php echo $Publicidade['Publicidade']['nome'] ?>" src="<?php echo $this->request->base ?>/upload/publicidade/<?php echo $Publicidade['Publicidade']['id'] ?>/350x250-<?php echo $Publicidade['Publicidade']['imagem'] ?>"></a>
 				
 				</div>
 			<?php } ?>
