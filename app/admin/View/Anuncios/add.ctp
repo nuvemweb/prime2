@@ -16,6 +16,7 @@
                     	<?php
 		echo $this->Form->input('anunciante');
         echo $this->Form->input('telefone');
+        echo $this->Form->input('celular');
         echo $this->Form->input('facebook');
         echo $this->Form->input('tiponegocio', array('options' => array("Comprar" => "Comprar", "Vender" => "Vender", "outros" => "outros"), 'empty' => 'Selecione'));
         echo $this->Form->input('titulo');

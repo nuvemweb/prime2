@@ -21,6 +21,7 @@
 			<p><span class="camposview">Anunciante:</span> <?php echo $Anuncio['Anuncio']['anunciante'];?></p>
 			<p><span class="camposview">Facebook:</span> <a href="<?php echo $Anuncio['Anuncio']['facebook'];?>" target="_blank"><?php echo $Anuncio['Anuncio']['facebook'];?></a></p>
 			<p><span class="camposview">Telefone:</span> <?php echo $Anuncio['Anuncio']['telefone'];?></p>
+			<p><span class="camposview">Celular:</span> <?php echo $Anuncio['Anuncio']['celular'];?></p>
 			<?php if(($Anuncio['Anuncio']['preco']) != "") {?>
 			<br/><p><span class="camposview">Preço:</span> <?php echo $Anuncio['Anuncio']['preco'];?></p>
 			<?php } ?>
